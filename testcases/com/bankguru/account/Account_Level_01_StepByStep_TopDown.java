@@ -72,6 +72,11 @@ public class Account_Level_01_StepByStep_TopDown {
 	  //05: check userID display in Home page
 	  Assert.assertTrue(driver.findElement(By.xpath("//td[text()='Manger Id : "+userIDInfor+"']")).isDisplayed());
   }
+  
+  @Test
+  public void TC_03() {
+	  
+  }
  
   public int randomNumber() {
 	  Random random = new Random();
