@@ -1,5 +1,9 @@
 package commons;
 
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.util.List;
 import java.util.Set;
 
@@ -21,6 +25,12 @@ public class AbstractPage {
 	WebDriverWait explicitWait;
 	Actions action;
 	
+	String rootFolder = System.getProperty("user.dir");
+	
+	By byLocator;
+	long longTimeout = 30;
+	long shortTimeout = 5;
+	
     //WebBrowser
 	public void openAnyUrl(WebDriver driver, String Url) {
 		driver.get(Url);
@@ -30,8 +40,8 @@ public class AbstractPage {
 		driver.getTitle();
 	}
 	
-	public void getCurrentPageUrl(WebDriver driver) {
-		driver.getCurrentUrl();
+	public String getCurrentPageUrl(WebDriver driver) {
+		return driver.getCurrentUrl();
 	}
 	
 	public void getPageSource(WebDriver driver) {
@@ -212,6 +222,7 @@ public class AbstractPage {
 		element = driver.findElement(By.xpath(locator));
 		action.moveToElement(element).perform();
 	}
+
 	
 	public void rightClick (WebDriver driver, String locator) {
 		action = new Actions(driver);
@@ -227,12 +238,10 @@ public class AbstractPage {
 		action.dragAndDrop(source, target).perform();
 	}
 	
-	public void sendKeyboardToElement (WebDriver driver, String locator, String key) {
+	public void sendKeyboardToElement (WebDriver driver, String locator, Keys key) {
 		action = new Actions(driver);
-		//element = driver.findElement(By.xpath(locator));
-		
-		action.sendKeys(Keys.ENTER).build().perform();
-		action.keyDown(Keys.CONTROL).sendKeys(key).keyUp(Keys.CONTROL).perform();
+		element = driver.findElement(By.xpath(locator));
+		action.sendKeys(element, key);
 	}
 	
 	public void uploadSenkeyOneFile(WebDriver driver, String locator, String linkFile, String locatorBtnUpload) {
@@ -241,9 +250,160 @@ public class AbstractPage {
 		driver.findElement(By.xpath(locatorBtnUpload)).click();
 	}
 	
-	public void uploadSenkeyMultiFiles(WebDriver driver, String locator, String linkFile, String locatorBtnUpload) {
-		
+	public void uploadSenkeyMultiFiles(WebDriver driver, String locator, String fileName01, String fileName02, String fileName03, String locatorBtnUpload) throws Exception {
+	    element = driver.findElement(By.xpath(locator));
+	
+		String fileNamePath01 = rootFolder+"\\uploadFiles\\"+fileName01;
+		String fileNamePath02 = rootFolder+"\\uploadFiles\\"+fileName02;
+		String fileNamePath03 = rootFolder+"\\uploadFiles\\"+fileName03;
+	    element.sendKeys(fileNamePath01 +  "\n" + fileNamePath02 + "\n" + fileNamePath03);
+	    Thread.sleep(5000);
+	    driver.findElement(By.xpath(locatorBtnUpload)).click();
+	    Thread.sleep(5000);
 	}
 	
-	
+	public void uploadRobot(WebDriver driver, String fileNamePath01, String locatorUploadFile, String locatorBtnUpload) throws Exception {
+		StringSelection select = new  StringSelection(fileNamePath01);
+		
+	    Toolkit.getDefaultToolkit().getSystemClipboard().setContents(select, null);
+
+        element =  driver.findElement(By.xpath(locatorUploadFile));
+        element.click();
+        Thread.sleep(1000);
+
+	    Robot robot = new Robot();
+	    Thread.sleep(1000);
+
+	    robot.keyPress(KeyEvent.VK_ENTER);
+	    robot.keyRelease(KeyEvent.VK_ENTER);
+
+	    robot.keyPress(KeyEvent.VK_CONTROL);
+	    robot.keyPress(KeyEvent.VK_V);
+
+	    robot.keyRelease(KeyEvent.VK_CONTROL);
+	    robot.keyRelease(KeyEvent.VK_V);
+	    Thread.sleep(1000);
+
+	    robot.keyPress(KeyEvent.VK_ENTER);
+	    robot.keyRelease(KeyEvent.VK_ENTER);
+	      
+	    Thread.sleep(3000);
+	      
+	    driver.findElement(By.xpath(locatorBtnUpload)).click();
+	}
+
+	public void uploadAutoIT(WebDriver driver, String locator, String fileName01, String locatorBtnUpload) throws Exception {
+      element =  driver.findElement(By.xpath(locator));
+      element.click();
+      Thread.sleep(1000);
+      String fileNamePath01 = rootFolder+"\\uploadFiles\\"+fileName01;
+  	  String chromePath = rootFolder+"\\uploadFiles\\chrome.exe";
+	  Runtime.getRuntime().exec(new  String[] { chromePath, fileNamePath01 }); 
+	  Thread.sleep(3000);
+	  
+	  driver.findElement(By.xpath(locatorBtnUpload)).click();
+	  Thread.sleep(5000);
+	}
+
+	//JavascriptExecutor 
+    public String executeJavascriptToBrowser(WebDriver driver, String javaSript) {
+      JavascriptExecutor js = (JavascriptExecutor) driver;
+      return (String) js.executeScript(javaSript);
+    }
+    
+    public Object clickToElementByJS(WebDriver driver, WebElement element) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        return js.executeScript("arguments[0].click();", element);
+    }
+    
+    public Object sendkeyToElementByJS(WebDriver driver, WebElement element, String value) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        return js.executeScript("arguments[0].setAttribute('value', '" + value + "')", element);
+     }   
+
+    public Object scrollToBottomPage(WebDriver driver) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        return js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+    }   
+
+    public Object scrollToElement(WebDriver driver, String locator) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        element = driver.findElement(By.xpath(locator));
+        return js.executeScript("arguments[0].scrollIntoView(true);",element);
+    }
+
+    public void highlightElement(WebDriver driver, WebElement element) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].style.border='6px groove red'", element);
+        try {
+  		Thread.sleep(1000);
+        } catch (InterruptedException e) {
+  		// TODO Auto-generated catch block
+  		e.printStackTrace();
+        }
+    }    
+    
+    public void removeAttributeOfElement(WebDriver driver, WebElement element, String attribute) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].removeAttribute('" + attribute + "');", element);
+        try {
+  		Thread.sleep(3000);
+  	  } 
+        catch (InterruptedException e) {
+  		// TODO Auto-generated catch block
+  		e.printStackTrace();
+  	   }
+    }   
+
+    public Object navigateToUrlByJS(WebDriver driver, String url) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        return js.executeScript("window.location = '" + url + "'");
+    }   
+    
+    public boolean checkRealImg(WebDriver driver, String locator) {
+    	element = driver.findElement(By.xpath(locator));
+    	Boolean ImagePresent = (Boolean) ((JavascriptExecutor)driver).executeScript("return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0", element);
+        if (!ImagePresent)
+        {
+             return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+
+    public void waitForElementPresence(WebDriver driver, String locator) {
+    	explicitWait = new WebDriverWait(driver, 30);
+    	byLocator = By.xpath(locator);
+    	explicitWait.until(ExpectedConditions.presenceOfElementLocated(byLocator));
+    }
+
+    public void waitForElementVisible (WebDriver driver, String locator) {
+    	explicitWait = new WebDriverWait(driver, 30);
+    	byLocator = By.xpath(locator);
+    	explicitWait.until(ExpectedConditions.visibilityOfElementLocated(byLocator));
+    }    
+
+    public void waitForElementClickable (WebDriver driver, String locator) {
+    	explicitWait = new WebDriverWait(driver, 30);
+    	byLocator = By.xpath(locator);
+    	explicitWait.until(ExpectedConditions.elementToBeClickable(byLocator));
+    }     
+
+    public void waitForElementInVisible (WebDriver driver, String locator) {
+    	explicitWait = new WebDriverWait(driver, longTimeout);
+    	byLocator = By.xpath(locator);
+    	explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(byLocator));
+    }      
+
+    public void waitForAlertPresence (WebDriver driver) {
+    	explicitWait = new WebDriverWait(driver, longTimeout);
+    	explicitWait.until(ExpectedConditions.alertIsPresent());
+    }  
+    
+    
+    
+    
+    
 }
