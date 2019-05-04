@@ -241,7 +241,7 @@ public class AbstractPage {
 	public void sendKeyboardToElement (WebDriver driver, String locator, Keys key) {
 		action = new Actions(driver);
 		element = driver.findElement(By.xpath(locator));
-		action.sendKeys(element, key);
+		action.sendKeys(element, key).perform();
 	}
 	
 	public void uploadSenkeyOneFile(WebDriver driver, String locator, String linkFile, String locatorBtnUpload) {

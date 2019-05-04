@@ -26,7 +26,6 @@ public class Account_Level_02_ApplyAbstractPage {
 	  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	  driver.manage().window().maximize();
 	  
-	  driver.get("http://demo.guru99.com/v4/");
 	  abstractPage.openAnyUrl(driver, "http://demo.guru99.com/v4/");
 	  
 	  email = "trinh"+randomNumber()+"@gmail.com";
