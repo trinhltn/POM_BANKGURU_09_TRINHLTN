@@ -2,7 +2,7 @@
 <suite name="Bank Guru" parallel="false">
   <test name="run on chrome">
     <classes>
-      <class name="com.bankguru.account.Account_Level_01_StepByStep_TopDown"/>
+      <class name="com.bankguru.account.Account_Level_05_PageFactoryManager_SingletonPattern"/>
     </classes>
   </test> 
 </suite> 

@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import bankguru.LoginPageUI;
 import commons.AbstractPage;
+import commons.PageFactoryManager;
 
 public class LoginPageObject extends AbstractPage{
 	public WebDriver driver;
@@ -21,11 +22,19 @@ public class LoginPageObject extends AbstractPage{
 		return getCurrentPageUrl(driver);
 	}
 
-	public void clickToHereLink() {
+	/*using for Level 03*/
+	/*public void clickToHereLink() {
 		waitForElementVisible(driver, LoginPageUI.HERE_LINK);
 		clickToElement(driver, LoginPageUI.HERE_LINK);
-	}
+	}*/
 
+	/*using for level 05*/
+	public RegisterPageObject clickToHereLink() {
+		waitForElementVisible(driver, LoginPageUI.HERE_LINK);
+		clickToElement(driver, LoginPageUI.HERE_LINK);
+		return PageFactoryManager.getRegisterPage(driver);
+	}
+	
 	public void inputToUserIDTextbox(String userIDInfor) {
 		waitForElementVisible(driver, LoginPageUI.USER_ID_TEXTBOX);
 		senkeyToElement(driver, LoginPageUI.USER_ID_TEXTBOX, userIDInfor);
@@ -35,10 +44,18 @@ public class LoginPageObject extends AbstractPage{
 		waitForElementVisible(driver, LoginPageUI.PASSWORD_TEXTBOX);
 		senkeyToElement(driver, LoginPageUI.PASSWORD_TEXTBOX, passwordInfor);
 	}
-
-	public void clickToLoginButton() {
+	
+	/*using lv 03*/
+	/*public void clickToLoginButton() {
 		waitForElementVisible(driver, LoginPageUI.LOGIN_BUTTON);
 		clickToElement(driver, LoginPageUI.LOGIN_BUTTON);
+	}*/
+
+	/*using lv 05*/
+	public HomePageObject clickToLoginButton() {
+		waitForElementVisible(driver, LoginPageUI.LOGIN_BUTTON);
+		clickToElement(driver, LoginPageUI.LOGIN_BUTTON);
+		return PageFactoryManager.getHomePage(driver);
 	}
 
 }
