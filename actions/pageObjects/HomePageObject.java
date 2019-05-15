@@ -28,7 +28,6 @@ public class HomePageObject extends AbstractPage{
 	public LoginPageObject clickToLogOutLink() {
 		waitForElementVisible(driver, HomePageUI.LOGOUT_LINK);
 		clickToElement(driver, HomePageUI.LOGOUT_LINK);
-		waitForAlertPresence(driver);
 		acceptAlert(driver);
 		
 		return PageFactoryManager.getLoginPage(driver);

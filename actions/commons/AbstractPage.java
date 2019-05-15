@@ -399,6 +399,11 @@ public class AbstractPage {
 
     public void waitForAlertPresence (WebDriver driver) {
     	explicitWait = new WebDriverWait(driver, longTimeout);
+    	try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
     	explicitWait.until(ExpectedConditions.alertIsPresent());
     }  
     

@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Bank Guru" parallel="false">
-  <test name="run on chrome">
-    <classes>
-      <class name="com.bankguru.account.Account_Level_05_PageFactoryManager_SingletonPattern"/>
-    </classes>
-  </test> 
+	<test name="run on chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class
+				name="com.bankguru.account.Account_Level_06_MultiBrowsers_ParallelTesting" />
+		</classes>
+	</test>
+ 	<test name="run on firefox"> 
+ 		<parameter name="browser" value="firefox" /> 
+ 		<classes> 
+			<class 
+				name="com.bankguru.account.Account_Level_06_MultiBrowsers_ParallelTesting" /> 
+ 		</classes> 
+ 	</test> 
+ 	<test name="run on chrome headless"> 
+ 		<parameter name="browser" value="chromeheadless" /> 
+ 		<classes> 
+ 			<class
+ 				name="com.bankguru.account.Account_Level_06_MultiBrowsers_ParallelTesting" /> 
+		</classes> 
+	</test>
 </suite> 
