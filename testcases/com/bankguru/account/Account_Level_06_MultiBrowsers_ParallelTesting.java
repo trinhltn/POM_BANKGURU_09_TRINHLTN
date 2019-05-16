@@ -13,13 +13,14 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import commons.AbstractTest;
 import commons.PageFactoryManager;
 import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
 import pageObjects.RegisterPageObject;
 
-public class Account_Level_06_MultiBrowsers_ParallelTesting {
-	WebDriver driver;
+public class Account_Level_06_MultiBrowsers_ParallelTesting extends AbstractTest {
+	private WebDriver driver;
 	String loginPageUrl, userIDInfor, passwordInfor, email;
 	LoginPageObject loginPage;
 	RegisterPageObject registerPage;
@@ -28,29 +29,7 @@ public class Account_Level_06_MultiBrowsers_ParallelTesting {
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeClass(String browserName) {
-		
-		if(browserName.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", ".\\lib\\chromedriver.exe");
-			driver = new ChromeDriver();
-		}
-		
-		else if(browserName.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver", ".\\lib\\geckodriver.exe");
-			driver = new FirefoxDriver();
-		}
-		
-		else if(browserName.equalsIgnoreCase("chromeheadless")) {
-			System.setProperty("webdriver.chrome.driver", ".\\lib\\chromedriver.exe");
-			ChromeOptions options = new ChromeOptions();
-			options.addArguments("headless");
-			options.addArguments("window-size=1366x768");
-			driver = new ChromeDriver(options);
-		}
-		
-		System.out.println("Run on browser = "+browserName);
-		System.out.println(driver.toString());
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
+		driver = openMultiBrowser(browserName);
 
 		driver.get("http://demo.guru99.com/v4/");
 
