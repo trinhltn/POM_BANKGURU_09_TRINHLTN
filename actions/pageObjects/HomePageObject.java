@@ -33,4 +33,11 @@ public class HomePageObject extends AbstractPage{
 		return PageFactoryManager.getLoginPage(driver);
 	}
 
+	public NewAccountPageObject openNewAccountPage() {
+		waitForElementVisible(driver, HomePageUI.NEW_ACCOUNT_LINK);
+		clickToElement(driver, HomePageUI.NEW_ACCOUNT_LINK);
+		return PageFactoryManager.getNewAccoutPage(driver);
+	}
+
+
 }

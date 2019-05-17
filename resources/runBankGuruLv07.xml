@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Bank Guru lv 07" parallel="false">
+	<test name="run on chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class
+				name="com.bankguru.account.Account_Level_07_WebDriverLifeCycle_ActionChain" />
+		</classes>
+	</test>
+</suite> 

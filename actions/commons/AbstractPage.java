@@ -16,9 +16,14 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
-public class AbstractPage {
+import bankguru.AbstractPageUI;
+import pageObjects.DepositPageObject;
+import pageObjects.FundTransferPageObject;
+import pageObjects.HomePageObject;
+import pageObjects.NewAccountPageObject;
+
+public class AbstractPage extends AbstractPageUI {
 	WebElement element;
 	List <WebElement> elements;
 	JavascriptExecutor jsExecutor;
@@ -406,9 +411,29 @@ public class AbstractPage {
 		}
     	explicitWait.until(ExpectedConditions.alertIsPresent());
     }  
-    
-    
-    
-    
+
+	public HomePageObject openHomePage(WebDriver driver) {
+		waitForElementVisible(driver, AbstractPageUI.HOME_PAGE_LINK);
+		clickToElement(driver, AbstractPageUI.HOME_PAGE_LINK);
+		return PageFactoryManager.getHomePage(driver);
+	}
+
+	public DepositPageObject openDepositPage(WebDriver driver) {
+		waitForElementVisible(driver, AbstractPageUI.DEPOSIT_LINK);
+		clickToElement(driver, AbstractPageUI.DEPOSIT_LINK);
+		return PageFactoryManager.getDepositPage(driver);
+	}
+	
+	public FundTransferPageObject openFundTransferPage(WebDriver driver) {
+		waitForElementVisible(driver, AbstractPageUI.FUND_TRANSFER_LINK);
+		clickToElement(driver, AbstractPageUI.FUND_TRANSFER_LINK);
+		return PageFactoryManager.getFundTransferPage(driver);
+	} 
+	
+	public NewAccountPageObject openNewAccountPage(WebDriver driver) {
+		waitForElementVisible(driver, AbstractPageUI.NEW_ACCOUNT_LINK);
+		clickToElement(driver, AbstractPageUI.NEW_ACCOUNT_LINK);
+		return PageFactoryManager.getNewAccoutPage(driver);
+	} 
     
 }

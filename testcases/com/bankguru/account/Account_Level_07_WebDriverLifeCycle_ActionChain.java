@@ -1,12 +1,8 @@
 package com.bankguru.account;
 
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -15,16 +11,22 @@ import org.testng.annotations.Test;
 
 import commons.AbstractTest;
 import commons.PageFactoryManager;
+import pageObjects.DepositPageObject;
+import pageObjects.FundTransferPageObject;
 import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
+import pageObjects.NewAccountPageObject;
 import pageObjects.RegisterPageObject;
 
-public class Account_Level_06_MultiBrowsers_ParallelTesting extends AbstractTest {
+public class Account_Level_07_WebDriverLifeCycle_ActionChain extends AbstractTest {
 	private WebDriver driver;
 	String loginPageUrl, userIDInfor, passwordInfor, email;
 	LoginPageObject loginPage;
 	RegisterPageObject registerPage;
 	HomePageObject homePage;
+	NewAccountPageObject newAccountPage;
+	DepositPageObject depositPage;
+	FundTransferPageObject fundTransferPage;
 
 	@Parameters("browser")
 	@BeforeClass
@@ -61,11 +63,23 @@ public class Account_Level_06_MultiBrowsers_ParallelTesting extends AbstractTest
 		Assert.assertTrue(homePage.isWelcomeMessageDisplayed());
 		Assert.assertTrue(homePage.isUserIDDisplayed(userIDInfor));
 
-		loginPage = homePage.clickToLogOutLink();
-		Assert.assertTrue(loginPage.isLoginFormDisplayed());
+	}
+
+	@Test
+	public void TC_03_OpenMultiPage() {
+		// Home page -> new account page
+		newAccountPage = homePage.openNewAccountPage(driver);
+
+		// new account -> deposit
+		depositPage = newAccountPage.openDepositPage(driver);
+
+		// deposit -> fund transfer
+		fundTransferPage = depositPage.openFundTransferPage(driver);
+
+		// fund transfer -> home page
+		homePage = fundTransferPage.openHomePage(driver);
 
 	}
-	
 
 	public int randomNumber() {
 		Random random = new Random();
