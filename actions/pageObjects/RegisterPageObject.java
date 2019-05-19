@@ -20,7 +20,7 @@ public class RegisterPageObject extends AbstractPage{
 
 	public void inputToEmailIDTextbox(String email) {
 		waitForElementVisible(driver, RegisterPageUI.EMAIL_ID_TEXTBOX);
-		senkeyToElement(driver, RegisterPageUI.EMAIL_ID_TEXTBOX, email);
+		sendkeyToElement(driver, RegisterPageUI.EMAIL_ID_TEXTBOX, email);
 	}
 
 	public void clickToSubmitButton() {

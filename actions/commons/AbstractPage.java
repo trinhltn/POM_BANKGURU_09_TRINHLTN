@@ -22,6 +22,7 @@ import pageObjects.DepositPageObject;
 import pageObjects.FundTransferPageObject;
 import pageObjects.HomePageObject;
 import pageObjects.NewAccountPageObject;
+import pageObjects.NewCustomerPageObject;
 
 public class AbstractPage extends AbstractPageUI {
 	WebElement element;
@@ -87,7 +88,7 @@ public class AbstractPage extends AbstractPageUI {
 		element.click();
 	}
 	
-	public void senkeyToElement(WebDriver driver, String locator, String value) {
+	public void sendkeyToElement(WebDriver driver, String locator, String value) {
 		element = driver.findElement(By.xpath(locator));
 		element.sendKeys(value);
 	}
@@ -435,5 +436,12 @@ public class AbstractPage extends AbstractPageUI {
 		clickToElement(driver, AbstractPageUI.NEW_ACCOUNT_LINK);
 		return PageFactoryManager.getNewAccoutPage(driver);
 	} 
+	
+
+	public NewCustomerPageObject openNewCustomerPage(WebDriver driver) {
+		waitForElementVisible(driver, AbstractPageUI.NEW_CUSTOMER_LINK);
+		clickToElement(driver, AbstractPageUI.NEW_CUSTOMER_LINK);
+		return PageFactoryManager.getNewCustomerPage(driver);
+	}
     
 }

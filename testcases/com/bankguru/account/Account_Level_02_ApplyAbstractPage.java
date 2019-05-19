@@ -38,7 +38,7 @@ public class Account_Level_02_ApplyAbstractPage {
 	  abstractPage.clickToElement(driver, "//a[text()='here']");
 	  Assert.assertTrue(abstractPage.elementIsDisplayed(driver, "//input[@name='emailid']"));
 	  
-	  abstractPage.senkeyToElement(driver, "//input[@name='emailid']", email);
+	  abstractPage.sendkeyToElement(driver, "//input[@name='emailid']", email);
 
 	  abstractPage.clickToElement(driver, "//input[@name='btnLogin']");
 	  
@@ -53,8 +53,8 @@ public class Account_Level_02_ApplyAbstractPage {
   public void TC_02_Login() {
 	  abstractPage.openAnyUrl(driver, loginPageUrl);
 	  Assert.assertTrue(abstractPage.elementIsDisplayed(driver, "//form[@name='frmLogin']"));
-	  abstractPage.senkeyToElement(driver, "//input[@name='uid']", userIDInfor);
-	  abstractPage.senkeyToElement(driver, "//input[@name='password']", passwordInfor);
+	  abstractPage.sendkeyToElement(driver, "//input[@name='uid']", userIDInfor);
+	  abstractPage.sendkeyToElement(driver, "//input[@name='password']", passwordInfor);
 	  
 	  abstractPage.clickToElement(driver, "//input[@name='btnLogin']");
 	  

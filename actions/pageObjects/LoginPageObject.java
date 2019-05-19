@@ -37,12 +37,12 @@ public class LoginPageObject extends AbstractPage{
 	
 	public void inputToUserIDTextbox(String userIDInfor) {
 		waitForElementVisible(driver, LoginPageUI.USER_ID_TEXTBOX);
-		senkeyToElement(driver, LoginPageUI.USER_ID_TEXTBOX, userIDInfor);
+		sendkeyToElement(driver, LoginPageUI.USER_ID_TEXTBOX, userIDInfor);
 	}
 
 	public void inputToPasswordTextbox(String passwordInfor) {
 		waitForElementVisible(driver, LoginPageUI.PASSWORD_TEXTBOX);
-		senkeyToElement(driver, LoginPageUI.PASSWORD_TEXTBOX, passwordInfor);
+		sendkeyToElement(driver, LoginPageUI.PASSWORD_TEXTBOX, passwordInfor);
 	}
 	
 	/*using lv 03*/
