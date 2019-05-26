@@ -30,7 +30,7 @@ public class AbstractTest {
 		
 		System.out.println("Run on browser = "+browserName);
 		System.out.println(driver.toString());
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Constants.LONG_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		
 		return driver;

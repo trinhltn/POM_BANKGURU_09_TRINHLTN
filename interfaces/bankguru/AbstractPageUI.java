@@ -7,4 +7,6 @@ public class AbstractPageUI {
 	public static final String DEPOSIT_LINK = "//ul[@class='menusubnav']//a[text()='Deposit']";
 	public static final String NEW_CUSTOMER_LINK = "//ul[@class='menusubnav']//a[text()='New Customer']";
 	
+	public static final String DYNAMIC_LINK = "//ul[@class='menusubnav']//a[text()='%s']";
+	
 }
