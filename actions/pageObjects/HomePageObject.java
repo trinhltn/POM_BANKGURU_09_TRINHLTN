@@ -3,6 +3,7 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 
 import bankguru.HomePageUI;
+import bankguru.LoginPageUI;
 import commons.AbstractPage;
 import commons.PageFactoryManager;
 
@@ -31,6 +32,16 @@ public class HomePageObject extends AbstractPage{
 		acceptAlert(driver);
 		
 		return PageFactoryManager.getLoginPage(driver);
+	}
+
+	public boolean isLoginFormUnDisplayed() {
+		waitToElementInVisible(driver, HomePageUI.LOGIN_FORM);
+		return isControlUnDisplayed(driver, HomePageUI.LOGIN_FORM);
+	}
+
+	public boolean isUserDataUnDisplayed() {
+		waitToElementInVisible(driver, HomePageUI.USER_DATA);
+		return isControlUnDisplayed(driver, HomePageUI.USER_DATA);
 	}
 
 }
