@@ -1,0 +1,23 @@
+2019-06-02 13:10:15,395 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Register - Step 01: Verify Login form display
+2019-06-02 13:10:16,350 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Register - Step 02: Get Login Page url
+2019-06-02 13:10:16,463 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Register - Step 03: Click to 'here' link
+2019-06-02 13:10:19,155 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Register - Step 04: Verify Register Page display
+2019-06-02 13:10:19,224 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Register - Step 05: Input to Email Textbox
+2019-06-02 13:10:19,420 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Register - Step 06: Click to Submit button
+2019-06-02 13:10:22,041 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Register - Step 07: Get UserID infor
+2019-06-02 13:10:22,127 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Register - Step 08: Get Password infor
+2019-06-02 13:10:22,198 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Login - Step 01: Open Login Page url again
+2019-06-02 13:10:24,172 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Login - Step 02: Verify Login form display
+2019-06-02 13:10:24,280 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Check - Step 01: Open Login Page url again
+2019-06-02 13:10:26,488 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Check - Step 02: Verify Login form display
+2019-06-02 13:10:26,560 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - ===FAILED===
+2019-06-02 13:10:26,562 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Check - Step 03: Input to UserID textbox and Password textbox
+2019-06-02 13:10:26,837 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Check - Step 04: Click to Login button
+2019-06-02 13:10:28,450 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Check - Step 05: Verify WelcomeMsg display
+2019-06-02 13:10:28,520 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - ===PASSED==
+2019-06-02 13:10:28,521 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Check - Step 07: Verify userID display
+2019-06-02 13:10:28,592 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - ===FAILED===
+2019-06-02 13:10:28,592 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Check - Step 08: Verify XXX undisplay
+2019-06-02 13:10:38,746 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - ===PASSED==
+2019-06-02 13:10:48,810 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - ===FAILED===
+2019-06-02 13:10:48,811 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Check - Step 09: Verify XXX display

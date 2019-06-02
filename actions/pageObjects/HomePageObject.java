@@ -43,5 +43,15 @@ public class HomePageObject extends AbstractPage{
 		waitToElementInVisible(driver, HomePageUI.USER_DATA);
 		return isControlUnDisplayed(driver, HomePageUI.USER_DATA);
 	}
+	
+	public boolean isXXXUnDisplayed() {
+		waitToElementInVisible(driver, HomePageUI.XXX);
+		return isControlUnDisplayed(driver, HomePageUI.XXX);
+	}
+
+	public boolean isXXXDisplayed() {
+		waitForElementVisible(driver, HomePageUI.XXX);
+		return elementIsDisplayed(driver, HomePageUI.XXX);
+	}
 
 }

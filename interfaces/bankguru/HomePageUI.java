@@ -8,4 +8,6 @@ public class HomePageUI {
 	public static final String LOGIN_FORM = "//form[@name='frmLogin']";
 	public static final String USER_DATA = "//div[@id='userdata_el']";
 	
+	public static final String XXX = "//div[@id='xxx']";
+	
 }
