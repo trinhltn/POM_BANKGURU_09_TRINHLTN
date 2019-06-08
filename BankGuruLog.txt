@@ -1,23 +1,44 @@
-2019-06-02 13:10:15,395 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Register - Step 01: Verify Login form display
-2019-06-02 13:10:16,350 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Register - Step 02: Get Login Page url
-2019-06-02 13:10:16,463 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Register - Step 03: Click to 'here' link
-2019-06-02 13:10:19,155 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Register - Step 04: Verify Register Page display
-2019-06-02 13:10:19,224 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Register - Step 05: Input to Email Textbox
-2019-06-02 13:10:19,420 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Register - Step 06: Click to Submit button
-2019-06-02 13:10:22,041 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Register - Step 07: Get UserID infor
-2019-06-02 13:10:22,127 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Register - Step 08: Get Password infor
-2019-06-02 13:10:22,198 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Login - Step 01: Open Login Page url again
-2019-06-02 13:10:24,172 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Login - Step 02: Verify Login form display
-2019-06-02 13:10:24,280 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Check - Step 01: Open Login Page url again
-2019-06-02 13:10:26,488 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Check - Step 02: Verify Login form display
-2019-06-02 13:10:26,560 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - ===FAILED===
-2019-06-02 13:10:26,562 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Check - Step 03: Input to UserID textbox and Password textbox
-2019-06-02 13:10:26,837 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Check - Step 04: Click to Login button
-2019-06-02 13:10:28,450 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Check - Step 05: Verify WelcomeMsg display
-2019-06-02 13:10:28,520 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - ===PASSED==
-2019-06-02 13:10:28,521 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Check - Step 07: Verify userID display
-2019-06-02 13:10:28,592 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - ===FAILED===
-2019-06-02 13:10:28,592 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Check - Step 08: Verify XXX undisplay
-2019-06-02 13:10:38,746 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - ===PASSED==
-2019-06-02 13:10:48,810 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - ===FAILED===
-2019-06-02 13:10:48,811 INFO  com.bankguru.account.Account_Level_10_AssertVerify_Log_Report - Check - Step 09: Verify XXX display
+2019-06-08 16:37:03,593 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 01: Verify Login form display
+2019-06-08 16:37:04,277 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 02: Get Login Page url
+2019-06-08 16:37:04,293 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 03: Click to 'here' link
+2019-06-08 16:37:12,927 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 04: Verify Register Page display
+2019-06-08 16:37:13,036 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 05: Input to Email Textbox
+2019-06-08 16:37:13,373 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 06: Click to Submit button
+2019-06-08 16:37:17,637 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 07: Get UserID infor
+2019-06-08 16:37:17,714 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 08: Get Password infor
+2019-06-08 16:37:26,030 INFO  com.bankguru.account.Account_Level_11_ShareClassState_CloseBrowser_WebDriverManager - Login - Step 02: Verify Login form display
+2019-06-08 16:37:26,455 INFO  com.bankguru.account.Account_Level_11_ShareClassState_CloseBrowser_WebDriverManager - Login - Step 03: Input to UserID textbox and Password textbox
+2019-06-08 16:37:26,818 INFO  com.bankguru.account.Account_Level_11_ShareClassState_CloseBrowser_WebDriverManager - Login - Step 04: Click to Login button
+2019-06-08 16:37:29,048 INFO  com.bankguru.account.Account_Level_11_ShareClassState_CloseBrowser_WebDriverManager - Login - Step 05: Verify WelcomeMsg display
+2019-06-08 16:37:29,132 INFO  com.bankguru.account.Account_Level_11_ShareClassState_CloseBrowser_WebDriverManager - Login - Step 07: Verify userID display
+2019-06-08 16:37:29,215 INFO  com.bankguru.account.Account_Level_11_ShareClassState_CloseBrowser_WebDriverManager - OS name = windows 10
+2019-06-08 16:37:30,461 INFO  com.bankguru.account.Account_Level_11_ShareClassState_CloseBrowser_WebDriverManager - -------QUIT BROWSER SUCCESS-------
+2019-06-08 16:37:30,464 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - OS name = windows 10
+2019-06-08 16:37:33,229 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'DESKTOP-M48N40L', ip: '192.168.1.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:63500}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=75.0.3770.8 (681f24ea911fe754973dda2fdc6d2a2e159dd300-refs/branch-heads/3770@{#40}), userDataDir=C:\Users\PC\AppData\Local\Temp\scoped_dir1072_17638}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.80, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 49b16c70a5c780ddcce37097539750b7
+2019-06-08 16:37:50,164 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 01: Verify Login form display
+2019-06-08 16:37:50,266 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 02: Get Login Page url
+2019-06-08 16:37:50,273 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 03: Click to 'here' link
+2019-06-08 16:37:54,120 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 04: Verify Register Page display
+2019-06-08 16:37:54,205 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 05: Input to Email Textbox
+2019-06-08 16:37:54,513 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 06: Click to Submit button
+2019-06-08 16:37:57,643 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 07: Get UserID infor
+2019-06-08 16:37:57,777 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 08: Get Password infor
+2019-06-08 16:38:09,470 INFO  com.bankguru.account.Account_Level_11_ShareClassState_CloseBrowser_WebDriverManager - Login - Step 02: Verify Login form display
+2019-06-08 16:38:09,537 INFO  com.bankguru.account.Account_Level_11_ShareClassState_CloseBrowser_WebDriverManager - Login - Step 03: Input to UserID textbox and Password textbox
+2019-06-08 16:38:09,832 INFO  com.bankguru.account.Account_Level_11_ShareClassState_CloseBrowser_WebDriverManager - Login - Step 04: Click to Login button
+2019-06-08 16:38:11,858 INFO  com.bankguru.account.Account_Level_11_ShareClassState_CloseBrowser_WebDriverManager - Login - Step 05: Verify WelcomeMsg display
+2019-06-08 16:38:11,926 INFO  com.bankguru.account.Account_Level_11_ShareClassState_CloseBrowser_WebDriverManager - Login - Step 07: Verify userID display
+2019-06-08 16:38:12,000 INFO  com.bankguru.account.Account_Level_11_ShareClassState_CloseBrowser_WebDriverManager - OS name = windows 10
+2019-06-08 16:38:12,939 INFO  com.bankguru.account.Account_Level_11_ShareClassState_CloseBrowser_WebDriverManager - -------QUIT BROWSER SUCCESS-------
+2019-06-08 16:38:12,940 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - OS name = windows 10
+2019-06-08 16:38:15,656 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'DESKTOP-M48N40L', ip: '192.168.1.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:63656}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=75.0.3770.8 (681f24ea911fe754973dda2fdc6d2a2e159dd300-refs/branch-heads/3770@{#40}), userDataDir=C:\Users\PC\AppData\Local\Temp\scoped_dir13708_8279}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.80, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3b5332dc6caf8e9ac08296c48018c5e2
