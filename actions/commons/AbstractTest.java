@@ -4,6 +4,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.joda.time.DateTime;
+import org.joda.time.DateTimeZone;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -16,7 +18,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class AbstractTest {
 	private WebDriver driver;
 	protected final Log log;
-	
+
 	protected AbstractTest() {
 		log = LogFactory.getLog(getClass());
 	}
@@ -24,20 +26,20 @@ public class AbstractTest {
 	protected WebDriver openMultiBrowser(String browserName) {
 		if (browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
-			//WebDriverManager.chromedriver().version("2.46").setup();
-			//System.setProperty("webdriver.chrome.driver", ".\\lib\\chromedriver.exe");
+			// WebDriverManager.chromedriver().version("2.46").setup();
+			// System.setProperty("webdriver.chrome.driver", ".\\lib\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 
 		else if (browserName.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
-			//System.setProperty("webdriver.gecko.driver", ".\\lib\\geckodriver.exe");
+			// System.setProperty("webdriver.gecko.driver", ".\\lib\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 
 		else if (browserName.equalsIgnoreCase("chromeheadless")) {
 			WebDriverManager.iedriver().setup();
-			//System.setProperty("webdriver.chrome.driver", ".\\lib\\chromedriver.exe");
+			// System.setProperty("webdriver.chrome.driver", ".\\lib\\chromedriver.exe");
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("headless");
 			options.addArguments("window-size=1366x768");
@@ -130,24 +132,23 @@ public class AbstractTest {
 	protected void closeBrowserAndDriver(WebDriver driver) {
 		try {
 			String osName = System.getProperty("os.name").toLowerCase();
-			log.info("OS name = "+osName);
-			
+			log.info("OS name = " + osName);
+
 			String cmd = "";
-			if(driver!=null) {
+			if (driver != null) {
 				driver.quit();
 			}
-			if(driver.toString().toLowerCase().contains("chrome")) {
-				if(osName.toLowerCase().contains("mac")) {
+			if (driver.toString().toLowerCase().contains("chrome")) {
+				if (osName.toLowerCase().contains("mac")) {
 					cmd = "pkill chromedriver";
-				}
-				else if(osName.toLowerCase().contains("windows")) {
+				} else if (osName.toLowerCase().contains("windows")) {
 					cmd = "taskkill /F /FI \"IMAGENAME eq chromedriver*\"";
 				}
 				Process process = Runtime.getRuntime().exec(cmd);
 				process.waitFor();
 			}
-			if(driver.toString().toLowerCase().contains("internetexplorer")) {
-				if(osName.toLowerCase().contains("window")) {
+			if (driver.toString().toLowerCase().contains("internetexplorer")) {
+				if (osName.toLowerCase().contains("window")) {
 					cmd = "taskkill /F /FI \"IMAGENAME eq IEDriverServer*\"";
 					Process process = Runtime.getRuntime().exec(cmd);
 					process.waitFor();
@@ -158,4 +159,34 @@ public class AbstractTest {
 			log.info(e.getMessage());
 		}
 	}
+	
+	public String getCurrentDay() {
+		DateTime nowUTC = new DateTime(DateTimeZone.UTC);
+		DateTime nowLocal = new DateTime();
+		System.out.println("Time in UTC" + nowUTC);
+		System.out.println("Time in Local" + nowLocal);
+		return nowUTC.getDayOfMonth() + "";
+	}
+
+	public String getCurrentMonth() {
+		DateTime now = new DateTime(DateTimeZone.UTC);
+		int month = now.getMonthOfYear();
+		if(month<10) {
+			String monthValue = "0"+month;
+			return monthValue;
+		}
+		else {
+			return month+"";
+		}
+	}
+	
+	public String getCurrentYear() {
+		DateTime now = new DateTime(DateTimeZone.UTC);
+		return now.getYear()+"";
+	}
+	
+	public String getToday() {
+		return getCurrentYear()+"-"+getCurrentMonth()+"-"+getCurrentDay();
+	}
+
 }

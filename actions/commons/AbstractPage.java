@@ -85,33 +85,53 @@ public class AbstractPage extends AbstractPageUI {
 	// WebElement
 	public void clickToElement(WebDriver driver, String locator) {
 		element = driver.findElement(By.xpath(locator));
+		highlightElement(driver, element);
 		element.click();
 	}
 
 	public void clickToElement(WebDriver driver, String locator, String... values) {
 		locator = String.format(locator, (Object[]) values);
 		element = driver.findElement(By.xpath(locator));
+		highlightElement(driver, element);
 		element.click();
 	}
 
 	public void sendkeyToElement(WebDriver driver, String locator, String value) {
 		element = driver.findElement(By.xpath(locator));
+		highlightElement(driver, element);
+		element.clear();
 		element.sendKeys(value);
 	}
 
 	public void sendkeyToElement(WebDriver driver, String locator, String valueSendkey, String... values) {
 		locator = String.format(locator, (Object[]) values);
 		element = driver.findElement(By.xpath(locator));
+		highlightElement(driver, element);
+		element.clear();
 		element.sendKeys(valueSendkey);
 	}
-
+	
 	public void selectItemInDropdown(WebDriver driver, String locator, String value) {
 		element = driver.findElement(By.xpath(locator));
 		Select select = new Select(element);
 		select.selectByVisibleText(value);
 	}
 
+	public void selectItemInDropdown(WebDriver driver, String locator, String value, String... values) {
+		locator = String.format(locator, (Object[]) values);
+		element = driver.findElement(By.xpath(locator));
+		Select select = new Select(element);
+		select.selectByVisibleText(value);
+	}
+	
 	public String getSelectedItemInDropDown(WebDriver driver, String locator) {
+		element = driver.findElement(By.xpath(locator));
+		Select select = new Select(element);
+		return select.getFirstSelectedOption().getText();
+	}
+
+	public String getSelectedItemInDropDown(WebDriver driver, String locator, String... values) {
+		locator = String.format(locator, (Object[]) values);
 		element = driver.findElement(By.xpath(locator));
 		Select select = new Select(element);
 		return select.getFirstSelectedOption().getText();
@@ -143,8 +163,14 @@ public class AbstractPage extends AbstractPageUI {
 		}
 
 	}
-
+	
 	public String getAttributeValue(WebDriver driver, String locator, String attributeName) {
+		element = driver.findElement(By.xpath(locator));
+		return element.getAttribute(attributeName);
+	}
+
+	public String getAttributeValue(WebDriver driver, String locator, String attributeName, String... values) {
+		locator = String.format(locator, (Object[]) values);
 		element = driver.findElement(By.xpath(locator));
 		return element.getAttribute(attributeName);
 	}
@@ -157,7 +183,7 @@ public class AbstractPage extends AbstractPageUI {
 	public String getTextElement(WebDriver driver, String locator, String... values) {
 		locator = String.format(locator, (Object[]) values);
 		element = driver.findElement(By.xpath(locator));
-		return element.getText();
+		return element.getText().trim();
 	}
 
 	public int countElementNumber(WebDriver driver, String locator) {
@@ -366,7 +392,7 @@ public class AbstractPage extends AbstractPageUI {
 
 	public void highlightElement(WebDriver driver, WebElement element) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].style.border='6px groove red'", element);
+		js.executeScript("arguments[0].style.border='2px groove red'", element);
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
@@ -484,6 +510,24 @@ public class AbstractPage extends AbstractPageUI {
 			return PageFactoryManager.getDepositPage(driver);
 		case "New Customer":
 			return PageFactoryManager.getNewCustomerPage(driver);
+		case "Edit Customer":
+			return PageFactoryManager.getEditCustomerPage(driver);
+		case "Delete Customer":
+			return PageFactoryManager.getDeleteCustomerPage(driver);
+		case "Edit Account":
+			return PageFactoryManager.getEditAccountPage(driver);
+		case "Delete Account":
+			return PageFactoryManager.getDeleteAccountPage(driver);
+		case "Withdrawal":
+			return PageFactoryManager.getWithdrawalPage(driver);
+		case "Change Password":
+			return PageFactoryManager.getChangePasswordPage(driver);
+		case "Balance Enquiry":
+			return PageFactoryManager.getBalanceEnquiryPage(driver);
+		case "Mini Statement":
+			return PageFactoryManager.getMiniStatementPage(driver);
+		case "Customised Statement":
+			return PageFactoryManager.getCustomisedStatementPage(driver);
 
 		default:
 			return PageFactoryManager.getHomePage(driver);
@@ -537,5 +581,50 @@ public class AbstractPage extends AbstractPageUI {
 
 	public void overrideTimeout(WebDriver driver, int timeout) {
 		driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
+	}
+
+	public void clickToDynamicButtonTextBoxTextArea(WebDriver driver, String fieldName) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_TEXTAREA_TEXTBOX_BUTTON_CHECKBOX, fieldName);
+		clickToElement(driver, AbstractPageUI.DYNAMIC_TEXTAREA_TEXTBOX_BUTTON_CHECKBOX, fieldName);
+	}
+
+	public void sendKeyToDynamicButtonTextBoxTextArea(WebDriver driver, String fieldName, String value) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_TEXTAREA_TEXTBOX_BUTTON_CHECKBOX, fieldName);
+		sendkeyToElement(driver, AbstractPageUI.DYNAMIC_TEXTAREA_TEXTBOX_BUTTON_CHECKBOX, value, fieldName);
+	}
+
+	public String getDynamicErrorMessage(WebDriver driver, String fieldName) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_ERROR_MESSAGE, fieldName);
+		return getTextElement(driver, AbstractPageUI.DYNAMIC_ERROR_MESSAGE, fieldName);
+	}
+	
+	public String getDynamicValueInTable(WebDriver driver, String fieldName) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_VALUE_IN_TABLE, fieldName);
+		return getTextElement(driver, AbstractPageUI.DYNAMIC_VALUE_IN_TABLE, fieldName);
+	}
+	
+	public void selectValueInDynamicDropdown(WebDriver driver, String dropdownID, String valueItem) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_DROPDOWN_LIST, dropdownID);
+		selectItemInDropdown(driver, AbstractPageUI.DYNAMIC_DROPDOWN_LIST, valueItem, dropdownID);
+	}
+	
+	public String getFirstItemValueInDynamicDropdown(WebDriver driver, String dropdownID) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_DROPDOWN_LIST, dropdownID);
+		return getSelectedItemInDropDown(driver, AbstractPageUI.DYNAMIC_DROPDOWN_LIST, dropdownID);
+	}
+	
+	public String getDynamicTextValueInTextbox(WebDriver driver, String fieldName) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_TEXTAREA_TEXTBOX_BUTTON_CHECKBOX, fieldName);
+		return getAttributeValue(driver, AbstractPageUI.DYNAMIC_TEXTAREA_TEXTBOX_BUTTON_CHECKBOX, "value", fieldName);
+	}
+
+	public String getDynamicTextValueInTextArea(WebDriver driver, String fieldName) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_TEXTAREA_TEXTBOX_BUTTON_CHECKBOX, fieldName);
+		return getTextElement(driver, AbstractPageUI.DYNAMIC_TEXTAREA_TEXTBOX_BUTTON_CHECKBOX, fieldName);
+	}
+
+	public boolean isDynamicPageTitleDisplayed(WebDriver driver, String pageTitle) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_PAGE_TITLE, pageTitle);
+		return elementIsDisplayed(driver, AbstractPageUI.DYNAMIC_PAGE_TITLE, pageTitle);
 	}
 }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Bank Guru">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+		<listener class-name="commons.ExtentReportListener"/>
+	</listeners>
+
+	<test name="run on chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class
+				name="com.bankguru.account.Account_Common_01_RegisterToSystem" />
+			<class
+				name="com.bankguru.payment.TestCasesPayment" />
+		</classes>
+	</test>
+</suite> 

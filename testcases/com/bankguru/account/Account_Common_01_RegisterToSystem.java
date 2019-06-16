@@ -4,7 +4,6 @@ import java.util.Random;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
@@ -60,17 +59,14 @@ public class Account_Common_01_RegisterToSystem extends AbstractTest {
 
 		log.info("Register - Step 08: Get Password infor");
 		PASSWORD_INFO = registerPage.getPasswordInfor();
-		
+
+		closeBrowserAndDriver(driver);
+
 	}
 
 	public int randomNumber() {
 		Random random = new Random();
 		return random.nextInt(999999);
-	}
-
-	@AfterTest(alwaysRun=true)
-	public void quitBrowser() {
-		closeBrowserAndDriver(driver);
 	}
 
 }
