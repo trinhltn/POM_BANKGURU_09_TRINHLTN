@@ -1,5 +1,6 @@
 package pageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import bankguru.LoginPageUI;
@@ -31,7 +32,13 @@ public class LoginPageObject extends AbstractPage{
 	/*using for level 05*/
 	public RegisterPageObject clickToHereLink() {
 		waitForElementVisible(driver, LoginPageUI.HERE_LINK);
-		clickToElement(driver, LoginPageUI.HERE_LINK);
+		if(driver.toString().toLowerCase().contains("internet explorer")) {
+			String linkHere = getAttributeValue(driver, LoginPageUI.HERE_LINK, "href");
+			driver.get(linkHere);
+		}
+		else {
+			clickToElement(driver, LoginPageUI.HERE_LINK);
+		}
 		return PageFactoryManager.getRegisterPage(driver);
 	}
 	
