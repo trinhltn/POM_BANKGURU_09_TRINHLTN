@@ -1,10 +1,1198 @@
-2019-06-16 19:23:38,596 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 01: Verify Login form display
-2019-06-16 19:23:39,332 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 02: Get Login Page url
-2019-06-16 19:23:39,426 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 03: Click to 'here' link
-2019-06-16 19:23:42,899 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 04: Verify Register Page display
-2019-06-16 19:23:42,976 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 05: Input to Email Textbox
-2019-06-16 19:23:44,245 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 06: Click to Submit button
-2019-06-16 19:23:47,782 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 07: Get UserID infor
-2019-06-16 19:23:47,891 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 08: Get Password infor
-2019-06-16 19:23:47,962 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - OS name = windows 10
-2019-06-16 19:23:49,067 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - -------QUIT BROWSER SUCCESS-------
+2019-06-23 15:34:17,596 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 01: Verify Login form display
+2019-06-23 15:34:18,041 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 02: Get Login Page url
+2019-06-23 15:34:18,062 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 03: Click to 'here' link
+2019-06-23 15:34:22,192 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 04: Verify Register Page display
+2019-06-23 15:34:22,309 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 05: Input to Email Textbox
+2019-06-23 15:34:23,692 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 06: Click to Submit button
+2019-06-23 15:34:26,515 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 07: Get UserID infor
+2019-06-23 15:34:26,688 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 08: Get Password infor
+2019-06-23 15:34:26,771 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - OS name = windows 10
+2019-06-23 15:34:27,776 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - -------QUIT BROWSER SUCCESS-------
+2019-06-23 15:34:34,835 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:34:40,438 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:34:40,629 INFO  com.bankguru.payment.TestCasesPayment - Payment 01 - Step 01: Open New Customer Form
+2019-06-23 15:34:42,733 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:34:42,733 INFO  com.bankguru.payment.TestCasesPayment - Payment 01 - Step 02: Input valid data to all fields
+2019-06-23 15:34:59,763 INFO  com.bankguru.payment.TestCasesPayment - Payment 01 - Step 03: Verify msg 'Customer Registered Successfully!!!'
+2019-06-23 15:34:59,870 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:34:59,870 INFO  com.bankguru.payment.TestCasesPayment - Payment 01 - Step 04: Verify actual data matching with expected data
+2019-06-23 15:34:59,936 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium
+2019-06-23 15:34:59,936 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium
+2019-06-23 15:34:59,936 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:34:59,937 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:00,004 INFO  com.bankguru.payment.TestCasesPayment - Actual = male
+2019-06-23 15:35:00,004 INFO  com.bankguru.payment.TestCasesPayment - Expected = male
+2019-06-23 15:35:00,004 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:00,004 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:00,076 INFO  com.bankguru.payment.TestCasesPayment - Actual = 1999-01-01
+2019-06-23 15:35:00,076 INFO  com.bankguru.payment.TestCasesPayment - Expected = 1999-01-01
+2019-06-23 15:35:00,076 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:00,076 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:00,139 INFO  com.bankguru.payment.TestCasesPayment - Actual = 123 Nguyen Van Linh
+2019-06-23 15:35:00,139 INFO  com.bankguru.payment.TestCasesPayment - Expected = 123 Nguyen Van Linh
+2019-06-23 15:35:00,139 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:00,140 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:00,209 INFO  com.bankguru.payment.TestCasesPayment - Actual = Da Nang
+2019-06-23 15:35:00,209 INFO  com.bankguru.payment.TestCasesPayment - Expected = Da Nang
+2019-06-23 15:35:00,209 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:00,209 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:00,271 INFO  com.bankguru.payment.TestCasesPayment - Actual = Hai Chau
+2019-06-23 15:35:00,271 INFO  com.bankguru.payment.TestCasesPayment - Expected = Hai Chau
+2019-06-23 15:35:00,271 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:00,271 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:00,333 INFO  com.bankguru.payment.TestCasesPayment - Actual = 123456
+2019-06-23 15:35:00,333 INFO  com.bankguru.payment.TestCasesPayment - Expected = 123456
+2019-06-23 15:35:00,333 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:00,333 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:00,394 INFO  com.bankguru.payment.TestCasesPayment - Actual = 0123456789
+2019-06-23 15:35:00,394 INFO  com.bankguru.payment.TestCasesPayment - Expected = 0123456789
+2019-06-23 15:35:00,394 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:00,394 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:00,457 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium384353@gmail.com
+2019-06-23 15:35:00,457 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium384353@gmail.com
+2019-06-23 15:35:00,457 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:00,457 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:00,522 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 01: Open Edit Customer Page
+2019-06-23 15:35:03,150 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:35:03,151 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 02: Input CustomerID
+2019-06-23 15:35:06,502 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 03: Verify actual data matching with expected data
+2019-06-23 15:35:06,635 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:35:06,706 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium
+2019-06-23 15:35:06,706 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium
+2019-06-23 15:35:06,706 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:06,707 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:06,773 INFO  com.bankguru.payment.TestCasesPayment - Actual = male
+2019-06-23 15:35:06,774 INFO  com.bankguru.payment.TestCasesPayment - Expected = male
+2019-06-23 15:35:06,774 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:06,774 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:06,826 INFO  com.bankguru.payment.TestCasesPayment - Actual = 1999-01-01
+2019-06-23 15:35:06,826 INFO  com.bankguru.payment.TestCasesPayment - Expected = 1999-01-01
+2019-06-23 15:35:06,826 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:06,826 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:06,899 INFO  com.bankguru.payment.TestCasesPayment - Actual = 123 Nguyen Van Linh
+2019-06-23 15:35:06,899 INFO  com.bankguru.payment.TestCasesPayment - Expected = 123 Nguyen Van Linh
+2019-06-23 15:35:06,899 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:06,899 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:06,946 INFO  com.bankguru.payment.TestCasesPayment - Actual = Da Nang
+2019-06-23 15:35:06,946 INFO  com.bankguru.payment.TestCasesPayment - Expected = Da Nang
+2019-06-23 15:35:06,946 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:06,946 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:06,998 INFO  com.bankguru.payment.TestCasesPayment - Actual = Hai Chau
+2019-06-23 15:35:06,999 INFO  com.bankguru.payment.TestCasesPayment - Expected = Hai Chau
+2019-06-23 15:35:06,999 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:06,999 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:07,055 INFO  com.bankguru.payment.TestCasesPayment - Actual = 123456
+2019-06-23 15:35:07,055 INFO  com.bankguru.payment.TestCasesPayment - Expected = 123456
+2019-06-23 15:35:07,055 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:07,056 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:07,100 INFO  com.bankguru.payment.TestCasesPayment - Actual = 0123456789
+2019-06-23 15:35:07,101 INFO  com.bankguru.payment.TestCasesPayment - Expected = 0123456789
+2019-06-23 15:35:07,101 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:07,101 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:07,154 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium384353@gmail.com
+2019-06-23 15:35:07,155 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium384353@gmail.com
+2019-06-23 15:35:07,155 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:07,155 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:07,155 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 04: Input data to all edit-able fields
+2019-06-23 15:35:16,934 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 05: Verify msg 'Customer details updated Successfully!!!'
+2019-06-23 15:35:17,083 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:35:17,084 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 06: Verify actual data matching with expected data
+2019-06-23 15:35:17,143 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium
+2019-06-23 15:35:17,143 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium
+2019-06-23 15:35:17,143 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:17,143 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:17,204 INFO  com.bankguru.payment.TestCasesPayment - Actual = male
+2019-06-23 15:35:17,205 INFO  com.bankguru.payment.TestCasesPayment - Expected = male
+2019-06-23 15:35:17,205 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:17,205 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:17,272 INFO  com.bankguru.payment.TestCasesPayment - Actual = 1999-01-01
+2019-06-23 15:35:17,272 INFO  com.bankguru.payment.TestCasesPayment - Expected = 1999-01-01
+2019-06-23 15:35:17,272 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:17,272 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:17,331 INFO  com.bankguru.payment.TestCasesPayment - Actual = 321 Phan Chau Trinh
+2019-06-23 15:35:17,332 INFO  com.bankguru.payment.TestCasesPayment - Expected = 321 Phan Chau Trinh
+2019-06-23 15:35:17,332 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:17,332 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:17,393 INFO  com.bankguru.payment.TestCasesPayment - Actual = Ha Noi
+2019-06-23 15:35:17,393 INFO  com.bankguru.payment.TestCasesPayment - Expected = Ha Noi
+2019-06-23 15:35:17,393 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:17,393 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:17,450 INFO  com.bankguru.payment.TestCasesPayment - Actual = Hoan Kiem
+2019-06-23 15:35:17,451 INFO  com.bankguru.payment.TestCasesPayment - Expected = Hoan Kiem
+2019-06-23 15:35:17,451 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:17,451 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:17,504 INFO  com.bankguru.payment.TestCasesPayment - Actual = 090909
+2019-06-23 15:35:17,505 INFO  com.bankguru.payment.TestCasesPayment - Expected = 090909
+2019-06-23 15:35:17,505 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:17,505 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:17,561 INFO  com.bankguru.payment.TestCasesPayment - Actual = 0909123123
+2019-06-23 15:35:17,562 INFO  com.bankguru.payment.TestCasesPayment - Expected = 0909123123
+2019-06-23 15:35:17,562 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:17,562 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:17,619 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium921941@hotmail.com
+2019-06-23 15:35:17,620 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium921941@hotmail.com
+2019-06-23 15:35:17,620 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:17,620 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:17,621 INFO  com.bankguru.payment.TestCasesPayment - Payment 03 - Step 01: Open New Account Form
+2019-06-23 15:35:19,662 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:35:19,662 INFO  com.bankguru.payment.TestCasesPayment - Payment 03 - Step 02: Input data into form and click submit button
+2019-06-23 15:35:24,560 INFO  com.bankguru.payment.TestCasesPayment - Payment 03 - Step 03: Verify msg 'Account Generated Successfully!!!' is displayed
+2019-06-23 15:35:24,734 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:35:24,734 INFO  com.bankguru.payment.TestCasesPayment - Payment 03 - Step 04: Verify data detail
+2019-06-23 15:35:24,794 INFO  com.bankguru.payment.TestCasesPayment - Actual = 69602
+2019-06-23 15:35:24,794 INFO  com.bankguru.payment.TestCasesPayment - Expected = 69602
+2019-06-23 15:35:24,794 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:24,794 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:24,846 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium
+2019-06-23 15:35:24,846 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium
+2019-06-23 15:35:24,846 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:24,846 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:24,903 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium921941@hotmail.com
+2019-06-23 15:35:24,903 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium921941@hotmail.com
+2019-06-23 15:35:24,903 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:24,903 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:24,965 INFO  com.bankguru.payment.TestCasesPayment - Actual = Savings
+2019-06-23 15:35:24,965 INFO  com.bankguru.payment.TestCasesPayment - Expected = Savings
+2019-06-23 15:35:24,966 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:24,966 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:25,026 INFO  com.bankguru.payment.TestCasesPayment - Actual = 2019-06-23
+2019-06-23 15:35:25,027 INFO  com.bankguru.payment.TestCasesPayment - Expected = 2019-06-23
+2019-06-23 15:35:25,027 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:25,027 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:25,091 INFO  com.bankguru.payment.TestCasesPayment - Actual = 50000
+2019-06-23 15:35:25,091 INFO  com.bankguru.payment.TestCasesPayment - Expected = 50000
+2019-06-23 15:35:25,091 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:25,091 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:25,157 INFO  com.bankguru.payment.TestCasesPayment - Payment 04 - Step 01: Open Edit Account Form
+2019-06-23 15:35:27,710 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:35:27,710 INFO  com.bankguru.payment.TestCasesPayment - Payment 04 - Step 02: Input AccountID and click btn submit
+2019-06-23 15:35:31,315 INFO  com.bankguru.payment.TestCasesPayment - Payment 04 - Step 03: Verify actual data matching with expected data
+2019-06-23 15:35:31,441 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:35:31,496 INFO  com.bankguru.payment.TestCasesPayment - Actual = 69602
+2019-06-23 15:35:31,497 INFO  com.bankguru.payment.TestCasesPayment - Expected = 69602
+2019-06-23 15:35:31,497 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:31,497 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:31,614 INFO  com.bankguru.payment.TestCasesPayment - Actual = Savings
+2019-06-23 15:35:31,614 INFO  com.bankguru.payment.TestCasesPayment - Expected = Savings
+2019-06-23 15:35:31,614 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:31,614 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:31,662 INFO  com.bankguru.payment.TestCasesPayment - Actual = 50000
+2019-06-23 15:35:31,662 INFO  com.bankguru.payment.TestCasesPayment - Expected = 50000
+2019-06-23 15:35:31,662 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:31,662 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:31,664 INFO  com.bankguru.payment.TestCasesPayment - Payment 05 - Step 01: Open Withdrawal Form
+2019-06-23 15:35:34,430 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:35:34,430 INFO  com.bankguru.payment.TestCasesPayment - Payment 05 - Step 02: Input data into all fields and click btn submit
+2019-06-23 15:35:40,493 INFO  com.bankguru.payment.TestCasesPayment - Payment 05 - Step 03: Veify data matching
+2019-06-23 15:35:40,596 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:35:40,673 INFO  com.bankguru.payment.TestCasesPayment - Actual = 62958
+2019-06-23 15:35:40,673 INFO  com.bankguru.payment.TestCasesPayment - Expected = 62958
+2019-06-23 15:35:40,673 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:40,673 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:40,747 INFO  com.bankguru.payment.TestCasesPayment - Actual = 15000
+2019-06-23 15:35:40,747 INFO  com.bankguru.payment.TestCasesPayment - Expected = 15000
+2019-06-23 15:35:40,747 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:40,747 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:40,806 INFO  com.bankguru.payment.TestCasesPayment - Actual = Withdrawal
+2019-06-23 15:35:40,807 INFO  com.bankguru.payment.TestCasesPayment - Expected = Withdrawal
+2019-06-23 15:35:40,807 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:40,807 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:40,866 INFO  com.bankguru.payment.TestCasesPayment - Actual = Withdrawal
+2019-06-23 15:35:40,866 INFO  com.bankguru.payment.TestCasesPayment - Expected = Withdrawal
+2019-06-23 15:35:40,866 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:40,866 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:40,925 INFO  com.bankguru.payment.TestCasesPayment - Actual = 35000
+2019-06-23 15:35:40,925 INFO  com.bankguru.payment.TestCasesPayment - Expected = 35000
+2019-06-23 15:35:40,925 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:40,925 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:40,926 INFO  com.bankguru.payment.TestCasesPayment - Payment 06 - Step 01: Open Fund transfer Form
+2019-06-23 15:35:43,444 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:35:43,444 INFO  com.bankguru.payment.TestCasesPayment - Payment 06 - Step 02: Input data into Fund transfer form and click btn submit
+2019-06-23 15:35:50,568 INFO  com.bankguru.payment.TestCasesPayment - Payment 06 - Step 03: Verify data matching with expected
+2019-06-23 15:35:50,691 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:35:50,758 INFO  com.bankguru.payment.TestCasesPayment - Actual = 62958
+2019-06-23 15:35:50,759 INFO  com.bankguru.payment.TestCasesPayment - Expected = 62958
+2019-06-23 15:35:50,759 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:50,759 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:50,822 INFO  com.bankguru.payment.TestCasesPayment - Actual = 62957
+2019-06-23 15:35:50,822 INFO  com.bankguru.payment.TestCasesPayment - Expected = 62957
+2019-06-23 15:35:50,822 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:50,822 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:50,879 INFO  com.bankguru.payment.TestCasesPayment - Actual = 10000
+2019-06-23 15:35:50,879 INFO  com.bankguru.payment.TestCasesPayment - Expected = 10000
+2019-06-23 15:35:50,879 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:50,879 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:50,934 INFO  com.bankguru.payment.TestCasesPayment - Actual = Transfer
+2019-06-23 15:35:50,934 INFO  com.bankguru.payment.TestCasesPayment - Expected = Transfer
+2019-06-23 15:35:50,934 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:50,934 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:50,936 INFO  com.bankguru.payment.TestCasesPayment - Payment 07 - Step 01: Open Balance Enquiry Form
+2019-06-23 15:35:53,468 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:35:53,468 INFO  com.bankguru.payment.TestCasesPayment - Payment 07 - Step 02: Input AccountID into Balance Enquiry form and click btn submit
+2019-06-23 15:35:57,097 INFO  com.bankguru.payment.TestCasesPayment - Payment 07 - Step 03: Verify data in Balance Details for Account
+2019-06-23 15:35:57,202 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:35:57,283 INFO  com.bankguru.payment.TestCasesPayment - Actual = 62958
+2019-06-23 15:35:57,283 INFO  com.bankguru.payment.TestCasesPayment - Expected = 62958
+2019-06-23 15:35:57,283 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:57,283 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:57,343 INFO  com.bankguru.payment.TestCasesPayment - Actual = Savings
+2019-06-23 15:35:57,343 INFO  com.bankguru.payment.TestCasesPayment - Expected = Savings
+2019-06-23 15:35:57,343 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:57,343 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:57,404 INFO  com.bankguru.payment.TestCasesPayment - Actual = 25000
+2019-06-23 15:35:57,405 INFO  com.bankguru.payment.TestCasesPayment - Expected = 25000
+2019-06-23 15:35:57,405 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:35:57,405 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:35:57,405 INFO  com.bankguru.payment.TestCasesPayment - OS name = windows 10
+2019-06-23 15:35:58,403 INFO  com.bankguru.payment.TestCasesPayment - -------QUIT BROWSER SUCCESS-------
+2019-06-23 15:36:05,075 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 01: Verify Login form display
+2019-06-23 15:36:05,341 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 02: Get Login Page url
+2019-06-23 15:36:05,344 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 03: Click to 'here' link
+2019-06-23 15:36:09,103 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 04: Verify Register Page display
+2019-06-23 15:36:09,248 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 05: Input to Email Textbox
+2019-06-23 15:36:10,442 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 06: Click to Submit button
+2019-06-23 15:36:12,965 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 07: Get UserID infor
+2019-06-23 15:36:13,077 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 08: Get Password infor
+2019-06-23 15:36:13,136 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - OS name = windows 10
+2019-06-23 15:36:14,350 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - -------QUIT BROWSER SUCCESS-------
+2019-06-23 15:36:22,688 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:36:27,924 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:36:27,925 INFO  com.bankguru.payment.TestCasesPayment - Payment 01 - Step 01: Open New Customer Form
+2019-06-23 15:36:29,965 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:36:29,965 INFO  com.bankguru.payment.TestCasesPayment - Payment 01 - Step 02: Input valid data to all fields
+2019-06-23 15:36:45,715 INFO  com.bankguru.payment.TestCasesPayment - Payment 01 - Step 03: Verify msg 'Customer Registered Successfully!!!'
+2019-06-23 15:36:45,901 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:36:45,901 INFO  com.bankguru.payment.TestCasesPayment - Payment 01 - Step 04: Verify actual data matching with expected data
+2019-06-23 15:36:45,988 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium
+2019-06-23 15:36:45,988 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium
+2019-06-23 15:36:45,988 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:36:45,988 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:36:46,132 INFO  com.bankguru.payment.TestCasesPayment - Actual = male
+2019-06-23 15:36:46,132 INFO  com.bankguru.payment.TestCasesPayment - Expected = male
+2019-06-23 15:36:46,132 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:36:46,132 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:36:46,214 INFO  com.bankguru.payment.TestCasesPayment - Actual = 1999-01-01
+2019-06-23 15:36:46,214 INFO  com.bankguru.payment.TestCasesPayment - Expected = 1999-01-01
+2019-06-23 15:36:46,214 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:36:46,214 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:36:46,268 INFO  com.bankguru.payment.TestCasesPayment - Actual = 123 Nguyen Van Linh
+2019-06-23 15:36:46,268 INFO  com.bankguru.payment.TestCasesPayment - Expected = 123 Nguyen Van Linh
+2019-06-23 15:36:46,268 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:36:46,268 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:36:46,330 INFO  com.bankguru.payment.TestCasesPayment - Actual = Da Nang
+2019-06-23 15:36:46,330 INFO  com.bankguru.payment.TestCasesPayment - Expected = Da Nang
+2019-06-23 15:36:46,330 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:36:46,330 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:36:46,381 INFO  com.bankguru.payment.TestCasesPayment - Actual = Hai Chau
+2019-06-23 15:36:46,381 INFO  com.bankguru.payment.TestCasesPayment - Expected = Hai Chau
+2019-06-23 15:36:46,381 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:36:46,381 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:36:46,426 INFO  com.bankguru.payment.TestCasesPayment - Actual = 123456
+2019-06-23 15:36:46,426 INFO  com.bankguru.payment.TestCasesPayment - Expected = 123456
+2019-06-23 15:36:46,426 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:36:46,426 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:36:46,491 INFO  com.bankguru.payment.TestCasesPayment - Actual = 0123456789
+2019-06-23 15:36:46,491 INFO  com.bankguru.payment.TestCasesPayment - Expected = 0123456789
+2019-06-23 15:36:46,491 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:36:46,491 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:36:46,533 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium945903@gmail.com
+2019-06-23 15:36:46,533 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium945903@gmail.com
+2019-06-23 15:36:46,533 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:36:46,533 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:36:46,576 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 01: Open Edit Customer Page
+2019-06-23 15:36:48,925 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:36:48,925 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 02: Input CustomerID
+2019-06-23 15:36:52,281 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 03: Verify actual data matching with expected data
+2019-06-23 15:36:52,448 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:36:52,531 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium
+2019-06-23 15:36:52,531 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium
+2019-06-23 15:36:52,531 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:36:52,531 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:36:52,589 INFO  com.bankguru.payment.TestCasesPayment - Actual = male
+2019-06-23 15:36:52,589 INFO  com.bankguru.payment.TestCasesPayment - Expected = male
+2019-06-23 15:36:52,589 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:36:52,589 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:36:52,657 INFO  com.bankguru.payment.TestCasesPayment - Actual = 1999-01-01
+2019-06-23 15:36:52,657 INFO  com.bankguru.payment.TestCasesPayment - Expected = 1999-01-01
+2019-06-23 15:36:52,657 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:36:52,657 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:36:52,729 INFO  com.bankguru.payment.TestCasesPayment - Actual = 123 Nguyen Van Linh
+2019-06-23 15:36:52,729 INFO  com.bankguru.payment.TestCasesPayment - Expected = 123 Nguyen Van Linh
+2019-06-23 15:36:52,729 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:36:52,729 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:36:52,790 INFO  com.bankguru.payment.TestCasesPayment - Actual = Da Nang
+2019-06-23 15:36:52,790 INFO  com.bankguru.payment.TestCasesPayment - Expected = Da Nang
+2019-06-23 15:36:52,790 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:36:52,790 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:36:52,845 INFO  com.bankguru.payment.TestCasesPayment - Actual = Hai Chau
+2019-06-23 15:36:52,845 INFO  com.bankguru.payment.TestCasesPayment - Expected = Hai Chau
+2019-06-23 15:36:52,845 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:36:52,845 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:36:52,897 INFO  com.bankguru.payment.TestCasesPayment - Actual = 123456
+2019-06-23 15:36:52,897 INFO  com.bankguru.payment.TestCasesPayment - Expected = 123456
+2019-06-23 15:36:52,897 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:36:52,897 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:36:52,947 INFO  com.bankguru.payment.TestCasesPayment - Actual = 0123456789
+2019-06-23 15:36:52,947 INFO  com.bankguru.payment.TestCasesPayment - Expected = 0123456789
+2019-06-23 15:36:52,947 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:36:52,947 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:36:52,997 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium945903@gmail.com
+2019-06-23 15:36:52,997 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium945903@gmail.com
+2019-06-23 15:36:52,997 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:36:52,997 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:36:52,997 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 04: Input data to all edit-able fields
+2019-06-23 15:37:02,348 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 05: Verify msg 'Customer details updated Successfully!!!'
+2019-06-23 15:37:02,623 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:37:02,623 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 06: Verify actual data matching with expected data
+2019-06-23 15:37:02,816 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium
+2019-06-23 15:37:02,816 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium
+2019-06-23 15:37:02,817 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:02,817 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:02,914 INFO  com.bankguru.payment.TestCasesPayment - Actual = male
+2019-06-23 15:37:02,914 INFO  com.bankguru.payment.TestCasesPayment - Expected = male
+2019-06-23 15:37:02,914 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:02,914 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:02,986 INFO  com.bankguru.payment.TestCasesPayment - Actual = 1999-01-01
+2019-06-23 15:37:02,986 INFO  com.bankguru.payment.TestCasesPayment - Expected = 1999-01-01
+2019-06-23 15:37:02,986 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:02,986 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:03,051 INFO  com.bankguru.payment.TestCasesPayment - Actual = 321 Phan Chau Trinh
+2019-06-23 15:37:03,051 INFO  com.bankguru.payment.TestCasesPayment - Expected = 321 Phan Chau Trinh
+2019-06-23 15:37:03,051 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:03,051 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:03,100 INFO  com.bankguru.payment.TestCasesPayment - Actual = Ha Noi
+2019-06-23 15:37:03,100 INFO  com.bankguru.payment.TestCasesPayment - Expected = Ha Noi
+2019-06-23 15:37:03,100 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:03,100 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:03,150 INFO  com.bankguru.payment.TestCasesPayment - Actual = Hoan Kiem
+2019-06-23 15:37:03,150 INFO  com.bankguru.payment.TestCasesPayment - Expected = Hoan Kiem
+2019-06-23 15:37:03,150 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:03,150 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:03,215 INFO  com.bankguru.payment.TestCasesPayment - Actual = 090909
+2019-06-23 15:37:03,215 INFO  com.bankguru.payment.TestCasesPayment - Expected = 090909
+2019-06-23 15:37:03,215 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:03,215 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:03,280 INFO  com.bankguru.payment.TestCasesPayment - Actual = 0909123123
+2019-06-23 15:37:03,280 INFO  com.bankguru.payment.TestCasesPayment - Expected = 0909123123
+2019-06-23 15:37:03,280 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:03,280 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:03,342 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium252328@hotmail.com
+2019-06-23 15:37:03,342 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium252328@hotmail.com
+2019-06-23 15:37:03,342 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:03,342 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:03,344 INFO  com.bankguru.payment.TestCasesPayment - Payment 03 - Step 01: Open New Account Form
+2019-06-23 15:37:05,517 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:37:05,517 INFO  com.bankguru.payment.TestCasesPayment - Payment 03 - Step 02: Input data into form and click submit button
+2019-06-23 15:37:10,173 INFO  com.bankguru.payment.TestCasesPayment - Payment 03 - Step 03: Verify msg 'Account Generated Successfully!!!' is displayed
+2019-06-23 15:37:10,345 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:37:10,345 INFO  com.bankguru.payment.TestCasesPayment - Payment 03 - Step 04: Verify data detail
+2019-06-23 15:37:10,402 INFO  com.bankguru.payment.TestCasesPayment - Actual = 89045
+2019-06-23 15:37:10,403 INFO  com.bankguru.payment.TestCasesPayment - Expected = 89045
+2019-06-23 15:37:10,403 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:10,403 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:10,495 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium
+2019-06-23 15:37:10,495 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium
+2019-06-23 15:37:10,495 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:10,495 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:10,573 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium252328@hotmail.com
+2019-06-23 15:37:10,573 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium252328@hotmail.com
+2019-06-23 15:37:10,573 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:10,573 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:10,626 INFO  com.bankguru.payment.TestCasesPayment - Actual = Savings
+2019-06-23 15:37:10,626 INFO  com.bankguru.payment.TestCasesPayment - Expected = Savings
+2019-06-23 15:37:10,626 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:10,626 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:10,673 INFO  com.bankguru.payment.TestCasesPayment - Actual = 2019-06-23
+2019-06-23 15:37:10,673 INFO  com.bankguru.payment.TestCasesPayment - Expected = 2019-06-23
+2019-06-23 15:37:10,673 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:10,673 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:10,716 INFO  com.bankguru.payment.TestCasesPayment - Actual = 50000
+2019-06-23 15:37:10,716 INFO  com.bankguru.payment.TestCasesPayment - Expected = 50000
+2019-06-23 15:37:10,716 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:10,716 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:10,759 INFO  com.bankguru.payment.TestCasesPayment - Payment 04 - Step 01: Open Edit Account Form
+2019-06-23 15:37:13,526 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:37:13,527 INFO  com.bankguru.payment.TestCasesPayment - Payment 04 - Step 02: Input AccountID and click btn submit
+2019-06-23 15:37:16,858 INFO  com.bankguru.payment.TestCasesPayment - Payment 04 - Step 03: Verify actual data matching with expected data
+2019-06-23 15:37:17,013 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:37:17,073 INFO  com.bankguru.payment.TestCasesPayment - Actual = 89045
+2019-06-23 15:37:17,073 INFO  com.bankguru.payment.TestCasesPayment - Expected = 89045
+2019-06-23 15:37:17,073 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:17,073 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:17,183 INFO  com.bankguru.payment.TestCasesPayment - Actual = Savings
+2019-06-23 15:37:17,183 INFO  com.bankguru.payment.TestCasesPayment - Expected = Savings
+2019-06-23 15:37:17,184 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:17,184 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:17,240 INFO  com.bankguru.payment.TestCasesPayment - Actual = 50000
+2019-06-23 15:37:17,241 INFO  com.bankguru.payment.TestCasesPayment - Expected = 50000
+2019-06-23 15:37:17,241 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:17,241 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:17,241 INFO  com.bankguru.payment.TestCasesPayment - Payment 05 - Step 01: Open Withdrawal Form
+2019-06-23 15:37:19,815 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:37:19,815 INFO  com.bankguru.payment.TestCasesPayment - Payment 05 - Step 02: Input data into all fields and click btn submit
+2019-06-23 15:37:25,690 INFO  com.bankguru.payment.TestCasesPayment - Payment 05 - Step 03: Veify data matching
+2019-06-23 15:37:25,871 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:37:25,938 INFO  com.bankguru.payment.TestCasesPayment - Actual = 62959
+2019-06-23 15:37:25,938 INFO  com.bankguru.payment.TestCasesPayment - Expected = 62959
+2019-06-23 15:37:25,938 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:25,939 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:26,001 INFO  com.bankguru.payment.TestCasesPayment - Actual = 15000
+2019-06-23 15:37:26,001 INFO  com.bankguru.payment.TestCasesPayment - Expected = 15000
+2019-06-23 15:37:26,001 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:26,001 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:26,052 INFO  com.bankguru.payment.TestCasesPayment - Actual = Withdrawal
+2019-06-23 15:37:26,052 INFO  com.bankguru.payment.TestCasesPayment - Expected = Withdrawal
+2019-06-23 15:37:26,052 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:26,052 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:26,106 INFO  com.bankguru.payment.TestCasesPayment - Actual = Withdrawal
+2019-06-23 15:37:26,106 INFO  com.bankguru.payment.TestCasesPayment - Expected = Withdrawal
+2019-06-23 15:37:26,106 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:26,106 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:26,158 INFO  com.bankguru.payment.TestCasesPayment - Actual = 35000
+2019-06-23 15:37:26,158 INFO  com.bankguru.payment.TestCasesPayment - Expected = 35000
+2019-06-23 15:37:26,158 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:26,158 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:26,159 INFO  com.bankguru.payment.TestCasesPayment - Payment 06 - Step 01: Open Fund transfer Form
+2019-06-23 15:37:29,207 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:37:29,207 INFO  com.bankguru.payment.TestCasesPayment - Payment 06 - Step 02: Input data into Fund transfer form and click btn submit
+2019-06-23 15:37:36,144 INFO  com.bankguru.payment.TestCasesPayment - Payment 06 - Step 03: Verify data matching with expected
+2019-06-23 15:37:36,358 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:37:36,448 INFO  com.bankguru.payment.TestCasesPayment - Actual = 62959
+2019-06-23 15:37:36,448 INFO  com.bankguru.payment.TestCasesPayment - Expected = 62959
+2019-06-23 15:37:36,448 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:36,448 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:36,506 INFO  com.bankguru.payment.TestCasesPayment - Actual = 62958
+2019-06-23 15:37:36,506 INFO  com.bankguru.payment.TestCasesPayment - Expected = 62958
+2019-06-23 15:37:36,506 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:36,506 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:36,557 INFO  com.bankguru.payment.TestCasesPayment - Actual = 10000
+2019-06-23 15:37:36,557 INFO  com.bankguru.payment.TestCasesPayment - Expected = 10000
+2019-06-23 15:37:36,557 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:36,557 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:36,608 INFO  com.bankguru.payment.TestCasesPayment - Actual = Transfer
+2019-06-23 15:37:36,608 INFO  com.bankguru.payment.TestCasesPayment - Expected = Transfer
+2019-06-23 15:37:36,608 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:36,608 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:36,611 INFO  com.bankguru.payment.TestCasesPayment - Payment 07 - Step 01: Open Balance Enquiry Form
+2019-06-23 15:37:39,529 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:37:39,529 INFO  com.bankguru.payment.TestCasesPayment - Payment 07 - Step 02: Input AccountID into Balance Enquiry form and click btn submit
+2019-06-23 15:37:43,068 INFO  com.bankguru.payment.TestCasesPayment - Payment 07 - Step 03: Verify data in Balance Details for Account
+2019-06-23 15:37:43,215 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:37:43,263 INFO  com.bankguru.payment.TestCasesPayment - Actual = 62959
+2019-06-23 15:37:43,263 INFO  com.bankguru.payment.TestCasesPayment - Expected = 62959
+2019-06-23 15:37:43,263 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:43,263 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:43,323 INFO  com.bankguru.payment.TestCasesPayment - Actual = Savings
+2019-06-23 15:37:43,324 INFO  com.bankguru.payment.TestCasesPayment - Expected = Savings
+2019-06-23 15:37:43,324 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:43,324 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:43,382 INFO  com.bankguru.payment.TestCasesPayment - Actual = 25000
+2019-06-23 15:37:43,383 INFO  com.bankguru.payment.TestCasesPayment - Expected = 25000
+2019-06-23 15:37:43,383 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:37:43,383 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:37:43,384 INFO  com.bankguru.payment.TestCasesPayment - OS name = windows 10
+2019-06-23 15:37:44,394 INFO  com.bankguru.payment.TestCasesPayment - -------QUIT BROWSER SUCCESS-------
+2019-06-23 15:37:52,769 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 01: Verify Login form display
+2019-06-23 15:37:52,851 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 02: Get Login Page url
+2019-06-23 15:37:52,857 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 03: Click to 'here' link
+2019-06-23 15:37:55,960 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 04: Verify Register Page display
+2019-06-23 15:37:56,064 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 05: Input to Email Textbox
+2019-06-23 15:37:57,305 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 06: Click to Submit button
+2019-06-23 15:37:59,593 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 07: Get UserID infor
+2019-06-23 15:37:59,655 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 08: Get Password infor
+2019-06-23 15:37:59,746 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - OS name = windows 10
+2019-06-23 15:38:00,670 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - -------QUIT BROWSER SUCCESS-------
+2019-06-23 15:38:08,266 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:38:13,376 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:38:13,377 INFO  com.bankguru.payment.TestCasesPayment - Payment 01 - Step 01: Open New Customer Form
+2019-06-23 15:38:15,275 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:38:15,275 INFO  com.bankguru.payment.TestCasesPayment - Payment 01 - Step 02: Input valid data to all fields
+2019-06-23 15:38:31,595 INFO  com.bankguru.payment.TestCasesPayment - Payment 01 - Step 03: Verify msg 'Customer Registered Successfully!!!'
+2019-06-23 15:38:31,644 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:38:31,644 INFO  com.bankguru.payment.TestCasesPayment - Payment 01 - Step 04: Verify actual data matching with expected data
+2019-06-23 15:38:31,744 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium
+2019-06-23 15:38:31,744 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium
+2019-06-23 15:38:31,744 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:31,744 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:31,803 INFO  com.bankguru.payment.TestCasesPayment - Actual = male
+2019-06-23 15:38:31,803 INFO  com.bankguru.payment.TestCasesPayment - Expected = male
+2019-06-23 15:38:31,803 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:31,803 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:31,864 INFO  com.bankguru.payment.TestCasesPayment - Actual = 1999-01-01
+2019-06-23 15:38:31,864 INFO  com.bankguru.payment.TestCasesPayment - Expected = 1999-01-01
+2019-06-23 15:38:31,864 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:31,864 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:31,925 INFO  com.bankguru.payment.TestCasesPayment - Actual = 123 Nguyen Van Linh
+2019-06-23 15:38:31,925 INFO  com.bankguru.payment.TestCasesPayment - Expected = 123 Nguyen Van Linh
+2019-06-23 15:38:31,925 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:31,925 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:31,987 INFO  com.bankguru.payment.TestCasesPayment - Actual = Da Nang
+2019-06-23 15:38:31,987 INFO  com.bankguru.payment.TestCasesPayment - Expected = Da Nang
+2019-06-23 15:38:31,987 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:31,987 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:32,048 INFO  com.bankguru.payment.TestCasesPayment - Actual = Hai Chau
+2019-06-23 15:38:32,048 INFO  com.bankguru.payment.TestCasesPayment - Expected = Hai Chau
+2019-06-23 15:38:32,048 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:32,048 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:32,113 INFO  com.bankguru.payment.TestCasesPayment - Actual = 123456
+2019-06-23 15:38:32,113 INFO  com.bankguru.payment.TestCasesPayment - Expected = 123456
+2019-06-23 15:38:32,113 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:32,113 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:32,176 INFO  com.bankguru.payment.TestCasesPayment - Actual = 0123456789
+2019-06-23 15:38:32,176 INFO  com.bankguru.payment.TestCasesPayment - Expected = 0123456789
+2019-06-23 15:38:32,176 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:32,176 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:32,235 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium514326@gmail.com
+2019-06-23 15:38:32,235 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium514326@gmail.com
+2019-06-23 15:38:32,235 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:32,235 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:32,297 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 01: Open Edit Customer Page
+2019-06-23 15:38:34,653 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:38:34,653 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 02: Input CustomerID
+2019-06-23 15:38:37,800 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 03: Verify actual data matching with expected data
+2019-06-23 15:38:37,867 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:38:37,917 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium
+2019-06-23 15:38:37,917 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium
+2019-06-23 15:38:37,917 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:37,917 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:37,966 INFO  com.bankguru.payment.TestCasesPayment - Actual = male
+2019-06-23 15:38:37,966 INFO  com.bankguru.payment.TestCasesPayment - Expected = male
+2019-06-23 15:38:37,966 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:37,966 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:38,008 INFO  com.bankguru.payment.TestCasesPayment - Actual = 1999-01-01
+2019-06-23 15:38:38,008 INFO  com.bankguru.payment.TestCasesPayment - Expected = 1999-01-01
+2019-06-23 15:38:38,008 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:38,008 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:38,070 INFO  com.bankguru.payment.TestCasesPayment - Actual = 123 Nguyen Van Linh
+2019-06-23 15:38:38,071 INFO  com.bankguru.payment.TestCasesPayment - Expected = 123 Nguyen Van Linh
+2019-06-23 15:38:38,071 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:38,071 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:38,124 INFO  com.bankguru.payment.TestCasesPayment - Actual = Da Nang
+2019-06-23 15:38:38,124 INFO  com.bankguru.payment.TestCasesPayment - Expected = Da Nang
+2019-06-23 15:38:38,124 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:38,124 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:38,169 INFO  com.bankguru.payment.TestCasesPayment - Actual = Hai Chau
+2019-06-23 15:38:38,169 INFO  com.bankguru.payment.TestCasesPayment - Expected = Hai Chau
+2019-06-23 15:38:38,169 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:38,169 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:38,214 INFO  com.bankguru.payment.TestCasesPayment - Actual = 123456
+2019-06-23 15:38:38,214 INFO  com.bankguru.payment.TestCasesPayment - Expected = 123456
+2019-06-23 15:38:38,214 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:38,214 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:38,260 INFO  com.bankguru.payment.TestCasesPayment - Actual = 0123456789
+2019-06-23 15:38:38,260 INFO  com.bankguru.payment.TestCasesPayment - Expected = 0123456789
+2019-06-23 15:38:38,260 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:38,260 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:38,305 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium514326@gmail.com
+2019-06-23 15:38:38,305 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium514326@gmail.com
+2019-06-23 15:38:38,305 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:38,305 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:38,305 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 04: Input data to all edit-able fields
+2019-06-23 15:38:48,208 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 05: Verify msg 'Customer details updated Successfully!!!'
+2019-06-23 15:38:48,290 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:38:48,290 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 06: Verify actual data matching with expected data
+2019-06-23 15:38:48,353 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium
+2019-06-23 15:38:48,353 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium
+2019-06-23 15:38:48,353 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:48,353 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:48,418 INFO  com.bankguru.payment.TestCasesPayment - Actual = male
+2019-06-23 15:38:48,418 INFO  com.bankguru.payment.TestCasesPayment - Expected = male
+2019-06-23 15:38:48,418 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:48,418 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:48,478 INFO  com.bankguru.payment.TestCasesPayment - Actual = 1999-01-01
+2019-06-23 15:38:48,478 INFO  com.bankguru.payment.TestCasesPayment - Expected = 1999-01-01
+2019-06-23 15:38:48,478 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:48,478 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:48,542 INFO  com.bankguru.payment.TestCasesPayment - Actual = 321 Phan Chau Trinh
+2019-06-23 15:38:48,542 INFO  com.bankguru.payment.TestCasesPayment - Expected = 321 Phan Chau Trinh
+2019-06-23 15:38:48,542 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:48,542 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:48,605 INFO  com.bankguru.payment.TestCasesPayment - Actual = Ha Noi
+2019-06-23 15:38:48,605 INFO  com.bankguru.payment.TestCasesPayment - Expected = Ha Noi
+2019-06-23 15:38:48,605 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:48,605 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:48,677 INFO  com.bankguru.payment.TestCasesPayment - Actual = Hoan Kiem
+2019-06-23 15:38:48,678 INFO  com.bankguru.payment.TestCasesPayment - Expected = Hoan Kiem
+2019-06-23 15:38:48,678 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:48,678 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:48,753 INFO  com.bankguru.payment.TestCasesPayment - Actual = 090909
+2019-06-23 15:38:48,753 INFO  com.bankguru.payment.TestCasesPayment - Expected = 090909
+2019-06-23 15:38:48,753 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:48,753 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:48,811 INFO  com.bankguru.payment.TestCasesPayment - Actual = 0909123123
+2019-06-23 15:38:48,811 INFO  com.bankguru.payment.TestCasesPayment - Expected = 0909123123
+2019-06-23 15:38:48,811 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:48,811 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:48,870 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium632448@hotmail.com
+2019-06-23 15:38:48,871 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium632448@hotmail.com
+2019-06-23 15:38:48,871 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:48,871 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:48,872 INFO  com.bankguru.payment.TestCasesPayment - Payment 03 - Step 01: Open New Account Form
+2019-06-23 15:38:50,998 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:38:50,998 INFO  com.bankguru.payment.TestCasesPayment - Payment 03 - Step 02: Input data into form and click submit button
+2019-06-23 15:38:55,947 INFO  com.bankguru.payment.TestCasesPayment - Payment 03 - Step 03: Verify msg 'Account Generated Successfully!!!' is displayed
+2019-06-23 15:38:56,012 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:38:56,012 INFO  com.bankguru.payment.TestCasesPayment - Payment 03 - Step 04: Verify data detail
+2019-06-23 15:38:56,070 INFO  com.bankguru.payment.TestCasesPayment - Actual = 19628
+2019-06-23 15:38:56,070 INFO  com.bankguru.payment.TestCasesPayment - Expected = 19628
+2019-06-23 15:38:56,070 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:56,070 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:56,160 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium
+2019-06-23 15:38:56,160 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium
+2019-06-23 15:38:56,160 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:56,160 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:56,217 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium632448@hotmail.com
+2019-06-23 15:38:56,217 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium632448@hotmail.com
+2019-06-23 15:38:56,217 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:56,217 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:56,285 INFO  com.bankguru.payment.TestCasesPayment - Actual = Savings
+2019-06-23 15:38:56,285 INFO  com.bankguru.payment.TestCasesPayment - Expected = Savings
+2019-06-23 15:38:56,285 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:56,285 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:56,343 INFO  com.bankguru.payment.TestCasesPayment - Actual = 2019-06-23
+2019-06-23 15:38:56,343 INFO  com.bankguru.payment.TestCasesPayment - Expected = 2019-06-23
+2019-06-23 15:38:56,343 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:56,343 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:56,404 INFO  com.bankguru.payment.TestCasesPayment - Actual = 50000
+2019-06-23 15:38:56,404 INFO  com.bankguru.payment.TestCasesPayment - Expected = 50000
+2019-06-23 15:38:56,404 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:38:56,404 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:38:56,465 INFO  com.bankguru.payment.TestCasesPayment - Payment 04 - Step 01: Open Edit Account Form
+2019-06-23 15:38:59,337 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:38:59,337 INFO  com.bankguru.payment.TestCasesPayment - Payment 04 - Step 02: Input AccountID and click btn submit
+2019-06-23 15:39:03,017 INFO  com.bankguru.payment.TestCasesPayment - Payment 04 - Step 03: Verify actual data matching with expected data
+2019-06-23 15:39:03,090 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:39:03,144 INFO  com.bankguru.payment.TestCasesPayment - Actual = 19628
+2019-06-23 15:39:03,144 INFO  com.bankguru.payment.TestCasesPayment - Expected = 19628
+2019-06-23 15:39:03,144 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:39:03,144 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:39:03,257 INFO  com.bankguru.payment.TestCasesPayment - Actual = Savings
+2019-06-23 15:39:03,258 INFO  com.bankguru.payment.TestCasesPayment - Expected = Savings
+2019-06-23 15:39:03,258 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:39:03,258 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:39:03,314 INFO  com.bankguru.payment.TestCasesPayment - Actual = 50000
+2019-06-23 15:39:03,314 INFO  com.bankguru.payment.TestCasesPayment - Expected = 50000
+2019-06-23 15:39:03,314 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:39:03,314 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:39:03,315 INFO  com.bankguru.payment.TestCasesPayment - Payment 05 - Step 01: Open Withdrawal Form
+2019-06-23 15:39:05,843 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:39:05,843 INFO  com.bankguru.payment.TestCasesPayment - Payment 05 - Step 02: Input data into all fields and click btn submit
+2019-06-23 15:39:12,066 INFO  com.bankguru.payment.TestCasesPayment - Payment 05 - Step 03: Veify data matching
+2019-06-23 15:39:12,151 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:39:12,221 INFO  com.bankguru.payment.TestCasesPayment - Actual = 62960
+2019-06-23 15:39:12,221 INFO  com.bankguru.payment.TestCasesPayment - Expected = 62960
+2019-06-23 15:39:12,221 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:39:12,221 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:39:12,279 INFO  com.bankguru.payment.TestCasesPayment - Actual = 15000
+2019-06-23 15:39:12,279 INFO  com.bankguru.payment.TestCasesPayment - Expected = 15000
+2019-06-23 15:39:12,279 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:39:12,279 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:39:12,340 INFO  com.bankguru.payment.TestCasesPayment - Actual = Withdrawal
+2019-06-23 15:39:12,341 INFO  com.bankguru.payment.TestCasesPayment - Expected = Withdrawal
+2019-06-23 15:39:12,341 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:39:12,341 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:39:12,403 INFO  com.bankguru.payment.TestCasesPayment - Actual = Withdrawal
+2019-06-23 15:39:12,403 INFO  com.bankguru.payment.TestCasesPayment - Expected = Withdrawal
+2019-06-23 15:39:12,403 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:39:12,403 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:39:12,462 INFO  com.bankguru.payment.TestCasesPayment - Actual = 35000
+2019-06-23 15:39:12,462 INFO  com.bankguru.payment.TestCasesPayment - Expected = 35000
+2019-06-23 15:39:12,462 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:39:12,462 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:39:12,463 INFO  com.bankguru.payment.TestCasesPayment - Payment 06 - Step 01: Open Fund transfer Form
+2019-06-23 15:39:15,096 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:39:15,096 INFO  com.bankguru.payment.TestCasesPayment - Payment 06 - Step 02: Input data into Fund transfer form and click btn submit
+2019-06-23 15:39:22,587 INFO  com.bankguru.payment.TestCasesPayment - Payment 06 - Step 03: Verify data matching with expected
+2019-06-23 15:39:22,647 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:39:22,703 INFO  com.bankguru.payment.TestCasesPayment - Actual = 62960
+2019-06-23 15:39:22,703 INFO  com.bankguru.payment.TestCasesPayment - Expected = 62960
+2019-06-23 15:39:22,703 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:39:22,703 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:39:22,761 INFO  com.bankguru.payment.TestCasesPayment - Actual = 62959
+2019-06-23 15:39:22,761 INFO  com.bankguru.payment.TestCasesPayment - Expected = 62959
+2019-06-23 15:39:22,761 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:39:22,761 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:39:22,817 INFO  com.bankguru.payment.TestCasesPayment - Actual = 10000
+2019-06-23 15:39:22,817 INFO  com.bankguru.payment.TestCasesPayment - Expected = 10000
+2019-06-23 15:39:22,817 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:39:22,817 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:39:22,877 INFO  com.bankguru.payment.TestCasesPayment - Actual = Transfer
+2019-06-23 15:39:22,877 INFO  com.bankguru.payment.TestCasesPayment - Expected = Transfer
+2019-06-23 15:39:22,877 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:39:22,877 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:39:22,878 INFO  com.bankguru.payment.TestCasesPayment - Payment 07 - Step 01: Open Balance Enquiry Form
+2019-06-23 15:39:25,170 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:39:25,170 INFO  com.bankguru.payment.TestCasesPayment - Payment 07 - Step 02: Input AccountID into Balance Enquiry form and click btn submit
+2019-06-23 15:39:28,807 INFO  com.bankguru.payment.TestCasesPayment - Payment 07 - Step 03: Verify data in Balance Details for Account
+2019-06-23 15:39:28,868 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:39:28,924 INFO  com.bankguru.payment.TestCasesPayment - Actual = 62960
+2019-06-23 15:39:28,924 INFO  com.bankguru.payment.TestCasesPayment - Expected = 62960
+2019-06-23 15:39:28,924 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:39:28,924 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:39:28,982 INFO  com.bankguru.payment.TestCasesPayment - Actual = Savings
+2019-06-23 15:39:28,982 INFO  com.bankguru.payment.TestCasesPayment - Expected = Savings
+2019-06-23 15:39:28,982 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:39:28,982 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:39:29,044 INFO  com.bankguru.payment.TestCasesPayment - Actual = 25000
+2019-06-23 15:39:29,044 INFO  com.bankguru.payment.TestCasesPayment - Expected = 25000
+2019-06-23 15:39:29,044 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:39:29,044 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:39:29,045 INFO  com.bankguru.payment.TestCasesPayment - OS name = windows 10
+2019-06-23 15:39:29,943 INFO  com.bankguru.payment.TestCasesPayment - -------QUIT BROWSER SUCCESS-------
+2019-06-23 15:39:35,964 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 01: Verify Login form display
+2019-06-23 15:39:36,084 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 02: Get Login Page url
+2019-06-23 15:39:36,089 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 03: Click to 'here' link
+2019-06-23 15:39:38,945 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 04: Verify Register Page display
+2019-06-23 15:39:39,027 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 05: Input to Email Textbox
+2019-06-23 15:39:40,183 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 06: Click to Submit button
+2019-06-23 15:39:42,831 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 07: Get UserID infor
+2019-06-23 15:39:42,926 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 08: Get Password infor
+2019-06-23 15:39:42,978 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - OS name = windows 10
+2019-06-23 15:39:44,738 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - -------QUIT BROWSER SUCCESS-------
+2019-06-23 15:39:52,435 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:39:57,599 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:39:57,600 INFO  com.bankguru.payment.TestCasesPayment - Payment 01 - Step 01: Open New Customer Form
+2019-06-23 15:39:59,941 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:39:59,941 INFO  com.bankguru.payment.TestCasesPayment - Payment 01 - Step 02: Input valid data to all fields
+2019-06-23 15:40:15,368 INFO  com.bankguru.payment.TestCasesPayment - Payment 01 - Step 03: Verify msg 'Customer Registered Successfully!!!'
+2019-06-23 15:40:15,553 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:40:15,553 INFO  com.bankguru.payment.TestCasesPayment - Payment 01 - Step 04: Verify actual data matching with expected data
+2019-06-23 15:40:15,685 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium
+2019-06-23 15:40:15,685 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium
+2019-06-23 15:40:15,685 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:15,685 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:15,815 INFO  com.bankguru.payment.TestCasesPayment - Actual = male
+2019-06-23 15:40:15,815 INFO  com.bankguru.payment.TestCasesPayment - Expected = male
+2019-06-23 15:40:15,815 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:15,815 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:15,893 INFO  com.bankguru.payment.TestCasesPayment - Actual = 1999-01-01
+2019-06-23 15:40:15,893 INFO  com.bankguru.payment.TestCasesPayment - Expected = 1999-01-01
+2019-06-23 15:40:15,893 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:15,893 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:15,965 INFO  com.bankguru.payment.TestCasesPayment - Actual = 123 Nguyen Van Linh
+2019-06-23 15:40:15,965 INFO  com.bankguru.payment.TestCasesPayment - Expected = 123 Nguyen Van Linh
+2019-06-23 15:40:15,965 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:15,965 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:16,034 INFO  com.bankguru.payment.TestCasesPayment - Actual = Da Nang
+2019-06-23 15:40:16,034 INFO  com.bankguru.payment.TestCasesPayment - Expected = Da Nang
+2019-06-23 15:40:16,034 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:16,034 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:16,081 INFO  com.bankguru.payment.TestCasesPayment - Actual = Hai Chau
+2019-06-23 15:40:16,081 INFO  com.bankguru.payment.TestCasesPayment - Expected = Hai Chau
+2019-06-23 15:40:16,081 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:16,081 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:16,135 INFO  com.bankguru.payment.TestCasesPayment - Actual = 123456
+2019-06-23 15:40:16,135 INFO  com.bankguru.payment.TestCasesPayment - Expected = 123456
+2019-06-23 15:40:16,136 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:16,136 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:16,186 INFO  com.bankguru.payment.TestCasesPayment - Actual = 0123456789
+2019-06-23 15:40:16,186 INFO  com.bankguru.payment.TestCasesPayment - Expected = 0123456789
+2019-06-23 15:40:16,186 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:16,186 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:16,234 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium714820@gmail.com
+2019-06-23 15:40:16,235 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium714820@gmail.com
+2019-06-23 15:40:16,235 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:16,235 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:16,292 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 01: Open Edit Customer Page
+2019-06-23 15:40:18,686 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:40:18,686 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 02: Input CustomerID
+2019-06-23 15:40:22,357 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 03: Verify actual data matching with expected data
+2019-06-23 15:40:22,451 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:40:22,500 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium
+2019-06-23 15:40:22,500 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium
+2019-06-23 15:40:22,500 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:22,500 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:22,553 INFO  com.bankguru.payment.TestCasesPayment - Actual = male
+2019-06-23 15:40:22,553 INFO  com.bankguru.payment.TestCasesPayment - Expected = male
+2019-06-23 15:40:22,553 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:22,553 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:22,600 INFO  com.bankguru.payment.TestCasesPayment - Actual = 1999-01-01
+2019-06-23 15:40:22,600 INFO  com.bankguru.payment.TestCasesPayment - Expected = 1999-01-01
+2019-06-23 15:40:22,600 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:22,600 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:22,644 INFO  com.bankguru.payment.TestCasesPayment - Actual = 123 Nguyen Van Linh
+2019-06-23 15:40:22,644 INFO  com.bankguru.payment.TestCasesPayment - Expected = 123 Nguyen Van Linh
+2019-06-23 15:40:22,644 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:22,644 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:22,688 INFO  com.bankguru.payment.TestCasesPayment - Actual = Da Nang
+2019-06-23 15:40:22,688 INFO  com.bankguru.payment.TestCasesPayment - Expected = Da Nang
+2019-06-23 15:40:22,688 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:22,688 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:22,734 INFO  com.bankguru.payment.TestCasesPayment - Actual = Hai Chau
+2019-06-23 15:40:22,734 INFO  com.bankguru.payment.TestCasesPayment - Expected = Hai Chau
+2019-06-23 15:40:22,734 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:22,734 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:22,804 INFO  com.bankguru.payment.TestCasesPayment - Actual = 123456
+2019-06-23 15:40:22,805 INFO  com.bankguru.payment.TestCasesPayment - Expected = 123456
+2019-06-23 15:40:22,805 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:22,805 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:22,872 INFO  com.bankguru.payment.TestCasesPayment - Actual = 0123456789
+2019-06-23 15:40:22,872 INFO  com.bankguru.payment.TestCasesPayment - Expected = 0123456789
+2019-06-23 15:40:22,872 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:22,872 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:22,932 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium714820@gmail.com
+2019-06-23 15:40:22,932 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium714820@gmail.com
+2019-06-23 15:40:22,932 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:22,932 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:22,932 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 04: Input data to all edit-able fields
+2019-06-23 15:40:31,957 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 05: Verify msg 'Customer details updated Successfully!!!'
+2019-06-23 15:40:32,138 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:40:32,138 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 06: Verify actual data matching with expected data
+2019-06-23 15:40:32,198 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium
+2019-06-23 15:40:32,198 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium
+2019-06-23 15:40:32,198 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:32,198 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:32,318 INFO  com.bankguru.payment.TestCasesPayment - Actual = male
+2019-06-23 15:40:32,318 INFO  com.bankguru.payment.TestCasesPayment - Expected = male
+2019-06-23 15:40:32,318 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:32,318 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:32,373 INFO  com.bankguru.payment.TestCasesPayment - Actual = 1999-01-01
+2019-06-23 15:40:32,373 INFO  com.bankguru.payment.TestCasesPayment - Expected = 1999-01-01
+2019-06-23 15:40:32,373 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:32,373 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:32,424 INFO  com.bankguru.payment.TestCasesPayment - Actual = 321 Phan Chau Trinh
+2019-06-23 15:40:32,424 INFO  com.bankguru.payment.TestCasesPayment - Expected = 321 Phan Chau Trinh
+2019-06-23 15:40:32,424 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:32,424 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:32,471 INFO  com.bankguru.payment.TestCasesPayment - Actual = Ha Noi
+2019-06-23 15:40:32,471 INFO  com.bankguru.payment.TestCasesPayment - Expected = Ha Noi
+2019-06-23 15:40:32,471 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:32,471 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:32,518 INFO  com.bankguru.payment.TestCasesPayment - Actual = Hoan Kiem
+2019-06-23 15:40:32,518 INFO  com.bankguru.payment.TestCasesPayment - Expected = Hoan Kiem
+2019-06-23 15:40:32,518 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:32,518 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:32,559 INFO  com.bankguru.payment.TestCasesPayment - Actual = 090909
+2019-06-23 15:40:32,559 INFO  com.bankguru.payment.TestCasesPayment - Expected = 090909
+2019-06-23 15:40:32,559 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:32,559 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:32,604 INFO  com.bankguru.payment.TestCasesPayment - Actual = 0909123123
+2019-06-23 15:40:32,604 INFO  com.bankguru.payment.TestCasesPayment - Expected = 0909123123
+2019-06-23 15:40:32,604 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:32,604 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:32,647 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium219499@hotmail.com
+2019-06-23 15:40:32,647 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium219499@hotmail.com
+2019-06-23 15:40:32,647 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:32,647 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:32,649 INFO  com.bankguru.payment.TestCasesPayment - Payment 03 - Step 01: Open New Account Form
+2019-06-23 15:40:34,717 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:40:34,717 INFO  com.bankguru.payment.TestCasesPayment - Payment 03 - Step 02: Input data into form and click submit button
+2019-06-23 15:40:39,398 INFO  com.bankguru.payment.TestCasesPayment - Payment 03 - Step 03: Verify msg 'Account Generated Successfully!!!' is displayed
+2019-06-23 15:40:39,575 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:40:39,576 INFO  com.bankguru.payment.TestCasesPayment - Payment 03 - Step 04: Verify data detail
+2019-06-23 15:40:39,631 INFO  com.bankguru.payment.TestCasesPayment - Actual = 9441
+2019-06-23 15:40:39,631 INFO  com.bankguru.payment.TestCasesPayment - Expected = 9441
+2019-06-23 15:40:39,631 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:39,631 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:39,687 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium
+2019-06-23 15:40:39,687 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium
+2019-06-23 15:40:39,687 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:39,687 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:39,759 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium219499@hotmail.com
+2019-06-23 15:40:39,759 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium219499@hotmail.com
+2019-06-23 15:40:39,759 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:39,759 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:39,829 INFO  com.bankguru.payment.TestCasesPayment - Actual = Savings
+2019-06-23 15:40:39,829 INFO  com.bankguru.payment.TestCasesPayment - Expected = Savings
+2019-06-23 15:40:39,829 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:39,829 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:39,876 INFO  com.bankguru.payment.TestCasesPayment - Actual = 2019-06-23
+2019-06-23 15:40:39,876 INFO  com.bankguru.payment.TestCasesPayment - Expected = 2019-06-23
+2019-06-23 15:40:39,876 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:39,876 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:39,920 INFO  com.bankguru.payment.TestCasesPayment - Actual = 50000
+2019-06-23 15:40:39,920 INFO  com.bankguru.payment.TestCasesPayment - Expected = 50000
+2019-06-23 15:40:39,920 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:39,920 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:39,965 INFO  com.bankguru.payment.TestCasesPayment - Payment 04 - Step 01: Open Edit Account Form
+2019-06-23 15:40:42,603 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:40:42,603 INFO  com.bankguru.payment.TestCasesPayment - Payment 04 - Step 02: Input AccountID and click btn submit
+2019-06-23 15:40:45,894 INFO  com.bankguru.payment.TestCasesPayment - Payment 04 - Step 03: Verify actual data matching with expected data
+2019-06-23 15:40:46,023 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:40:46,082 INFO  com.bankguru.payment.TestCasesPayment - Actual = 9441
+2019-06-23 15:40:46,083 INFO  com.bankguru.payment.TestCasesPayment - Expected = 9441
+2019-06-23 15:40:46,083 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:46,083 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:46,181 INFO  com.bankguru.payment.TestCasesPayment - Actual = Savings
+2019-06-23 15:40:46,181 INFO  com.bankguru.payment.TestCasesPayment - Expected = Savings
+2019-06-23 15:40:46,181 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:46,181 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:46,258 INFO  com.bankguru.payment.TestCasesPayment - Actual = 50000
+2019-06-23 15:40:46,258 INFO  com.bankguru.payment.TestCasesPayment - Expected = 50000
+2019-06-23 15:40:46,258 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:46,258 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:46,259 INFO  com.bankguru.payment.TestCasesPayment - Payment 05 - Step 01: Open Withdrawal Form
+2019-06-23 15:40:48,901 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:40:48,901 INFO  com.bankguru.payment.TestCasesPayment - Payment 05 - Step 02: Input data into all fields and click btn submit
+2019-06-23 15:40:55,044 INFO  com.bankguru.payment.TestCasesPayment - Payment 05 - Step 03: Veify data matching
+2019-06-23 15:40:55,138 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:40:55,186 INFO  com.bankguru.payment.TestCasesPayment - Actual = 62961
+2019-06-23 15:40:55,186 INFO  com.bankguru.payment.TestCasesPayment - Expected = 62961
+2019-06-23 15:40:55,186 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:55,186 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:55,228 INFO  com.bankguru.payment.TestCasesPayment - Actual = 15000
+2019-06-23 15:40:55,228 INFO  com.bankguru.payment.TestCasesPayment - Expected = 15000
+2019-06-23 15:40:55,228 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:55,228 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:55,273 INFO  com.bankguru.payment.TestCasesPayment - Actual = Withdrawal
+2019-06-23 15:40:55,274 INFO  com.bankguru.payment.TestCasesPayment - Expected = Withdrawal
+2019-06-23 15:40:55,274 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:55,274 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:55,313 INFO  com.bankguru.payment.TestCasesPayment - Actual = Withdrawal
+2019-06-23 15:40:55,313 INFO  com.bankguru.payment.TestCasesPayment - Expected = Withdrawal
+2019-06-23 15:40:55,313 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:55,313 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:55,357 INFO  com.bankguru.payment.TestCasesPayment - Actual = 35000
+2019-06-23 15:40:55,357 INFO  com.bankguru.payment.TestCasesPayment - Expected = 35000
+2019-06-23 15:40:55,357 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:40:55,357 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:40:55,358 INFO  com.bankguru.payment.TestCasesPayment - Payment 06 - Step 01: Open Fund transfer Form
+2019-06-23 15:40:58,000 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:40:58,000 INFO  com.bankguru.payment.TestCasesPayment - Payment 06 - Step 02: Input data into Fund transfer form and click btn submit
+2019-06-23 15:41:04,883 INFO  com.bankguru.payment.TestCasesPayment - Payment 06 - Step 03: Verify data matching with expected
+2019-06-23 15:41:05,024 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:41:05,079 INFO  com.bankguru.payment.TestCasesPayment - Actual = 62961
+2019-06-23 15:41:05,080 INFO  com.bankguru.payment.TestCasesPayment - Expected = 62961
+2019-06-23 15:41:05,080 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:41:05,080 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:41:05,131 INFO  com.bankguru.payment.TestCasesPayment - Actual = 62960
+2019-06-23 15:41:05,131 INFO  com.bankguru.payment.TestCasesPayment - Expected = 62960
+2019-06-23 15:41:05,131 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:41:05,131 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:41:05,183 INFO  com.bankguru.payment.TestCasesPayment - Actual = 10000
+2019-06-23 15:41:05,183 INFO  com.bankguru.payment.TestCasesPayment - Expected = 10000
+2019-06-23 15:41:05,183 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:41:05,183 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:41:05,231 INFO  com.bankguru.payment.TestCasesPayment - Actual = Transfer
+2019-06-23 15:41:05,231 INFO  com.bankguru.payment.TestCasesPayment - Expected = Transfer
+2019-06-23 15:41:05,231 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:41:05,231 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:41:05,232 INFO  com.bankguru.payment.TestCasesPayment - Payment 07 - Step 01: Open Balance Enquiry Form
+2019-06-23 15:41:07,856 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:41:07,856 INFO  com.bankguru.payment.TestCasesPayment - Payment 07 - Step 02: Input AccountID into Balance Enquiry form and click btn submit
+2019-06-23 15:41:11,487 INFO  com.bankguru.payment.TestCasesPayment - Payment 07 - Step 03: Verify data in Balance Details for Account
+2019-06-23 15:41:11,625 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:41:11,680 INFO  com.bankguru.payment.TestCasesPayment - Actual = 62961
+2019-06-23 15:41:11,680 INFO  com.bankguru.payment.TestCasesPayment - Expected = 62961
+2019-06-23 15:41:11,680 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:41:11,680 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:41:11,735 INFO  com.bankguru.payment.TestCasesPayment - Actual = Savings
+2019-06-23 15:41:11,735 INFO  com.bankguru.payment.TestCasesPayment - Expected = Savings
+2019-06-23 15:41:11,735 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:41:11,735 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:41:11,784 INFO  com.bankguru.payment.TestCasesPayment - Actual = 25000
+2019-06-23 15:41:11,784 INFO  com.bankguru.payment.TestCasesPayment - Expected = 25000
+2019-06-23 15:41:11,784 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:41:11,784 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:41:11,784 INFO  com.bankguru.payment.TestCasesPayment - OS name = windows 10
+2019-06-23 15:41:12,757 INFO  com.bankguru.payment.TestCasesPayment - -------QUIT BROWSER SUCCESS-------
+2019-06-23 15:41:23,086 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 01: Verify Login form display
+2019-06-23 15:41:23,481 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 02: Get Login Page url
+2019-06-23 15:41:23,503 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 03: Click to 'here' link
+2019-06-23 15:41:26,019 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 04: Verify Register Page display
+2019-06-23 15:41:26,436 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 05: Input to Email Textbox
+2019-06-23 15:41:28,706 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 06: Click to Submit button
+2019-06-23 15:41:32,192 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 07: Get UserID infor
+2019-06-23 15:41:32,581 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - Register - Step 08: Get Password infor
+2019-06-23 15:41:32,964 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - OS name = windows 10
+2019-06-23 15:41:34,260 INFO  com.bankguru.account.Account_Common_01_RegisterToSystem - -------QUIT BROWSER SUCCESS-------
+2019-06-23 15:41:44,245 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:41:52,487 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:41:52,488 INFO  com.bankguru.payment.TestCasesPayment - Payment 01 - Step 01: Open New Customer Form
+2019-06-23 15:41:55,962 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:41:55,962 INFO  com.bankguru.payment.TestCasesPayment - Payment 01 - Step 02: Input valid data to all fields
+2019-06-23 15:42:21,891 INFO  com.bankguru.payment.TestCasesPayment - Payment 01 - Step 03: Verify msg 'Customer Registered Successfully!!!'
+2019-06-23 15:42:21,891 INFO  com.bankguru.payment.TestCasesPayment - Payment 01 - Step 04: Verify actual data matching with expected data
+2019-06-23 15:42:22,346 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium
+2019-06-23 15:42:22,346 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium
+2019-06-23 15:42:22,346 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:42:22,346 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:42:22,763 INFO  com.bankguru.payment.TestCasesPayment - Actual = male
+2019-06-23 15:42:22,763 INFO  com.bankguru.payment.TestCasesPayment - Expected = male
+2019-06-23 15:42:22,763 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:42:22,763 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:42:23,179 INFO  com.bankguru.payment.TestCasesPayment - Actual = 1999-01-01
+2019-06-23 15:42:23,179 INFO  com.bankguru.payment.TestCasesPayment - Expected = 1999-01-01
+2019-06-23 15:42:23,179 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:42:23,179 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:42:23,604 INFO  com.bankguru.payment.TestCasesPayment - Actual = 123 Nguyen Van Linh
+2019-06-23 15:42:23,604 INFO  com.bankguru.payment.TestCasesPayment - Expected = 123 Nguyen Van Linh
+2019-06-23 15:42:23,604 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:42:23,604 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:42:24,013 INFO  com.bankguru.payment.TestCasesPayment - Actual = Da Nang
+2019-06-23 15:42:24,013 INFO  com.bankguru.payment.TestCasesPayment - Expected = Da Nang
+2019-06-23 15:42:24,013 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:42:24,013 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:42:24,426 INFO  com.bankguru.payment.TestCasesPayment - Actual = Hai Chau
+2019-06-23 15:42:24,426 INFO  com.bankguru.payment.TestCasesPayment - Expected = Hai Chau
+2019-06-23 15:42:24,426 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:42:24,426 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:42:24,860 INFO  com.bankguru.payment.TestCasesPayment - Actual = 123456
+2019-06-23 15:42:24,860 INFO  com.bankguru.payment.TestCasesPayment - Expected = 123456
+2019-06-23 15:42:24,860 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:42:24,860 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:42:25,300 INFO  com.bankguru.payment.TestCasesPayment - Actual = 0123456789
+2019-06-23 15:42:25,300 INFO  com.bankguru.payment.TestCasesPayment - Expected = 0123456789
+2019-06-23 15:42:25,300 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:42:25,300 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:42:25,728 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium712997@gmail.com
+2019-06-23 15:42:25,728 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium712997@gmail.com
+2019-06-23 15:42:25,728 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:42:25,728 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:42:26,143 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 01: Open Edit Customer Page
+2019-06-23 15:42:29,721 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:42:29,721 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 02: Input CustomerID
+2019-06-23 15:42:35,170 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 03: Verify actual data matching with expected data
+2019-06-23 15:42:35,659 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:42:36,032 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium
+2019-06-23 15:42:36,032 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium
+2019-06-23 15:42:36,033 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:42:36,033 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:42:36,395 INFO  com.bankguru.payment.TestCasesPayment - Actual = male
+2019-06-23 15:42:36,395 INFO  com.bankguru.payment.TestCasesPayment - Expected = male
+2019-06-23 15:42:36,396 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:42:36,396 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:42:36,774 INFO  com.bankguru.payment.TestCasesPayment - Actual = 1999-01-01
+2019-06-23 15:42:36,774 INFO  com.bankguru.payment.TestCasesPayment - Expected = 1999-01-01
+2019-06-23 15:42:36,774 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:42:36,774 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:42:37,210 INFO  com.bankguru.payment.TestCasesPayment - Actual = 123 Nguyen Van Linh
+2019-06-23 15:42:37,210 INFO  com.bankguru.payment.TestCasesPayment - Expected = 123 Nguyen Van Linh
+2019-06-23 15:42:37,210 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:42:37,210 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:42:37,574 INFO  com.bankguru.payment.TestCasesPayment - Actual = Da Nang
+2019-06-23 15:42:37,574 INFO  com.bankguru.payment.TestCasesPayment - Expected = Da Nang
+2019-06-23 15:42:37,574 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:42:37,574 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:42:37,939 INFO  com.bankguru.payment.TestCasesPayment - Actual = Hai Chau
+2019-06-23 15:42:37,939 INFO  com.bankguru.payment.TestCasesPayment - Expected = Hai Chau
+2019-06-23 15:42:37,939 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:42:37,939 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:42:38,313 INFO  com.bankguru.payment.TestCasesPayment - Actual = 123456
+2019-06-23 15:42:38,313 INFO  com.bankguru.payment.TestCasesPayment - Expected = 123456
+2019-06-23 15:42:38,313 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:42:38,313 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:42:38,669 INFO  com.bankguru.payment.TestCasesPayment - Actual = 0123456789
+2019-06-23 15:42:38,669 INFO  com.bankguru.payment.TestCasesPayment - Expected = 0123456789
+2019-06-23 15:42:38,669 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:42:38,669 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:42:39,023 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium712997@gmail.com
+2019-06-23 15:42:39,023 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium712997@gmail.com
+2019-06-23 15:42:39,023 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:42:39,023 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:42:39,023 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 04: Input data to all edit-able fields
+2019-06-23 15:42:54,118 INFO  com.bankguru.payment.TestCasesPayment - Payment 02 - Step 05: Verify msg 'Customer details updated Successfully!!!'
+2019-06-23 15:43:24,336 INFO  com.bankguru.payment.TestCasesPayment - Payment 03 - Step 01: Open New Account Form
+2019-06-23 15:43:27,917 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:43:27,917 INFO  com.bankguru.payment.TestCasesPayment - Payment 03 - Step 02: Input data into form and click submit button
+2019-06-23 15:43:35,937 INFO  com.bankguru.payment.TestCasesPayment - Payment 03 - Step 03: Verify msg 'Account Generated Successfully!!!' is displayed
+2019-06-23 15:43:36,376 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:43:36,376 INFO  com.bankguru.payment.TestCasesPayment - Payment 03 - Step 04: Verify data detail
+2019-06-23 15:43:36,780 INFO  com.bankguru.payment.TestCasesPayment - Actual = 35416
+2019-06-23 15:43:36,780 INFO  com.bankguru.payment.TestCasesPayment - Expected = 35416
+2019-06-23 15:43:36,780 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:43:36,780 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:43:37,223 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium
+2019-06-23 15:43:37,223 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium
+2019-06-23 15:43:37,223 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:43:37,223 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:43:37,686 INFO  com.bankguru.payment.TestCasesPayment - Actual = Selenium712997@gmail.com
+2019-06-23 15:43:37,686 INFO  com.bankguru.payment.TestCasesPayment - Expected = Selenium131977@hotmail.com
+2019-06-23 15:43:37,686 INFO  com.bankguru.payment.TestCasesPayment - Compare value = false
+2019-06-23 15:43:37,686 INFO  com.bankguru.payment.TestCasesPayment - ===FAILED===
+2019-06-23 15:43:38,100 INFO  com.bankguru.payment.TestCasesPayment - Actual = Savings
+2019-06-23 15:43:38,100 INFO  com.bankguru.payment.TestCasesPayment - Expected = Savings
+2019-06-23 15:43:38,100 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:43:38,100 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:43:38,533 INFO  com.bankguru.payment.TestCasesPayment - Actual = 2019-06-23
+2019-06-23 15:43:38,533 INFO  com.bankguru.payment.TestCasesPayment - Expected = 2019-06-23
+2019-06-23 15:43:38,533 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:43:38,533 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:43:39,025 INFO  com.bankguru.payment.TestCasesPayment - Actual = 50000
+2019-06-23 15:43:39,025 INFO  com.bankguru.payment.TestCasesPayment - Expected = 50000
+2019-06-23 15:43:39,025 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:43:39,025 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:43:39,454 INFO  com.bankguru.payment.TestCasesPayment - Payment 04 - Step 01: Open Edit Account Form
+2019-06-23 15:43:43,276 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:43:43,276 INFO  com.bankguru.payment.TestCasesPayment - Payment 04 - Step 02: Input AccountID and click btn submit
+2019-06-23 15:43:48,665 INFO  com.bankguru.payment.TestCasesPayment - Payment 04 - Step 03: Verify actual data matching with expected data
+2019-06-23 15:43:49,125 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:43:49,499 INFO  com.bankguru.payment.TestCasesPayment - Actual = 35416
+2019-06-23 15:43:49,499 INFO  com.bankguru.payment.TestCasesPayment - Expected = 35416
+2019-06-23 15:43:49,499 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:43:49,499 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:43:50,287 INFO  com.bankguru.payment.TestCasesPayment - Actual = Savings
+2019-06-23 15:43:50,287 INFO  com.bankguru.payment.TestCasesPayment - Expected = Savings
+2019-06-23 15:43:50,287 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:43:50,287 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:43:50,685 INFO  com.bankguru.payment.TestCasesPayment - Actual = 50000
+2019-06-23 15:43:50,685 INFO  com.bankguru.payment.TestCasesPayment - Expected = 50000
+2019-06-23 15:43:50,685 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:43:50,685 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:43:50,687 INFO  com.bankguru.payment.TestCasesPayment - Payment 05 - Step 01: Open Withdrawal Form
+2019-06-23 15:43:54,449 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:43:54,449 INFO  com.bankguru.payment.TestCasesPayment - Payment 05 - Step 02: Input data into all fields and click btn submit
+2019-06-23 15:44:04,356 INFO  com.bankguru.payment.TestCasesPayment - Payment 05 - Step 03: Veify data matching
+2019-06-23 15:44:04,848 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:44:05,343 INFO  com.bankguru.payment.TestCasesPayment - Actual = 62962
+2019-06-23 15:44:05,343 INFO  com.bankguru.payment.TestCasesPayment - Expected = 62962
+2019-06-23 15:44:05,343 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:44:05,343 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:44:05,899 INFO  com.bankguru.payment.TestCasesPayment - Actual = 15000
+2019-06-23 15:44:05,899 INFO  com.bankguru.payment.TestCasesPayment - Expected = 15000
+2019-06-23 15:44:05,899 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:44:05,899 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:44:06,372 INFO  com.bankguru.payment.TestCasesPayment - Actual = Withdrawal
+2019-06-23 15:44:06,372 INFO  com.bankguru.payment.TestCasesPayment - Expected = Withdrawal
+2019-06-23 15:44:06,372 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:44:06,372 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:44:06,832 INFO  com.bankguru.payment.TestCasesPayment - Actual = Withdrawal
+2019-06-23 15:44:06,832 INFO  com.bankguru.payment.TestCasesPayment - Expected = Withdrawal
+2019-06-23 15:44:06,832 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:44:06,832 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:44:07,278 INFO  com.bankguru.payment.TestCasesPayment - Actual = 35000
+2019-06-23 15:44:07,278 INFO  com.bankguru.payment.TestCasesPayment - Expected = 35000
+2019-06-23 15:44:07,278 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:44:07,278 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:44:07,279 INFO  com.bankguru.payment.TestCasesPayment - Payment 06 - Step 01: Open Fund transfer Form
+2019-06-23 15:44:11,139 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:44:11,139 INFO  com.bankguru.payment.TestCasesPayment - Payment 06 - Step 02: Input data into Fund transfer form and click btn submit
+2019-06-23 15:44:22,538 INFO  com.bankguru.payment.TestCasesPayment - Payment 06 - Step 03: Verify data matching with expected
+2019-06-23 15:44:22,954 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:44:23,341 INFO  com.bankguru.payment.TestCasesPayment - Actual = 62962
+2019-06-23 15:44:23,341 INFO  com.bankguru.payment.TestCasesPayment - Expected = 62962
+2019-06-23 15:44:23,341 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:44:23,341 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:44:23,734 INFO  com.bankguru.payment.TestCasesPayment - Actual = 62961
+2019-06-23 15:44:23,734 INFO  com.bankguru.payment.TestCasesPayment - Expected = 62961
+2019-06-23 15:44:23,734 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:44:23,734 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:44:24,179 INFO  com.bankguru.payment.TestCasesPayment - Actual = 10000
+2019-06-23 15:44:24,179 INFO  com.bankguru.payment.TestCasesPayment - Expected = 10000
+2019-06-23 15:44:24,179 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:44:24,179 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:44:24,612 INFO  com.bankguru.payment.TestCasesPayment - Actual = Transfer
+2019-06-23 15:44:24,612 INFO  com.bankguru.payment.TestCasesPayment - Expected = Transfer
+2019-06-23 15:44:24,612 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:44:24,612 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:44:24,613 INFO  com.bankguru.payment.TestCasesPayment - Payment 07 - Step 01: Open Balance Enquiry Form
+2019-06-23 15:44:28,390 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:44:28,390 INFO  com.bankguru.payment.TestCasesPayment - Payment 07 - Step 02: Input AccountID into Balance Enquiry form and click btn submit
+2019-06-23 15:44:33,768 INFO  com.bankguru.payment.TestCasesPayment - Payment 07 - Step 03: Verify data in Balance Details for Account
+2019-06-23 15:44:34,230 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED==
+2019-06-23 15:44:34,683 INFO  com.bankguru.payment.TestCasesPayment - Actual = 62962
+2019-06-23 15:44:34,683 INFO  com.bankguru.payment.TestCasesPayment - Expected = 62962
+2019-06-23 15:44:34,683 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:44:34,683 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:44:35,107 INFO  com.bankguru.payment.TestCasesPayment - Actual = Savings
+2019-06-23 15:44:35,107 INFO  com.bankguru.payment.TestCasesPayment - Expected = Savings
+2019-06-23 15:44:35,107 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:44:35,107 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:44:35,554 INFO  com.bankguru.payment.TestCasesPayment - Actual = 25000
+2019-06-23 15:44:35,554 INFO  com.bankguru.payment.TestCasesPayment - Expected = 25000
+2019-06-23 15:44:35,554 INFO  com.bankguru.payment.TestCasesPayment - Compare value = true
+2019-06-23 15:44:35,554 INFO  com.bankguru.payment.TestCasesPayment - ===PASSED===
+2019-06-23 15:44:35,555 INFO  com.bankguru.payment.TestCasesPayment - OS name = windows 10
+2019-06-23 15:44:37,037 INFO  com.bankguru.payment.TestCasesPayment - -------QUIT BROWSER SUCCESS-------
+2019-06-23 15:44:38,199 INFO  com.bankguru.payment.TestCasesPayment - OS name = windows 10
+2019-06-23 15:44:38,199 INFO  com.bankguru.payment.TestCasesPayment - 

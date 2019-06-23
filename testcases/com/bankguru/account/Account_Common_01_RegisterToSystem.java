@@ -28,10 +28,10 @@ public class Account_Common_01_RegisterToSystem extends AbstractTest {
 	DepositPageObject depositPage;
 	FundTransferPageObject fundTransferPage;
 
-	@Parameters("browser")
+	@Parameters({"browser", "version"})
 	@BeforeTest
-	public void beforeTest(String browserName) {
-		driver = openMultiBrowser(browserName);
+	public void beforeTest(String browserName, String driverVersion) {
+		driver = openMultiBrowser(browserName, driverVersion);
 		driver.get(Constants.TEST_SERVER_URL);
 		email = "trinh" + randomNumber() + "@gmail.com";
 		loginPage = PageFactoryManager.getLoginPage(driver);

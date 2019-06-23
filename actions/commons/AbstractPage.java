@@ -368,8 +368,9 @@ public class AbstractPage extends AbstractPageUI {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		return (String) js.executeScript(javaSript);
 	}
-
-	public Object clickToElementByJS(WebDriver driver, WebElement element) {
+	
+	public Object clickToElementByJS(WebDriver driver, String locator) {
+		element = driver.findElement(By.xpath(locator));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		return js.executeScript("arguments[0].click();", element);
 	}

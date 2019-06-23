@@ -9,7 +9,10 @@ import org.joda.time.DateTimeZone;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 
@@ -22,34 +25,84 @@ public class AbstractTest {
 	protected AbstractTest() {
 		log = LogFactory.getLog(getClass());
 	}
-
+	
 	protected WebDriver openMultiBrowser(String browserName) {
 		if (browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
-			// WebDriverManager.chromedriver().version("2.46").setup();
-			// System.setProperty("webdriver.chrome.driver", ".\\lib\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
-
+		
 		else if (browserName.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
-			// System.setProperty("webdriver.gecko.driver", ".\\lib\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
-
+		
 		else if (browserName.equalsIgnoreCase("chromeheadless")) {
-			WebDriverManager.iedriver().setup();
-			// System.setProperty("webdriver.chrome.driver", ".\\lib\\chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("headless");
 			options.addArguments("window-size=1366x768");
 			driver = new ChromeDriver(options);
+		}
+		
+		System.out.println("Run on browser = " + browserName);
+		System.out.println(driver.toString());
+		driver.manage().timeouts().implicitlyWait(Constants.LONG_TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		
+		return driver;
+	}
+
+	//add driver version 
+	protected WebDriver openMultiBrowser(String browserName, String driverVersion) {
+		if (browserName.equalsIgnoreCase("chrome")) {
+			WebDriverManager.chromedriver().version(driverVersion).setup();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("disable-infobars");
+			driver = new ChromeDriver(options);
+		}
+
+		else if (browserName.equalsIgnoreCase("firefox")) {
+			WebDriverManager.firefoxdriver().version(driverVersion).setup();
+			driver = new FirefoxDriver();
+		}
+		
+		else if (browserName.equalsIgnoreCase("chromeheadless")) {
+			WebDriverManager.chromedriver().version(driverVersion).setup();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("headless");
+			options.addArguments("window-size=1366x768");
+			driver = new ChromeDriver(options);
+		}
+		
+		else if (browserName.equalsIgnoreCase("firefoxheadless")) {
+			WebDriverManager.firefoxdriver().version(driverVersion).setup();
+			FirefoxOptions options = new FirefoxOptions();
+			options.setHeadless(true);
+			driver = new FirefoxDriver(options);
+		}
+		
+		else if (browserName.equalsIgnoreCase("ie")) {
+			WebDriverManager.iedriver().version(driverVersion).arch32().setup();
+			driver = new InternetExplorerDriver();
+		}
+
+		else if (browserName.equalsIgnoreCase("edge")) {
+			WebDriverManager.edgedriver().version(driverVersion).setup();
+			driver = new EdgeDriver();
 		}
 
 		System.out.println("Run on browser = " + browserName);
 		System.out.println(driver.toString());
 		driver.manage().timeouts().implicitlyWait(Constants.LONG_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
+		if(driver.toString().toLowerCase().contains("internet explorer")) {
+			try {
+				Thread.sleep(5000);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
 
 		return driver;
 	}
@@ -136,6 +189,7 @@ public class AbstractTest {
 
 			String cmd = "";
 			if (driver != null) {
+				driver.manage().deleteAllCookies();
 				driver.quit();
 			}
 			if (driver.toString().toLowerCase().contains("chrome")) {
