@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Bank Guru" parallel="false" thread-count="3">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="commons.ExtentReportListener" />
+	</listeners>
+
+	<test name="run on chrome">
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="2.46" />
+		<classes>
+			<class
+				name="com.liveguru.fe.LiveGuru_FE" />
+		</classes>
+	</test>
+
+</suite> 

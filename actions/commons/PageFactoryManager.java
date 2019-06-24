@@ -11,9 +11,11 @@ import pageObjects.DepositPageObject;
 import pageObjects.EditAccountPageObject;
 import pageObjects.EditCustomerPageObject;
 import pageObjects.FundTransferPageObject;
+import pageObjects.HomeLiveGuruFEPageObject;
 import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
 import pageObjects.MiniStatementPageObject;
+import pageObjects.MyAccountLiveGuruFEPageObject;
 import pageObjects.NewAccountPageObject;
 import pageObjects.NewCustomerPageObject;
 import pageObjects.RegisterPageObject;
@@ -84,5 +86,18 @@ public class PageFactoryManager {
 	public static CustomisedStatementPageObject getCustomisedStatementPage(WebDriver driver) {
 		return new CustomisedStatementPageObject(driver);
 	}
-
+	
+	
+//------------------------------Page factory manager for live guru FE ------------------------------------------
+	
+	public static HomeLiveGuruFEPageObject getHomeLiveGuruPage(WebDriver driver) {
+		return new HomeLiveGuruFEPageObject(driver);
+	}
+	
+	public static MyAccountLiveGuruFEPageObject getMyAccountLiveGuruPage(WebDriver driver) {
+		return new MyAccountLiveGuruFEPageObject(driver);
+	}
+	
+	
+	
 }

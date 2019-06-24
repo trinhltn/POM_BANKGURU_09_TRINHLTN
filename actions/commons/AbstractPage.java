@@ -20,9 +20,11 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import bankguru.AbstractPageUI;
+import liveguru.AbstractPageUILiveGuru;
 import pageObjects.DepositPageObject;
 import pageObjects.FundTransferPageObject;
 import pageObjects.HomePageObject;
+import pageObjects.MyAccountLiveGuruFEPageObject;
 import pageObjects.NewAccountPageObject;
 import pageObjects.NewCustomerPageObject;
 
@@ -110,7 +112,7 @@ public class AbstractPage extends AbstractPageUI {
 		element.clear();
 		element.sendKeys(valueSendkey);
 	}
-	
+
 	public void selectItemInDropdown(WebDriver driver, String locator, String value) {
 		element = driver.findElement(By.xpath(locator));
 		Select select = new Select(element);
@@ -123,7 +125,7 @@ public class AbstractPage extends AbstractPageUI {
 		Select select = new Select(element);
 		select.selectByVisibleText(value);
 	}
-	
+
 	public String getSelectedItemInDropDown(WebDriver driver, String locator) {
 		element = driver.findElement(By.xpath(locator));
 		Select select = new Select(element);
@@ -163,7 +165,7 @@ public class AbstractPage extends AbstractPageUI {
 		}
 
 	}
-	
+
 	public String getAttributeValue(WebDriver driver, String locator, String attributeName) {
 		element = driver.findElement(By.xpath(locator));
 		return element.getAttribute(attributeName);
@@ -368,7 +370,7 @@ public class AbstractPage extends AbstractPageUI {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		return (String) js.executeScript(javaSript);
 	}
-	
+
 	public Object clickToElementByJS(WebDriver driver, String locator) {
 		element = driver.findElement(By.xpath(locator));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -542,6 +544,15 @@ public class AbstractPage extends AbstractPageUI {
 
 	}
 
+	// --------------open page of live guru fe---------------
+	public MyAccountLiveGuruFEPageObject openMyAccountLiveGuruFEPage(WebDriver driver) {
+		waitForElementVisible(driver, AbstractPageUI.NEW_CUSTOMER_LINK);
+		clickToElement(driver, AbstractPageUI.NEW_CUSTOMER_LINK);
+		return PageFactoryManager.getMyAccountLiveGuruPage(driver);
+	}
+
+	//-------------end live guru-----------------
+
 	public void waitToElementInVisible(WebDriver driver, String locator) {
 		Date date = new Date();
 		By byLocator = By.xpath(locator);
@@ -598,22 +609,22 @@ public class AbstractPage extends AbstractPageUI {
 		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_ERROR_MESSAGE, fieldName);
 		return getTextElement(driver, AbstractPageUI.DYNAMIC_ERROR_MESSAGE, fieldName);
 	}
-	
+
 	public String getDynamicValueInTable(WebDriver driver, String fieldName) {
 		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_VALUE_IN_TABLE, fieldName);
 		return getTextElement(driver, AbstractPageUI.DYNAMIC_VALUE_IN_TABLE, fieldName);
 	}
-	
+
 	public void selectValueInDynamicDropdown(WebDriver driver, String dropdownID, String valueItem) {
 		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_DROPDOWN_LIST, dropdownID);
 		selectItemInDropdown(driver, AbstractPageUI.DYNAMIC_DROPDOWN_LIST, valueItem, dropdownID);
 	}
-	
+
 	public String getFirstItemValueInDynamicDropdown(WebDriver driver, String dropdownID) {
 		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_DROPDOWN_LIST, dropdownID);
 		return getSelectedItemInDropDown(driver, AbstractPageUI.DYNAMIC_DROPDOWN_LIST, dropdownID);
 	}
-	
+
 	public String getDynamicTextValueInTextbox(WebDriver driver, String fieldName) {
 		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_TEXTAREA_TEXTBOX_BUTTON_CHECKBOX, fieldName);
 		return getAttributeValue(driver, AbstractPageUI.DYNAMIC_TEXTAREA_TEXTBOX_BUTTON_CHECKBOX, "value", fieldName);
@@ -628,4 +639,47 @@ public class AbstractPage extends AbstractPageUI {
 		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_PAGE_TITLE, pageTitle);
 		return elementIsDisplayed(driver, AbstractPageUI.DYNAMIC_PAGE_TITLE, pageTitle);
 	}
+
+//	------------------------------FE LIVE GURU----------------------
+
+	public void clickToAccountTab(WebDriver driver) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.ACCOUNT_TAB);
+		clickToElement(driver, AbstractPageUILiveGuru.ACCOUNT_TAB);
+	}
+
+	public void clickToRegisterLink(WebDriver driver) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.REGISTER_LINK);
+		clickToElement(driver, AbstractPageUILiveGuru.REGISTER_LINK);
+	}
+
+	public void clickToMyAccountLink(WebDriver driver) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.MY_ACCOUNT_LINK);
+		clickToElement(driver, AbstractPageUILiveGuru.MY_ACCOUNT_LINK);
+	}
+
+	public boolean isCreateAccountPageDisplayed(WebDriver driver) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.PAGE_CREATE_ACCOUNT);
+		return elementIsDisplayed(driver, AbstractPageUILiveGuru.PAGE_CREATE_ACCOUNT);
+	}
+	
+	public boolean isMsgRegisterSuccessfullyDisplayed(WebDriver driver) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.MSG_REGISTER_SUCCESSFULLY);
+		return elementIsDisplayed(driver, AbstractPageUILiveGuru.MSG_REGISTER_SUCCESSFULLY);
+	}
+
+	public boolean isTitleOfMyAccountPageDisplayed(WebDriver driver) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.TITLE_OF_MY_ACCOUNT_PAGE);
+		return elementIsDisplayed(driver, AbstractPageUILiveGuru.TITLE_OF_MY_ACCOUNT_PAGE);
+	}
+
+	public void sendKeyToElementsCreateAcc(WebDriver driver, String fieldName, String value) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_TEXTBOX, fieldName);
+		sendkeyToElement(driver, AbstractPageUILiveGuru.DYNAMIC_TEXTBOX, value, fieldName);
+	}
+
+	public void clickToRegisterBtn(WebDriver driver) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.REGISTER_BUTTON);
+		clickToElement(driver, AbstractPageUILiveGuru.REGISTER_BUTTON);
+	}
+
 }
