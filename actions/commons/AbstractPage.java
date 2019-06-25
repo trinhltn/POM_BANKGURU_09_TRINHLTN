@@ -24,7 +24,6 @@ import liveguru.AbstractPageUILiveGuru;
 import pageObjects.DepositPageObject;
 import pageObjects.FundTransferPageObject;
 import pageObjects.HomePageObject;
-import pageObjects.MyAccountLiveGuruFEPageObject;
 import pageObjects.NewAccountPageObject;
 import pageObjects.NewCustomerPageObject;
 
@@ -501,7 +500,7 @@ public class AbstractPage extends AbstractPageUI {
 	public AbstractPage openMultiPage(WebDriver driver, String pageName) {
 		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_LINK, pageName);
 		clickToElement(driver, AbstractPageUI.DYNAMIC_LINK, pageName);
-
+		
 		switch (pageName) {
 		case "Manager":
 			return PageFactoryManager.getHomePage(driver);
@@ -531,9 +530,27 @@ public class AbstractPage extends AbstractPageUI {
 			return PageFactoryManager.getMiniStatementPage(driver);
 		case "Customised Statement":
 			return PageFactoryManager.getCustomisedStatementPage(driver);
-
+			
 		default:
 			return PageFactoryManager.getHomePage(driver);
+		}
+	}
+	
+	//open multi page live guru fe
+	public AbstractPage openMultiPageLiveFE(WebDriver driver, String pageName) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_LINK_PAGE, pageName);
+		clickToElement(driver, AbstractPageUILiveGuru.DYNAMIC_LINK_PAGE, pageName);
+
+		switch (pageName) {
+		case "My Account":
+			return PageFactoryManager.getMyAccountLiveGuruPage(driver);
+		case "Account Information":
+			return PageFactoryManager.getAccountInformationLiveGuruPage(driver);
+		case "Mobile":
+			return PageFactoryManager.getMobileLiveGuruPage(driver);
+
+		default:
+			return PageFactoryManager.getHomeLiveGuruPage(driver);
 		}
 
 	}
@@ -543,15 +560,6 @@ public class AbstractPage extends AbstractPageUI {
 		clickToElement(driver, AbstractPageUI.DYNAMIC_LINK, pageName);
 
 	}
-
-	// --------------open page of live guru fe---------------
-	public MyAccountLiveGuruFEPageObject openMyAccountLiveGuruFEPage(WebDriver driver) {
-		waitForElementVisible(driver, AbstractPageUI.NEW_CUSTOMER_LINK);
-		clickToElement(driver, AbstractPageUI.NEW_CUSTOMER_LINK);
-		return PageFactoryManager.getMyAccountLiveGuruPage(driver);
-	}
-
-	//-------------end live guru-----------------
 
 	public void waitToElementInVisible(WebDriver driver, String locator) {
 		Date date = new Date();
@@ -642,7 +650,7 @@ public class AbstractPage extends AbstractPageUI {
 
 //	------------------------------FE LIVE GURU----------------------
 
-	public void clickToAccountTab(WebDriver driver) {
+	public void clickToACCOUNTTab(WebDriver driver) {
 		waitForElementVisible(driver, AbstractPageUILiveGuru.ACCOUNT_TAB);
 		clickToElement(driver, AbstractPageUILiveGuru.ACCOUNT_TAB);
 	}
@@ -650,11 +658,6 @@ public class AbstractPage extends AbstractPageUI {
 	public void clickToRegisterLink(WebDriver driver) {
 		waitForElementVisible(driver, AbstractPageUILiveGuru.REGISTER_LINK);
 		clickToElement(driver, AbstractPageUILiveGuru.REGISTER_LINK);
-	}
-
-	public void clickToMyAccountLink(WebDriver driver) {
-		waitForElementVisible(driver, AbstractPageUILiveGuru.MY_ACCOUNT_LINK);
-		clickToElement(driver, AbstractPageUILiveGuru.MY_ACCOUNT_LINK);
 	}
 
 	public boolean isCreateAccountPageDisplayed(WebDriver driver) {
@@ -666,10 +669,15 @@ public class AbstractPage extends AbstractPageUI {
 		waitForElementVisible(driver, AbstractPageUILiveGuru.MSG_REGISTER_SUCCESSFULLY);
 		return elementIsDisplayed(driver, AbstractPageUILiveGuru.MSG_REGISTER_SUCCESSFULLY);
 	}
-
+	
 	public boolean isTitleOfMyAccountPageDisplayed(WebDriver driver) {
 		waitForElementVisible(driver, AbstractPageUILiveGuru.TITLE_OF_MY_ACCOUNT_PAGE);
 		return elementIsDisplayed(driver, AbstractPageUILiveGuru.TITLE_OF_MY_ACCOUNT_PAGE);
+	}
+
+	public boolean isTitleOfPage(WebDriver driver, String titlePage) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.TITLE_H2_PAGE, titlePage);
+		return elementIsDisplayed(driver, AbstractPageUILiveGuru.TITLE_H2_PAGE, titlePage);
 	}
 
 	public void sendKeyToElementsCreateAcc(WebDriver driver, String fieldName, String value) {
@@ -680,6 +688,21 @@ public class AbstractPage extends AbstractPageUI {
 	public void clickToRegisterBtn(WebDriver driver) {
 		waitForElementVisible(driver, AbstractPageUILiveGuru.REGISTER_BUTTON);
 		clickToElement(driver, AbstractPageUILiveGuru.REGISTER_BUTTON);
+	}
+
+	public String getDynamicValueOnAttribute(WebDriver driver, String fieldName) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_TEXTBOX, fieldName);
+		return getAttributeValue(driver, AbstractPageUILiveGuru.DYNAMIC_TEXTBOX, "value", fieldName);
+	}
+	
+	public String getDynamicPriceOfMobile(WebDriver driver, String mobileName) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_PRICE_OF_MOBILE, mobileName);
+		return getTextElement(driver, AbstractPageUILiveGuru.DYNAMIC_PRICE_OF_MOBILE, mobileName);
+	}
+	
+	public void clickToImgOfMobile(WebDriver driver, String mobileName) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_IMG_OF_MOBILE, mobileName);
+		clickToElement(driver, AbstractPageUILiveGuru.DYNAMIC_IMG_OF_MOBILE, mobileName);
 	}
 
 }

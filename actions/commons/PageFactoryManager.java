@@ -2,6 +2,7 @@ package commons;
 
 import org.openqa.selenium.WebDriver;
 
+import pageObjects.AccountInformationLiveGuruFEPageObject;
 import pageObjects.BalanceEnquiryPageObject;
 import pageObjects.ChangePasswordPageObject;
 import pageObjects.CustomisedStatementPageObject;
@@ -15,6 +16,7 @@ import pageObjects.HomeLiveGuruFEPageObject;
 import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
 import pageObjects.MiniStatementPageObject;
+import pageObjects.MobileLiveGuruFEPageObject;
 import pageObjects.MyAccountLiveGuruFEPageObject;
 import pageObjects.NewAccountPageObject;
 import pageObjects.NewCustomerPageObject;
@@ -98,6 +100,12 @@ public class PageFactoryManager {
 		return new MyAccountLiveGuruFEPageObject(driver);
 	}
 	
+	public static AccountInformationLiveGuruFEPageObject getAccountInformationLiveGuruPage(WebDriver driver) {
+		return new AccountInformationLiveGuruFEPageObject(driver);
+	}
 	
+	public static MobileLiveGuruFEPageObject getMobileLiveGuruPage(WebDriver driver) {
+		return new MobileLiveGuruFEPageObject(driver);
+	}
 	
 }

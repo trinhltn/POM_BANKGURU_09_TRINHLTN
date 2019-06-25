@@ -1,12 +1,31 @@
-2019-06-24 22:59:41,111 INFO  com.liveguru.fe.LiveGuru_FE - Register 01 - Step 01: Click to ACCOUNT menu
-2019-06-24 22:59:42,351 INFO  com.liveguru.fe.LiveGuru_FE - Register 01 - Step 02: Choose Register link
-2019-06-24 22:59:44,308 INFO  com.liveguru.fe.LiveGuru_FE - Register 01 - Step 03: Verify move to create account page
-2019-06-24 22:59:44,394 INFO  com.liveguru.fe.LiveGuru_FE - ===PASSED==
-2019-06-24 22:59:44,396 INFO  com.liveguru.fe.LiveGuru_FE - Register 01 - Step 04: Input valid data into all fields
-2019-06-24 22:59:50,386 INFO  com.liveguru.fe.LiveGuru_FE - Register 01 - Step 05: Click to register btn
-2019-06-24 22:59:53,122 INFO  com.liveguru.fe.LiveGuru_FE - Register 01 - Step 07: Verify display msg Thank you for registering with Main Website Store.
-2019-06-24 22:59:53,187 INFO  com.liveguru.fe.LiveGuru_FE - ===PASSED==
-2019-06-24 22:59:53,187 INFO  com.liveguru.fe.LiveGuru_FE - Verify 02 - Step 01: Open LiveGuru99 site 
-2019-06-24 22:59:53,727 INFO  com.liveguru.fe.LiveGuru_FE - Verify 02 - Step 02: Open 'MY ACCOUNT' page
-2019-06-24 23:00:24,193 INFO  com.liveguru.fe.LiveGuru_FE - OS name = windows 10
-2019-06-24 23:00:25,101 INFO  com.liveguru.fe.LiveGuru_FE - -------QUIT BROWSER SUCCESS-------
+2019-06-25 22:54:57,969 INFO  com.liveguru.fe.LiveGuru_FE - Register 01 - Step 01: Click to ACCOUNT menu
+2019-06-25 22:54:59,254 INFO  com.liveguru.fe.LiveGuru_FE - Register 01 - Step 02: Choose Register link
+2019-06-25 22:55:01,262 INFO  com.liveguru.fe.LiveGuru_FE - Register 01 - Step 03: Verify move to create account page
+2019-06-25 22:55:01,400 INFO  com.liveguru.fe.LiveGuru_FE - ===PASSED==
+2019-06-25 22:55:01,400 INFO  com.liveguru.fe.LiveGuru_FE - Register 01 - Step 04: Input valid data into all fields
+2019-06-25 22:55:07,962 INFO  com.liveguru.fe.LiveGuru_FE - Register 01 - Step 05: Click to register btn
+2019-06-25 22:55:10,929 INFO  com.liveguru.fe.LiveGuru_FE - Register 01 - Step 07: Verify display msg Thank you for registering with Main Website Store.
+2019-06-25 22:55:10,997 INFO  com.liveguru.fe.LiveGuru_FE - ===PASSED==
+2019-06-25 22:55:10,997 INFO  com.liveguru.fe.LiveGuru_FE - Verify 02 - Step 01: Open LiveGuru99 site 
+2019-06-25 22:55:11,582 INFO  com.liveguru.fe.LiveGuru_FE - Verify 02 - Step 02: click to 'ACCOUNT' tab
+2019-06-25 22:55:12,738 INFO  com.liveguru.fe.LiveGuru_FE - Verify 02 - Step 03: Open 'MY ACCOUNT' page
+2019-06-25 22:55:14,422 INFO  com.liveguru.fe.LiveGuru_FE - Verify 02 - Step 04: Verify display MY DASHBOARD
+2019-06-25 22:55:14,497 INFO  com.liveguru.fe.LiveGuru_FE - ===PASSED==
+2019-06-25 22:55:14,497 INFO  com.liveguru.fe.LiveGuru_FE - Verify 02 - Step 05: Open 'ACCOUNT INFORMATION' page
+2019-06-25 22:55:16,199 INFO  com.liveguru.fe.LiveGuru_FE - Verify 02 - Step 06: Verify 'ACCOUNT INFORMATION' displayed
+2019-06-25 22:55:16,316 INFO  com.liveguru.fe.LiveGuru_FE - ===PASSED==
+2019-06-25 22:55:16,316 INFO  com.liveguru.fe.LiveGuru_FE - Verify 02 - Step 07: Verify data in 3 fields are correctly
+2019-06-25 22:55:16,403 INFO  com.liveguru.fe.LiveGuru_FE - Actual = Trinh
+2019-06-25 22:55:16,403 INFO  com.liveguru.fe.LiveGuru_FE - Expected = Trinh
+2019-06-25 22:55:16,404 INFO  com.liveguru.fe.LiveGuru_FE - Compare value = true
+2019-06-25 22:55:16,404 INFO  com.liveguru.fe.LiveGuru_FE - ===PASSED===
+2019-06-25 22:55:16,488 INFO  com.liveguru.fe.LiveGuru_FE - Actual = Le
+2019-06-25 22:55:16,488 INFO  com.liveguru.fe.LiveGuru_FE - Expected = Le
+2019-06-25 22:55:16,488 INFO  com.liveguru.fe.LiveGuru_FE - Compare value = true
+2019-06-25 22:55:16,488 INFO  com.liveguru.fe.LiveGuru_FE - ===PASSED===
+2019-06-25 22:55:16,554 INFO  com.liveguru.fe.LiveGuru_FE - Actual = trinh303732@gmail.com
+2019-06-25 22:55:16,554 INFO  com.liveguru.fe.LiveGuru_FE - Expected = trinh303732@gmail.com
+2019-06-25 22:55:16,554 INFO  com.liveguru.fe.LiveGuru_FE - Compare value = true
+2019-06-25 22:55:16,554 INFO  com.liveguru.fe.LiveGuru_FE - ===PASSED===
+2019-06-25 22:55:16,556 INFO  com.liveguru.fe.LiveGuru_FE - OS name = windows 10
+2019-06-25 22:55:17,440 INFO  com.liveguru.fe.LiveGuru_FE - -------QUIT BROWSER SUCCESS-------
