@@ -554,6 +554,36 @@ public class AbstractPage extends AbstractPageUI {
 		}
 
 	}
+	
+	//open page mobile detail
+	public AbstractPage openMultiPageMobileDetail(WebDriver driver, String mobileName) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_MOBILE_NAME, mobileName);
+		clickToElement(driver, AbstractPageUILiveGuru.DYNAMIC_MOBILE_NAME, mobileName);
+
+		switch (mobileName) {
+		case "Xperia":
+			return PageFactoryManager.getXperiaDetailPage(driver);
+
+		default:
+			return PageFactoryManager.getMyAccountLiveGuruPage(driver);
+		}
+
+	}
+	
+	//get page shopping cart when click to button ADD TO CART
+	public AbstractPage openMultiShoppingCart(WebDriver driver, String mobileName) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_ADD_TO_CART, mobileName);
+		clickToElement(driver, AbstractPageUILiveGuru.DYNAMIC_ADD_TO_CART, mobileName);
+
+		switch (mobileName) {
+		case "IPhone":
+			return PageFactoryManager.getShoppingCartPage(driver);
+
+		default:
+			return PageFactoryManager.getMyAccountLiveGuruPage(driver);
+		}
+
+	}
 
 	public void openMultiPages(WebDriver driver, String pageName) {
 		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_LINK, pageName);
@@ -680,14 +710,14 @@ public class AbstractPage extends AbstractPageUI {
 		return elementIsDisplayed(driver, AbstractPageUILiveGuru.TITLE_H2_PAGE, titlePage);
 	}
 
-	public void sendKeyToElementsCreateAcc(WebDriver driver, String fieldName, String value) {
+	public void sendKeyToElementsInTextBox(WebDriver driver, String fieldName, String value) {
 		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_TEXTBOX, fieldName);
 		sendkeyToElement(driver, AbstractPageUILiveGuru.DYNAMIC_TEXTBOX, value, fieldName);
 	}
 
-	public void clickToRegisterBtn(WebDriver driver) {
-		waitForElementVisible(driver, AbstractPageUILiveGuru.REGISTER_BUTTON);
-		clickToElement(driver, AbstractPageUILiveGuru.REGISTER_BUTTON);
+	public void clickToDynamicButton(WebDriver driver, String title) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_BUTTON, title);
+		clickToElement(driver, AbstractPageUILiveGuru.DYNAMIC_BUTTON, title);
 	}
 
 	public String getDynamicValueOnAttribute(WebDriver driver, String fieldName) {
@@ -703,6 +733,31 @@ public class AbstractPage extends AbstractPageUI {
 	public void clickToImgOfMobile(WebDriver driver, String mobileName) {
 		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_IMG_OF_MOBILE, mobileName);
 		clickToElement(driver, AbstractPageUILiveGuru.DYNAMIC_IMG_OF_MOBILE, mobileName);
+	}
+	
+	public String getPriceAtDetailPage(WebDriver driver) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.TEXT_PRICE_AT_DETAIL_PAGE);
+		return getTextElement(driver, AbstractPageUILiveGuru.TEXT_PRICE_AT_DETAIL_PAGE);
+	}
+	
+	public String getPriceDiscount(WebDriver driver) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.TEXT_PRICE_DISCOUNT);
+		return getTextElement(driver, AbstractPageUILiveGuru.TEXT_PRICE_DISCOUNT);
+	}
+	
+	public void clickAddToCart(WebDriver driver, String mobileName) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_ADD_TO_CART, mobileName);
+		clickToElement(driver, AbstractPageUILiveGuru.DYNAMIC_ADD_TO_CART, mobileName);
+	}
+	
+	public boolean isAddedToCartIPhoneSuccess(WebDriver driver) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.TEXT_ADDED_TO_CART_IPHONE);
+		return elementIsDisplayed(driver, AbstractPageUILiveGuru.TEXT_ADDED_TO_CART_IPHONE);
+	}
+	
+	public boolean isAppliedDiscountMsgSuccess(WebDriver driver) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.TEXT_APPLIED_DISCOUNT);
+		return elementIsDisplayed(driver, AbstractPageUILiveGuru.TEXT_APPLIED_DISCOUNT);
 	}
 
 }

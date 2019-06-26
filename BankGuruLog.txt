@@ -1,31 +1,54 @@
-2019-06-25 22:54:57,969 INFO  com.liveguru.fe.LiveGuru_FE - Register 01 - Step 01: Click to ACCOUNT menu
-2019-06-25 22:54:59,254 INFO  com.liveguru.fe.LiveGuru_FE - Register 01 - Step 02: Choose Register link
-2019-06-25 22:55:01,262 INFO  com.liveguru.fe.LiveGuru_FE - Register 01 - Step 03: Verify move to create account page
-2019-06-25 22:55:01,400 INFO  com.liveguru.fe.LiveGuru_FE - ===PASSED==
-2019-06-25 22:55:01,400 INFO  com.liveguru.fe.LiveGuru_FE - Register 01 - Step 04: Input valid data into all fields
-2019-06-25 22:55:07,962 INFO  com.liveguru.fe.LiveGuru_FE - Register 01 - Step 05: Click to register btn
-2019-06-25 22:55:10,929 INFO  com.liveguru.fe.LiveGuru_FE - Register 01 - Step 07: Verify display msg Thank you for registering with Main Website Store.
-2019-06-25 22:55:10,997 INFO  com.liveguru.fe.LiveGuru_FE - ===PASSED==
-2019-06-25 22:55:10,997 INFO  com.liveguru.fe.LiveGuru_FE - Verify 02 - Step 01: Open LiveGuru99 site 
-2019-06-25 22:55:11,582 INFO  com.liveguru.fe.LiveGuru_FE - Verify 02 - Step 02: click to 'ACCOUNT' tab
-2019-06-25 22:55:12,738 INFO  com.liveguru.fe.LiveGuru_FE - Verify 02 - Step 03: Open 'MY ACCOUNT' page
-2019-06-25 22:55:14,422 INFO  com.liveguru.fe.LiveGuru_FE - Verify 02 - Step 04: Verify display MY DASHBOARD
-2019-06-25 22:55:14,497 INFO  com.liveguru.fe.LiveGuru_FE - ===PASSED==
-2019-06-25 22:55:14,497 INFO  com.liveguru.fe.LiveGuru_FE - Verify 02 - Step 05: Open 'ACCOUNT INFORMATION' page
-2019-06-25 22:55:16,199 INFO  com.liveguru.fe.LiveGuru_FE - Verify 02 - Step 06: Verify 'ACCOUNT INFORMATION' displayed
-2019-06-25 22:55:16,316 INFO  com.liveguru.fe.LiveGuru_FE - ===PASSED==
-2019-06-25 22:55:16,316 INFO  com.liveguru.fe.LiveGuru_FE - Verify 02 - Step 07: Verify data in 3 fields are correctly
-2019-06-25 22:55:16,403 INFO  com.liveguru.fe.LiveGuru_FE - Actual = Trinh
-2019-06-25 22:55:16,403 INFO  com.liveguru.fe.LiveGuru_FE - Expected = Trinh
-2019-06-25 22:55:16,404 INFO  com.liveguru.fe.LiveGuru_FE - Compare value = true
-2019-06-25 22:55:16,404 INFO  com.liveguru.fe.LiveGuru_FE - ===PASSED===
-2019-06-25 22:55:16,488 INFO  com.liveguru.fe.LiveGuru_FE - Actual = Le
-2019-06-25 22:55:16,488 INFO  com.liveguru.fe.LiveGuru_FE - Expected = Le
-2019-06-25 22:55:16,488 INFO  com.liveguru.fe.LiveGuru_FE - Compare value = true
-2019-06-25 22:55:16,488 INFO  com.liveguru.fe.LiveGuru_FE - ===PASSED===
-2019-06-25 22:55:16,554 INFO  com.liveguru.fe.LiveGuru_FE - Actual = trinh303732@gmail.com
-2019-06-25 22:55:16,554 INFO  com.liveguru.fe.LiveGuru_FE - Expected = trinh303732@gmail.com
-2019-06-25 22:55:16,554 INFO  com.liveguru.fe.LiveGuru_FE - Compare value = true
-2019-06-25 22:55:16,554 INFO  com.liveguru.fe.LiveGuru_FE - ===PASSED===
-2019-06-25 22:55:16,556 INFO  com.liveguru.fe.LiveGuru_FE - OS name = windows 10
-2019-06-25 22:55:17,440 INFO  com.liveguru.fe.LiveGuru_FE - -------QUIT BROWSER SUCCESS-------
+2019-06-26 23:56:51,039 INFO  com.liveguru.fe.LiveGuru_FE - Register 01 - Step 01: Click to ACCOUNT menu
+2019-06-26 23:56:52,265 INFO  com.liveguru.fe.LiveGuru_FE - Register 01 - Step 02: Choose Register link
+2019-06-26 23:56:54,244 INFO  com.liveguru.fe.LiveGuru_FE - Register 01 - Step 03: Verify move to create account page
+2019-06-26 23:56:54,343 INFO  com.liveguru.fe.LiveGuru_FE - ===PASSED==
+2019-06-26 23:56:54,345 INFO  com.liveguru.fe.LiveGuru_FE - Register 01 - Step 04: Input valid data into all fields
+2019-06-26 23:57:00,328 INFO  com.liveguru.fe.LiveGuru_FE - Register 01 - Step 05: Click to register btn
+2019-06-26 23:57:03,404 INFO  com.liveguru.fe.LiveGuru_FE - Register 01 - Step 07: Verify display msg Thank you for registering with Main Website Store.
+2019-06-26 23:57:03,492 INFO  com.liveguru.fe.LiveGuru_FE - ===PASSED==
+2019-06-26 23:57:03,495 INFO  com.liveguru.fe.LiveGuru_FE - Verify 02 - Step 01: Open LiveGuru99 site 
+2019-06-26 23:57:04,252 INFO  com.liveguru.fe.LiveGuru_FE - Verify 02 - Step 02: click to 'ACCOUNT' tab
+2019-06-26 23:57:05,401 INFO  com.liveguru.fe.LiveGuru_FE - Verify 02 - Step 03: Open 'MY ACCOUNT' page
+2019-06-26 23:57:07,252 INFO  com.liveguru.fe.LiveGuru_FE - Verify 02 - Step 04: Verify display MY DASHBOARD
+2019-06-26 23:57:07,333 INFO  com.liveguru.fe.LiveGuru_FE - ===PASSED==
+2019-06-26 23:57:07,333 INFO  com.liveguru.fe.LiveGuru_FE - Verify 02 - Step 05: Open 'ACCOUNT INFORMATION' page
+2019-06-26 23:57:08,968 INFO  com.liveguru.fe.LiveGuru_FE - Verify 02 - Step 06: Verify 'ACCOUNT INFORMATION' displayed
+2019-06-26 23:57:09,079 INFO  com.liveguru.fe.LiveGuru_FE - ===PASSED==
+2019-06-26 23:57:09,079 INFO  com.liveguru.fe.LiveGuru_FE - Verify 02 - Step 07: Verify data in 3 fields are correctly
+2019-06-26 23:57:09,147 INFO  com.liveguru.fe.LiveGuru_FE - Actual = Trinh
+2019-06-26 23:57:09,147 INFO  com.liveguru.fe.LiveGuru_FE - Expected = Trinh
+2019-06-26 23:57:09,147 INFO  com.liveguru.fe.LiveGuru_FE - Compare value = true
+2019-06-26 23:57:09,148 INFO  com.liveguru.fe.LiveGuru_FE - ===PASSED===
+2019-06-26 23:57:09,236 INFO  com.liveguru.fe.LiveGuru_FE - Actual = Le
+2019-06-26 23:57:09,236 INFO  com.liveguru.fe.LiveGuru_FE - Expected = Le
+2019-06-26 23:57:09,237 INFO  com.liveguru.fe.LiveGuru_FE - Compare value = true
+2019-06-26 23:57:09,237 INFO  com.liveguru.fe.LiveGuru_FE - ===PASSED===
+2019-06-26 23:57:09,322 INFO  com.liveguru.fe.LiveGuru_FE - Actual = trinh97527@gmail.com
+2019-06-26 23:57:09,322 INFO  com.liveguru.fe.LiveGuru_FE - Expected = trinh97527@gmail.com
+2019-06-26 23:57:09,322 INFO  com.liveguru.fe.LiveGuru_FE - Compare value = true
+2019-06-26 23:57:09,322 INFO  com.liveguru.fe.LiveGuru_FE - ===PASSED===
+2019-06-26 23:57:09,325 INFO  com.liveguru.fe.LiveGuru_FE - Verify 03 - Step 01: Click on Mobile menu
+2019-06-26 23:57:12,309 INFO  com.liveguru.fe.LiveGuru_FE - Verify 03 - Step 02: In the list mobile, get cost of Sony Xperia mobile
+2019-06-26 23:57:12,400 INFO  com.liveguru.fe.LiveGuru_FE - Verify 03 - Step 03: Click on Sony Xperia img
+2019-06-26 23:57:16,436 INFO  com.liveguru.fe.LiveGuru_FE - Verify 03 - Step 04: Open Sony Xperia detail
+2019-06-26 23:57:17,571 INFO  com.liveguru.fe.LiveGuru_FE - Verify 03 - Step 05: Get cost Sony Xperia from detail Page
+2019-06-26 23:57:17,688 INFO  com.liveguru.fe.LiveGuru_FE - Verify 03 - Step 06: Compare price at step 02 and step 05
+2019-06-26 23:57:17,688 INFO  com.liveguru.fe.LiveGuru_FE - Actual = $100.00
+2019-06-26 23:57:17,688 INFO  com.liveguru.fe.LiveGuru_FE - Expected = $100.00
+2019-06-26 23:57:17,688 INFO  com.liveguru.fe.LiveGuru_FE - Compare value = true
+2019-06-26 23:57:17,688 INFO  com.liveguru.fe.LiveGuru_FE - ===PASSED===
+2019-06-26 23:57:17,688 INFO  com.liveguru.fe.LiveGuru_FE - Actual = $100.00
+2019-06-26 23:57:17,688 INFO  com.liveguru.fe.LiveGuru_FE - Expected = $100.00
+2019-06-26 23:57:17,688 INFO  com.liveguru.fe.LiveGuru_FE - Compare value = true
+2019-06-26 23:57:17,688 INFO  com.liveguru.fe.LiveGuru_FE - ===PASSED===
+2019-06-26 23:57:17,691 INFO  com.liveguru.fe.LiveGuru_FE - Verify 04 - Step 01: Click on 'Mobile' menu
+2019-06-26 23:57:19,447 INFO  com.liveguru.fe.LiveGuru_FE - Verify 04 - Step 02: Click ADD TO CART and Verify 'IPhone was added to your shopping cart.' display
+2019-06-26 23:57:22,482 INFO  com.liveguru.fe.LiveGuru_FE - Verify 04 - Step 03: Enter Coupon code and click button Apply
+2019-06-26 23:57:26,297 INFO  com.liveguru.fe.LiveGuru_FE - Verify 04 - Step 04: Verify the discount generated
+2019-06-26 23:57:26,355 INFO  com.liveguru.fe.LiveGuru_FE - ===PASSED==
+2019-06-26 23:57:26,417 INFO  com.liveguru.fe.LiveGuru_FE - Actual = -$25.00
+2019-06-26 23:57:26,417 INFO  com.liveguru.fe.LiveGuru_FE - Expected = -$25.00
+2019-06-26 23:57:26,417 INFO  com.liveguru.fe.LiveGuru_FE - Compare value = true
+2019-06-26 23:57:26,417 INFO  com.liveguru.fe.LiveGuru_FE - ===PASSED===
+2019-06-26 23:57:26,418 INFO  com.liveguru.fe.LiveGuru_FE - OS name = windows 10
+2019-06-26 23:57:27,293 INFO  com.liveguru.fe.LiveGuru_FE - -------QUIT BROWSER SUCCESS-------

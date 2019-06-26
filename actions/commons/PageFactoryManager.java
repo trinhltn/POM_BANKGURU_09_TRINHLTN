@@ -21,7 +21,9 @@ import pageObjects.MyAccountLiveGuruFEPageObject;
 import pageObjects.NewAccountPageObject;
 import pageObjects.NewCustomerPageObject;
 import pageObjects.RegisterPageObject;
+import pageObjects.ShoppingCartFEPageObject;
 import pageObjects.WithdrawalPageObject;
+import pageObjects.XperiaDetailFEPageObject;
 
 public class PageFactoryManager {
 	
@@ -106,6 +108,14 @@ public class PageFactoryManager {
 	
 	public static MobileLiveGuruFEPageObject getMobileLiveGuruPage(WebDriver driver) {
 		return new MobileLiveGuruFEPageObject(driver);
+	}
+	
+	public static XperiaDetailFEPageObject getXperiaDetailPage(WebDriver driver) {
+		return new XperiaDetailFEPageObject(driver);
+	}
+	
+	public static ShoppingCartFEPageObject getShoppingCartPage(WebDriver driver) {
+		return new ShoppingCartFEPageObject(driver);
 	}
 	
 }

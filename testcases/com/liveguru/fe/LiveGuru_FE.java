@@ -15,6 +15,8 @@ import pageObjects.AccountInformationLiveGuruFEPageObject;
 import pageObjects.HomeLiveGuruFEPageObject;
 import pageObjects.MobileLiveGuruFEPageObject;
 import pageObjects.MyAccountLiveGuruFEPageObject;
+import pageObjects.ShoppingCartFEPageObject;
+import pageObjects.XperiaDetailFEPageObject;
 
 public class LiveGuru_FE extends AbstractTest {
 	private WebDriver driver;
@@ -22,8 +24,13 @@ public class LiveGuru_FE extends AbstractTest {
 	MyAccountLiveGuruFEPageObject myAccountLiveGuruFEPage;
 	AccountInformationLiveGuruFEPageObject accountInformationFEPage;
 	MobileLiveGuruFEPageObject mobileLiveGuruFEPage;
+	XperiaDetailFEPageObject xperiaDetailPage;
+	ShoppingCartFEPageObject shoppingCartFEPage;
 	String firstName, lastName, email, password;
-	String priceOfSonyXperia;
+	String priceOfSonyXperia, priceOfSonyXperiaDetail;
+	String priceSony = "$100.00";
+	String couponCode = "GURU50";
+	String discountIPhone = "-$25.00";
 
 	@Parameters({ "browser", "version" })
 	@BeforeClass
@@ -51,14 +58,14 @@ public class LiveGuru_FE extends AbstractTest {
 		verifyTrue(homeLiveGuruFEPage.isCreateAccountPageDisplayed(driver));
 		
 		log.info("Register 01 - Step 04: Input valid data into all fields");
-		homeLiveGuruFEPage.sendKeyToElementsCreateAcc(driver, "firstname", firstName);
-		homeLiveGuruFEPage.sendKeyToElementsCreateAcc(driver, "lastname", lastName);
-		homeLiveGuruFEPage.sendKeyToElementsCreateAcc(driver, "email_address", email);
-		homeLiveGuruFEPage.sendKeyToElementsCreateAcc(driver, "password", password);
-		homeLiveGuruFEPage.sendKeyToElementsCreateAcc(driver, "confirmation", password);
+		homeLiveGuruFEPage.sendKeyToElementsInTextBox(driver, "firstname", firstName);
+		homeLiveGuruFEPage.sendKeyToElementsInTextBox(driver, "lastname", lastName);
+		homeLiveGuruFEPage.sendKeyToElementsInTextBox(driver, "email_address", email);
+		homeLiveGuruFEPage.sendKeyToElementsInTextBox(driver, "password", password);
+		homeLiveGuruFEPage.sendKeyToElementsInTextBox(driver, "confirmation", password);
 		
 		log.info("Register 01 - Step 05: Click to register btn");
-		homeLiveGuruFEPage.clickToRegisterBtn(driver);
+		homeLiveGuruFEPage.clickToDynamicButton(driver, "Register");
 		
 		log.info("Register 01 - Step 07: Verify display msg Thank you for registering with Main Website Store.");
 		verifyTrue(homeLiveGuruFEPage.isMsgRegisterSuccessfullyDisplayed(driver));
@@ -100,14 +107,40 @@ public class LiveGuru_FE extends AbstractTest {
 		log.info("Verify 03 - Step 02: In the list mobile, get cost of Sony Xperia mobile");
 		priceOfSonyXperia = mobileLiveGuruFEPage.getDynamicPriceOfMobile(driver, "Sony Xperia");
 		
-		log.info("Verify 03 - Step 03: Click on Sony Xperia detail");
+		log.info("Verify 03 - Step 03: Click on Sony Xperia img");
 		mobileLiveGuruFEPage.clickToImgOfMobile(driver, "Sony Xperia");
 		
-		//chuyển sang page detail of sony----------------
+		log.info("Verify 03 - Step 04: Open Sony Xperia detail");
+		xperiaDetailPage = (XperiaDetailFEPageObject) mobileLiveGuruFEPage.openMultiPageMobileDetail(driver, "Xperia");
 		
+		log.info("Verify 03 - Step 05: Get cost Sony Xperia from detail Page");
+		priceOfSonyXperiaDetail = xperiaDetailPage.getPriceAtDetailPage(driver);
+		
+		log.info("Verify 03 - Step 06: Compare price at step 02 and step 05");
+		verifyEquals(priceOfSonyXperia, priceOfSonyXperiaDetail);
+		verifyEquals(priceOfSonyXperiaDetail, priceSony);
 		
 	}
 
+	@Test
+	public void TC_04_Verify_Discount_Coupon_works_correctly() {
+		log.info("Verify 04 - Step 01: Click on 'Mobile' menu");
+		mobileLiveGuruFEPage = (MobileLiveGuruFEPageObject) xperiaDetailPage.openMultiPageLiveFE(driver, "Mobile");
+		
+		log.info("Verify 04 - Step 02: Click ADD TO CART and Verify 'IPhone was added to your shopping cart.' display");
+		shoppingCartFEPage = (ShoppingCartFEPageObject) mobileLiveGuruFEPage.openMultiShoppingCart(driver, "IPhone");
+		shoppingCartFEPage.isAddedToCartIPhoneSuccess(driver);
+		
+		log.info("Verify 04 - Step 03: Enter Coupon code and click button Apply");
+		shoppingCartFEPage.sendKeyToElementsInTextBox(driver, "coupon_code", couponCode);
+		shoppingCartFEPage.clickToDynamicButton(driver, "Apply");
+		
+		log.info("Verify 04 - Step 04: Verify the discount generated");
+		verifyTrue(shoppingCartFEPage.isAppliedDiscountMsgSuccess(driver));
+		verifyEquals(shoppingCartFEPage.getPriceDiscount(driver), discountIPhone);
+		
+	}
+	
 	@AfterClass(alwaysRun = true)
 	public void afterClass() {
 		closeBrowserAndDriver(driver);
