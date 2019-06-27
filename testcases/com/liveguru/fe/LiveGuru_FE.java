@@ -154,7 +154,7 @@ public class LiveGuru_FE extends AbstractTest {
 		
 		log.info("Verify 05 - Step 03: Change QTY value to 501 and click UPDATE button");
 		shoppingCartFEPage.SetQtyEqual501(driver, quantity);
-		shoppingCartFEPage.clickToDynamicButton(driver, "Update");
+		shoppingCartFEPage.clickToUpdateButton(driver);
 		
 		log.info("Verify 05 - Step 04: Verify err msg");
 		verifyTrue(shoppingCartFEPage.isErrMsgBeyondQuantity(driver));

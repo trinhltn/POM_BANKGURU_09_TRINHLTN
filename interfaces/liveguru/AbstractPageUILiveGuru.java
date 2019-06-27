@@ -21,6 +21,7 @@ public class AbstractPageUILiveGuru {
 	public static final String TEXT_PRICE_DISCOUNT = "//td[contains(text(),'Discount (GURU50)')]/following-sibling::td//span";
 	public static final String DYNAMIC_ADD_TO_CART = "//a[text()='%s']/parent::h2/following-sibling::div[@class='actions']//button";
 	public static final String QTY_TEXTBOX = "//a[@title='Sony Xperia']/parent::td/following-sibling::td[@class='product-cart-actions']//input";
+	public static final String BUTTON_UPDATE = "//a[@title='Sony Xperia']/parent::td/following-sibling::td[@class='product-cart-actions']//button";
 	public static final String TEXT_NO_ITEMS_IN_CART = "//div[@class='cart-empty']//p[text()='You have no items in your shopping cart.']";
 	
 	public static final String TITLE_H2_PAGE = "//h2[@class='legend' and text()='%s']";

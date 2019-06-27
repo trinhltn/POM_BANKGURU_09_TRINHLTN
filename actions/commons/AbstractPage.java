@@ -737,10 +737,15 @@ public class AbstractPage extends AbstractPageUI {
 		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_TEXTBOX, fieldName);
 		sendkeyToElement(driver, AbstractPageUILiveGuru.DYNAMIC_TEXTBOX, value, fieldName);
 	}
-
+	
 	public void clickToDynamicButton(WebDriver driver, String title) {
-		waitForElementClickable(driver, AbstractPageUILiveGuru.DYNAMIC_BUTTON, title);
+		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_BUTTON, title);
 		clickToElement(driver, AbstractPageUILiveGuru.DYNAMIC_BUTTON, title);
+	}
+
+	public void clickToUpdateButton(WebDriver driver) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.BUTTON_UPDATE);
+		clickToElement(driver, AbstractPageUILiveGuru.BUTTON_UPDATE);
 	}
 
 	public String getDynamicValueOnAttribute(WebDriver driver, String fieldName) {
