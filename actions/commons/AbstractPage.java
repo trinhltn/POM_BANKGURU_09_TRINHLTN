@@ -449,9 +449,16 @@ public class AbstractPage extends AbstractPageUI {
 		byLocator = By.xpath(locator);
 		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(byLocator));
 	}
-
+	
 	public void waitForElementClickable(WebDriver driver, String locator) {
 		explicitWait = new WebDriverWait(driver, 30);
+		byLocator = By.xpath(locator);
+		explicitWait.until(ExpectedConditions.elementToBeClickable(byLocator));
+	}
+
+	public void waitForElementClickable(WebDriver driver, String locator, String... values) {
+		explicitWait = new WebDriverWait(driver, 30);
+		locator = String.format(locator, (Object[]) values);
 		byLocator = By.xpath(locator);
 		explicitWait.until(ExpectedConditions.elementToBeClickable(byLocator));
 	}
@@ -574,21 +581,37 @@ public class AbstractPage extends AbstractPageUI {
 	public AbstractPage openMultiShoppingCart(WebDriver driver, String mobileName) {
 		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_ADD_TO_CART, mobileName);
 		clickToElement(driver, AbstractPageUILiveGuru.DYNAMIC_ADD_TO_CART, mobileName);
-
+		
 		switch (mobileName) {
 		case "IPhone":
 			return PageFactoryManager.getShoppingCartPage(driver);
+		case "Sony Xperia":
+			return PageFactoryManager.getShoppingCartPage(driver);
+			
+		default:
+			return PageFactoryManager.getMyAccountLiveGuruPage(driver);
+		}
+		
+	}
+	
+	public AbstractPage openShoppingCartEmptyPage(WebDriver driver, String title) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_BUTTON, title);
+		clickToElement(driver, AbstractPageUILiveGuru.DYNAMIC_BUTTON, title);
+
+		switch (title) {
+		case "Empty Cart":
+			return PageFactoryManager.getShoppingCartEmptyPage(driver);
 
 		default:
 			return PageFactoryManager.getMyAccountLiveGuruPage(driver);
 		}
 
 	}
-
+	
 	public void openMultiPages(WebDriver driver, String pageName) {
 		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_LINK, pageName);
 		clickToElement(driver, AbstractPageUI.DYNAMIC_LINK, pageName);
-
+		
 	}
 
 	public void waitToElementInVisible(WebDriver driver, String locator) {
@@ -690,9 +713,9 @@ public class AbstractPage extends AbstractPageUI {
 		clickToElement(driver, AbstractPageUILiveGuru.REGISTER_LINK);
 	}
 
-	public boolean isCreateAccountPageDisplayed(WebDriver driver) {
-		waitForElementVisible(driver, AbstractPageUILiveGuru.PAGE_CREATE_ACCOUNT);
-		return elementIsDisplayed(driver, AbstractPageUILiveGuru.PAGE_CREATE_ACCOUNT);
+	public boolean isTextOfPageDisplayed(WebDriver driver, String textPage) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_TEXT_PAGE, textPage);
+		return elementIsDisplayed(driver, AbstractPageUILiveGuru.DYNAMIC_TEXT_PAGE, textPage);
 	}
 	
 	public boolean isMsgRegisterSuccessfullyDisplayed(WebDriver driver) {
@@ -716,7 +739,7 @@ public class AbstractPage extends AbstractPageUI {
 	}
 
 	public void clickToDynamicButton(WebDriver driver, String title) {
-		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_BUTTON, title);
+		waitForElementClickable(driver, AbstractPageUILiveGuru.DYNAMIC_BUTTON, title);
 		clickToElement(driver, AbstractPageUILiveGuru.DYNAMIC_BUTTON, title);
 	}
 
@@ -745,19 +768,35 @@ public class AbstractPage extends AbstractPageUI {
 		return getTextElement(driver, AbstractPageUILiveGuru.TEXT_PRICE_DISCOUNT);
 	}
 	
-	public void clickAddToCart(WebDriver driver, String mobileName) {
-		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_ADD_TO_CART, mobileName);
-		clickToElement(driver, AbstractPageUILiveGuru.DYNAMIC_ADD_TO_CART, mobileName);
-	}
-	
-	public boolean isAddedToCartIPhoneSuccess(WebDriver driver) {
-		waitForElementVisible(driver, AbstractPageUILiveGuru.TEXT_ADDED_TO_CART_IPHONE);
-		return elementIsDisplayed(driver, AbstractPageUILiveGuru.TEXT_ADDED_TO_CART_IPHONE);
+	public boolean isDynamicAddedToCartMobileSuccess(WebDriver driver, String mobileName) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_TEXT_ADDED_TO_CART_SUCCESS, mobileName);
+		return elementIsDisplayed(driver, AbstractPageUILiveGuru.DYNAMIC_TEXT_ADDED_TO_CART_SUCCESS, mobileName);
 	}
 	
 	public boolean isAppliedDiscountMsgSuccess(WebDriver driver) {
 		waitForElementVisible(driver, AbstractPageUILiveGuru.TEXT_APPLIED_DISCOUNT);
 		return elementIsDisplayed(driver, AbstractPageUILiveGuru.TEXT_APPLIED_DISCOUNT);
+	}
+	
+	public void SetQtyEqual501(WebDriver driver, String qty) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.QTY_TEXTBOX);
+		removeAttributeOfElement(driver, driver.findElement(By.xpath(AbstractPageUILiveGuru.QTY_TEXTBOX)), "value");
+		sendkeyToElement(driver, AbstractPageUILiveGuru.QTY_TEXTBOX, qty);
+	}
+	
+	public boolean isErrMsgBeyondQuantity(WebDriver driver) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.TEXT_ERR_BEYOND_QUANTITY );
+		return elementIsDisplayed(driver, AbstractPageUILiveGuru.TEXT_ERR_BEYOND_QUANTITY);
+	}
+	
+	public boolean isErrMsgBeyondQuantity2(WebDriver driver) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.TEXT_ERR_BEYOND_QUANTITY_2 );
+		return elementIsDisplayed(driver, AbstractPageUILiveGuru.TEXT_ERR_BEYOND_QUANTITY_2);
+	}
+	
+	public boolean isNoItemsInCartDisplayed(WebDriver driver) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.TEXT_NO_ITEMS_IN_CART );
+		return elementIsDisplayed(driver, AbstractPageUILiveGuru.TEXT_NO_ITEMS_IN_CART);
 	}
 
 }

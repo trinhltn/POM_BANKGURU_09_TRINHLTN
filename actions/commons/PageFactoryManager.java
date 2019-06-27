@@ -21,6 +21,7 @@ import pageObjects.MyAccountLiveGuruFEPageObject;
 import pageObjects.NewAccountPageObject;
 import pageObjects.NewCustomerPageObject;
 import pageObjects.RegisterPageObject;
+import pageObjects.ShoppingCartEmptyFEPageObject;
 import pageObjects.ShoppingCartFEPageObject;
 import pageObjects.WithdrawalPageObject;
 import pageObjects.XperiaDetailFEPageObject;
@@ -116,6 +117,10 @@ public class PageFactoryManager {
 	
 	public static ShoppingCartFEPageObject getShoppingCartPage(WebDriver driver) {
 		return new ShoppingCartFEPageObject(driver);
+	}
+	
+	public static ShoppingCartEmptyFEPageObject getShoppingCartEmptyPage(WebDriver driver) {
+		return new ShoppingCartEmptyFEPageObject(driver);
 	}
 	
 }

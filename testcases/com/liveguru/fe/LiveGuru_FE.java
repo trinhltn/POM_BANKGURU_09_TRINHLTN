@@ -15,6 +15,7 @@ import pageObjects.AccountInformationLiveGuruFEPageObject;
 import pageObjects.HomeLiveGuruFEPageObject;
 import pageObjects.MobileLiveGuruFEPageObject;
 import pageObjects.MyAccountLiveGuruFEPageObject;
+import pageObjects.ShoppingCartEmptyFEPageObject;
 import pageObjects.ShoppingCartFEPageObject;
 import pageObjects.XperiaDetailFEPageObject;
 
@@ -26,11 +27,13 @@ public class LiveGuru_FE extends AbstractTest {
 	MobileLiveGuruFEPageObject mobileLiveGuruFEPage;
 	XperiaDetailFEPageObject xperiaDetailPage;
 	ShoppingCartFEPageObject shoppingCartFEPage;
+	ShoppingCartEmptyFEPageObject ShoppingCartEmptyPage;
 	String firstName, lastName, email, password;
 	String priceOfSonyXperia, priceOfSonyXperiaDetail;
 	String priceSony = "$100.00";
 	String couponCode = "GURU50";
 	String discountIPhone = "-$25.00";
+	String quantity = "501";
 
 	@Parameters({ "browser", "version" })
 	@BeforeClass
@@ -55,7 +58,7 @@ public class LiveGuru_FE extends AbstractTest {
 		homeLiveGuruFEPage.clickToRegisterLink(driver);
 		
 		log.info("Register 01 - Step 03: Verify move to create account page");
-		verifyTrue(homeLiveGuruFEPage.isCreateAccountPageDisplayed(driver));
+		verifyTrue(homeLiveGuruFEPage.isTextOfPageDisplayed(driver, "Create an Account"));
 		
 		log.info("Register 01 - Step 04: Input valid data into all fields");
 		homeLiveGuruFEPage.sendKeyToElementsInTextBox(driver, "firstname", firstName);
@@ -129,7 +132,7 @@ public class LiveGuru_FE extends AbstractTest {
 		
 		log.info("Verify 04 - Step 02: Click ADD TO CART and Verify 'IPhone was added to your shopping cart.' display");
 		shoppingCartFEPage = (ShoppingCartFEPageObject) mobileLiveGuruFEPage.openMultiShoppingCart(driver, "IPhone");
-		shoppingCartFEPage.isAddedToCartIPhoneSuccess(driver);
+		shoppingCartFEPage.isDynamicAddedToCartMobileSuccess(driver, "IPhone");
 		
 		log.info("Verify 04 - Step 03: Enter Coupon code and click button Apply");
 		shoppingCartFEPage.sendKeyToElementsInTextBox(driver, "coupon_code", couponCode);
@@ -138,6 +141,31 @@ public class LiveGuru_FE extends AbstractTest {
 		log.info("Verify 04 - Step 04: Verify the discount generated");
 		verifyTrue(shoppingCartFEPage.isAppliedDiscountMsgSuccess(driver));
 		verifyEquals(shoppingCartFEPage.getPriceDiscount(driver), discountIPhone);
+		
+	}
+	
+	@Test
+	public void TC_05_Verify_Can_Not_Add_More_Than_500_Items() {
+		log.info("Verify 05 - Step 01: Click on 'Mobile' menu");
+		mobileLiveGuruFEPage = (MobileLiveGuruFEPageObject) shoppingCartFEPage.openMultiPageLiveFE(driver, "Mobile");
+		
+		log.info("Verify 05 - Step 02: Click ADD TO CART of Sony Xperia");
+		shoppingCartFEPage = (ShoppingCartFEPageObject) mobileLiveGuruFEPage.openMultiShoppingCart(driver, "Sony Xperia");
+		
+		log.info("Verify 05 - Step 03: Change QTY value to 501 and click UPDATE button");
+		shoppingCartFEPage.SetQtyEqual501(driver, quantity);
+		shoppingCartFEPage.clickToDynamicButton(driver, "Update");
+		
+		log.info("Verify 05 - Step 04: Verify err msg");
+		verifyTrue(shoppingCartFEPage.isErrMsgBeyondQuantity(driver));
+		verifyTrue(shoppingCartFEPage.isErrMsgBeyondQuantity2(driver));
+		
+		log.info("Verify 05 - Step 05: Click on EMPTY CART link");
+		ShoppingCartEmptyPage = (ShoppingCartEmptyFEPageObject) shoppingCartFEPage.openShoppingCartEmptyPage(driver, "Empty Cart");
+		
+		log.info("Verify 05 - Step 06: Verify cart is empty");
+		verifyTrue(ShoppingCartEmptyPage.isTextOfPageDisplayed(driver, "Shopping Cart is Empty"));
+		verifyTrue(ShoppingCartEmptyPage.isNoItemsInCartDisplayed(driver));
 		
 	}
 	
