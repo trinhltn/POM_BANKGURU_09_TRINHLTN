@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import pageObjects.AccountInformationLiveGuruFEPageObject;
 import pageObjects.BalanceEnquiryPageObject;
 import pageObjects.ChangePasswordPageObject;
+import pageObjects.CompareFEPageObject;
 import pageObjects.CustomisedStatementPageObject;
 import pageObjects.DeleteAccountPageObject;
 import pageObjects.DeleteCustomerPageObject;
@@ -21,8 +22,11 @@ import pageObjects.MyAccountLiveGuruFEPageObject;
 import pageObjects.NewAccountPageObject;
 import pageObjects.NewCustomerPageObject;
 import pageObjects.RegisterPageObject;
+import pageObjects.ShareWishlistPageObject;
 import pageObjects.ShoppingCartEmptyFEPageObject;
 import pageObjects.ShoppingCartFEPageObject;
+import pageObjects.TVLiveGuruFEPageObject;
+import pageObjects.WishlistFEPageObject;
 import pageObjects.WithdrawalPageObject;
 import pageObjects.XperiaDetailFEPageObject;
 
@@ -121,6 +125,22 @@ public class PageFactoryManager {
 	
 	public static ShoppingCartEmptyFEPageObject getShoppingCartEmptyPage(WebDriver driver) {
 		return new ShoppingCartEmptyFEPageObject(driver);
+	}
+	
+	public static TVLiveGuruFEPageObject getTVPage(WebDriver driver) {
+		return new TVLiveGuruFEPageObject(driver);
+	}
+	
+	public static CompareFEPageObject getComparePage(WebDriver driver) {
+		return new CompareFEPageObject(driver);
+	}
+	
+	public static WishlistFEPageObject getWishlistPage(WebDriver driver) {
+		return new WishlistFEPageObject(driver);
+	}
+	
+	public static ShareWishlistPageObject getShareWishlistPage(WebDriver driver) {
+		return new ShareWishlistPageObject(driver);
 	}
 	
 }

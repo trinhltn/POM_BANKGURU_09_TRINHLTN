@@ -12,11 +12,15 @@ import commons.AbstractTest;
 import commons.Constants;
 import commons.PageFactoryManager;
 import pageObjects.AccountInformationLiveGuruFEPageObject;
+import pageObjects.CompareFEPageObject;
 import pageObjects.HomeLiveGuruFEPageObject;
 import pageObjects.MobileLiveGuruFEPageObject;
 import pageObjects.MyAccountLiveGuruFEPageObject;
+import pageObjects.ShareWishlistPageObject;
 import pageObjects.ShoppingCartEmptyFEPageObject;
 import pageObjects.ShoppingCartFEPageObject;
+import pageObjects.TVLiveGuruFEPageObject;
+import pageObjects.WishlistFEPageObject;
 import pageObjects.XperiaDetailFEPageObject;
 
 public class LiveGuru_FE extends AbstractTest {
@@ -28,12 +32,21 @@ public class LiveGuru_FE extends AbstractTest {
 	XperiaDetailFEPageObject xperiaDetailPage;
 	ShoppingCartFEPageObject shoppingCartFEPage;
 	ShoppingCartEmptyFEPageObject ShoppingCartEmptyPage;
+	TVLiveGuruFEPageObject tvPage;
+	CompareFEPageObject comparePage;
+	WishlistFEPageObject wishlistPage;
+	ShareWishlistPageObject shareWishlistPage;
 	String firstName, lastName, email, password;
 	String priceOfSonyXperia, priceOfSonyXperiaDetail;
 	String priceSony = "$100.00";
+	String priceIPhone = "$500.00";
 	String couponCode = "GURU50";
 	String discountIPhone = "-$25.00";
 	String quantity = "501";
+	String parentID;
+	String msgAddedWishlistSuccess = " has been added to your wishlist. Click here to continue shopping.";
+	String emailComment = "trinh123@gmail.com";
+	String message = " send msg for me";
 
 	@Parameters({ "browser", "version" })
 	@BeforeClass
@@ -161,11 +174,69 @@ public class LiveGuru_FE extends AbstractTest {
 		verifyTrue(shoppingCartFEPage.isErrMsgBeyondQuantity2(driver));
 		
 		log.info("Verify 05 - Step 05: Click on EMPTY CART link");
-		ShoppingCartEmptyPage = (ShoppingCartEmptyFEPageObject) shoppingCartFEPage.openShoppingCartEmptyPage(driver, "Empty Cart");
+		ShoppingCartEmptyPage = (ShoppingCartEmptyFEPageObject) shoppingCartFEPage.openDynamicPagesFromButtonWithTitle(driver, "Empty Cart");
 		
 		log.info("Verify 05 - Step 06: Verify cart is empty");
 		verifyTrue(ShoppingCartEmptyPage.isTextOfPageDisplayed(driver, "Shopping Cart is Empty"));
 		verifyTrue(ShoppingCartEmptyPage.isNoItemsInCartDisplayed(driver));
+		
+	}
+	
+	@Test
+	public void TC_06_Verify_compare_two_products() {
+		log.info("Verify 06 - Step 01: Click on 'Mobile' menu");
+		mobileLiveGuruFEPage = (MobileLiveGuruFEPageObject) ShoppingCartEmptyPage.openMultiPageLiveFE(driver, "Mobile");
+		
+		log.info("Verify 06 - Step 02: Click 'Add to compare' Sony Xperia and IPhone");
+		mobileLiveGuruFEPage.clickToDynamicAddToCompare(driver, "Sony Xperia");
+		mobileLiveGuruFEPage.isDynamicAddedToCompareMobileSuccess(driver, "Sony Xperia");
+		mobileLiveGuruFEPage.clickToDynamicAddToCompare(driver, "IPhone");
+		mobileLiveGuruFEPage.isDynamicAddedToCompareMobileSuccess(driver, "IPhone");
+		
+		log.info("Verify 06 - Step 03: Click COMPARE button");
+		comparePage =  (CompareFEPageObject) mobileLiveGuruFEPage.openDynamicPagesFromButtonWithTitle(driver, "Compare");
+		
+		log.info("Verify 06 - Step 04: Verify popup window - switch windows");
+		String parentID = driver.getWindowHandle(); 
+		comparePage.switchToChildWindowByID(driver, parentID);
+		
+		log.info("Verify 06 - Step 05: Verify infor in popup window");
+		verifyTrue(comparePage.isTextOfPageDisplayed(driver, "Compare Products"));
+		
+		verifyTrue(comparePage.isMobileNameDisplayed(driver, "Sony Xperia"));
+		verifyEquals(comparePage.getDynamicPriceInComparePage(driver, "Sony Xperia"), priceSony);
+		verifyTrue(comparePage.isSKUDisplayed(driver, "MOB001"));
+		
+		verifyTrue(comparePage.isMobileNameDisplayed(driver, "IPhone"));
+		verifyEquals(comparePage.getDynamicPriceInComparePage(driver, "IPhone"), priceIPhone);
+		verifyTrue(comparePage.isSKUDisplayed(driver, "MOB0002"));
+		
+		log.info("Verify 06 - Step 06: Close popup window");
+		comparePage.closeAllWithoutParentWindows(driver, parentID);
+		
+	}
+	
+	@Test
+	public void TC_07_Verify_compare_two_products() {
+		log.info("Verify 07 - Step 01: Go to TV menu");
+		tvPage = (TVLiveGuruFEPageObject) comparePage.openMultiPageLiveFE(driver, "TV");
+		tvPage.isTextOfPageDisplayed(driver, "TV");
+		
+		log.info("Verify 07 - Step 02: Add 'LG LCD' in your wishlist");
+		wishlistPage = tvPage.openWishlistPage(driver, "LG LCD");
+		verifyEquals(wishlistPage.getMsgAddedWishlistSuccess(driver), "LG LCD"+msgAddedWishlistSuccess);
+		
+		log.info("Verify 07 - Step 03: Click 'SHARE WISHLIST' button");
+		shareWishlistPage = (ShareWishlistPageObject) wishlistPage.openDynamicPagesFromButtonWithTitle(driver, "Share Wishlist");
+		
+		log.info("Verify 07 - Step 04: Input email and message into textarea comment and Click 'SHARE WISHLIST' button");
+		shareWishlistPage.sendKeyToTextAreaComment(driver, "email_address", emailComment);
+		shareWishlistPage.sendKeyToTextAreaComment(driver, "message", message);
+		wishlistPage = (WishlistFEPageObject) shareWishlistPage.openWishlistPageFromShareWL(driver, "Share Wishlist");
+		
+		log.info("Verify 07 - Step 05: Verify have 1 LG LCD in My Wishlist");
+		verifyTrue(wishlistPage.isTVNameInMyWishlistDisplayed(driver, "LG LCD"));
+		verifyEquals(wishlistPage.getDynamicQtyOnAttributeOfTVWishlist(driver, "LG LCD"), "1");
 		
 	}
 	

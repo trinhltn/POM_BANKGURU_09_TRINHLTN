@@ -26,6 +26,7 @@ import pageObjects.FundTransferPageObject;
 import pageObjects.HomePageObject;
 import pageObjects.NewAccountPageObject;
 import pageObjects.NewCustomerPageObject;
+import pageObjects.WishlistFEPageObject;
 
 public class AbstractPage extends AbstractPageUI {
 	WebElement element;
@@ -496,11 +497,17 @@ public class AbstractPage extends AbstractPageUI {
 		clickToElement(driver, AbstractPageUI.NEW_ACCOUNT_LINK);
 		return PageFactoryManager.getNewAccoutPage(driver);
 	}
-
+	
 	public NewCustomerPageObject openNewCustomerPage(WebDriver driver) {
 		waitForElementVisible(driver, AbstractPageUI.NEW_CUSTOMER_LINK);
 		clickToElement(driver, AbstractPageUI.NEW_CUSTOMER_LINK);
 		return PageFactoryManager.getNewCustomerPage(driver);
+	}
+
+	public WishlistFEPageObject openWishlistPage(WebDriver driver, String TVName) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_ADD_TO_WISHLIST, TVName);
+		clickToElement(driver, AbstractPageUILiveGuru.DYNAMIC_ADD_TO_WISHLIST, TVName);
+		return PageFactoryManager.getWishlistPage(driver);
 	}
 
 	// 1 hàm mở ra 14 page (<=20 pages) => return page trong tầng pageObject
@@ -555,6 +562,8 @@ public class AbstractPage extends AbstractPageUI {
 			return PageFactoryManager.getAccountInformationLiveGuruPage(driver);
 		case "Mobile":
 			return PageFactoryManager.getMobileLiveGuruPage(driver);
+		case "TV":
+			return PageFactoryManager.getTVPage(driver);
 
 		default:
 			return PageFactoryManager.getHomeLiveGuruPage(driver);
@@ -594,18 +603,28 @@ public class AbstractPage extends AbstractPageUI {
 		
 	}
 	
-	public AbstractPage openShoppingCartEmptyPage(WebDriver driver, String title) {
+	public AbstractPage openDynamicPagesFromButtonWithTitle(WebDriver driver, String title) {
 		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_BUTTON, title);
 		clickToElement(driver, AbstractPageUILiveGuru.DYNAMIC_BUTTON, title);
 
 		switch (title) {
 		case "Empty Cart":
 			return PageFactoryManager.getShoppingCartEmptyPage(driver);
+		case "Compare":
+			return PageFactoryManager.getComparePage(driver);
+		case "Share Wishlist":
+			return PageFactoryManager.getShareWishlistPage(driver);
 
 		default:
 			return PageFactoryManager.getMyAccountLiveGuruPage(driver);
 		}
 
+	}
+	
+	public WishlistFEPageObject openWishlistPageFromShareWL(WebDriver driver, String title) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_BUTTON, title);
+		clickToElement(driver, AbstractPageUILiveGuru.DYNAMIC_BUTTON, title);
+		return PageFactoryManager.getWishlistPage(driver);
 	}
 	
 	public void openMultiPages(WebDriver driver, String pageName) {
@@ -712,10 +731,15 @@ public class AbstractPage extends AbstractPageUI {
 		waitForElementVisible(driver, AbstractPageUILiveGuru.REGISTER_LINK);
 		clickToElement(driver, AbstractPageUILiveGuru.REGISTER_LINK);
 	}
-
+	
 	public boolean isTextOfPageDisplayed(WebDriver driver, String textPage) {
 		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_TEXT_PAGE, textPage);
 		return elementIsDisplayed(driver, AbstractPageUILiveGuru.DYNAMIC_TEXT_PAGE, textPage);
+	}
+
+	public boolean isMobileNameDisplayed(WebDriver driver, String mobileName) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_GET_MOBILE_NAME, mobileName);
+		return elementIsDisplayed(driver, AbstractPageUILiveGuru.DYNAMIC_GET_MOBILE_NAME, mobileName);
 	}
 	
 	public boolean isMsgRegisterSuccessfullyDisplayed(WebDriver driver) {
@@ -742,10 +766,15 @@ public class AbstractPage extends AbstractPageUI {
 		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_BUTTON, title);
 		clickToElement(driver, AbstractPageUILiveGuru.DYNAMIC_BUTTON, title);
 	}
-
+	
 	public void clickToUpdateButton(WebDriver driver) {
 		waitForElementVisible(driver, AbstractPageUILiveGuru.BUTTON_UPDATE);
 		clickToElement(driver, AbstractPageUILiveGuru.BUTTON_UPDATE);
+	}
+
+	public void clickToDynamicAddToCompare(WebDriver driver, String mobileName) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_ADD_TO_COMPARE, mobileName);
+		clickToElement(driver, AbstractPageUILiveGuru.DYNAMIC_ADD_TO_COMPARE, mobileName);
 	}
 
 	public String getDynamicValueOnAttribute(WebDriver driver, String fieldName) {
@@ -778,6 +807,11 @@ public class AbstractPage extends AbstractPageUI {
 		return elementIsDisplayed(driver, AbstractPageUILiveGuru.DYNAMIC_TEXT_ADDED_TO_CART_SUCCESS, mobileName);
 	}
 	
+	public boolean isDynamicAddedToCompareMobileSuccess(WebDriver driver, String mobileName) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_TEXT_ADDED_TO_COMPARE_SUCCESS, mobileName);
+		return elementIsDisplayed(driver, AbstractPageUILiveGuru.DYNAMIC_TEXT_ADDED_TO_COMPARE_SUCCESS, mobileName);
+	}
+	
 	public boolean isAppliedDiscountMsgSuccess(WebDriver driver) {
 		waitForElementVisible(driver, AbstractPageUILiveGuru.TEXT_APPLIED_DISCOUNT);
 		return elementIsDisplayed(driver, AbstractPageUILiveGuru.TEXT_APPLIED_DISCOUNT);
@@ -803,5 +837,36 @@ public class AbstractPage extends AbstractPageUI {
 		waitForElementVisible(driver, AbstractPageUILiveGuru.TEXT_NO_ITEMS_IN_CART );
 		return elementIsDisplayed(driver, AbstractPageUILiveGuru.TEXT_NO_ITEMS_IN_CART);
 	}
+	
+	public String getDynamicPriceInComparePage(WebDriver driver, String mobileName) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_GET_PRICE_IN_COMPARE_PAGE, mobileName);
+		return getTextElement(driver, AbstractPageUILiveGuru.DYNAMIC_GET_PRICE_IN_COMPARE_PAGE, mobileName);
+	}
 
+	public String getMsgAddedWishlistSuccess(WebDriver driver) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.PAGE_NAME_OF_WISHLIST);
+		return getTextElement(driver, AbstractPageUILiveGuru.PAGE_NAME_OF_WISHLIST);
+	}
+	
+	public boolean isSKUDisplayed(WebDriver driver, String skuText) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_SKU, skuText);
+		return elementIsDisplayed(driver, AbstractPageUILiveGuru.DYNAMIC_SKU, skuText);
+	}
+
+	public boolean isTVNameInMyWishlistDisplayed(WebDriver driver, String TVName) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_LINK_PAGE, TVName);
+		return elementIsDisplayed(driver, AbstractPageUILiveGuru.DYNAMIC_LINK_PAGE, TVName);
+	}
+	
+	public void sendKeyToTextAreaComment(WebDriver driver, String idName, String value) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_COMMENT_WISHLIST_TEXT_AREA, idName);
+		sendkeyToElement(driver, AbstractPageUILiveGuru.DYNAMIC_COMMENT_WISHLIST_TEXT_AREA, value, idName);
+	}
+	
+	public String getDynamicQtyOnAttributeOfTVWishlist(WebDriver driver, String tvName) {
+		waitForElementVisible(driver, AbstractPageUILiveGuru.DYNAMIC_QTY_OF_TV_WISHLIST, tvName);
+		return getAttributeValue(driver, AbstractPageUILiveGuru.DYNAMIC_QTY_OF_TV_WISHLIST, "value", tvName);
+	}
+	
+	
 }
